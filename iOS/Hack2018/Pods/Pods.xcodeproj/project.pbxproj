@@ -7,33 +7,97 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3428E6A0A9B72681842A1DF165972B56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		43007AB217FA6F41C36B95A042D720E5 /* Pods-Hack2018-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4A302121D5C83C0B0BDA1CECB292D8 /* Pods-Hack2018-dummy.m */; };
-		EA46921CA63FE28856AB88D09F141B12 /* Pods-Hack2018-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE494AD4D57AC289E3AF8FA87BB80670 /* Pods-Hack2018-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14509F6A21E49A4BC8ED72F94AA98158 /* VideoCutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F1A358170F8461F294E3593F8363C5 /* VideoCutter.swift */; };
+		1AFB0B0FC5D8A9994A8A41E8B81759DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		251CE48D0B35C2733820862903DB6D95 /* SwiftSpinner.h in Headers */ = {isa = PBXBuildFile; fileRef = B39B000D381D27200BB150DEBAC17151 /* SwiftSpinner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BFC97B9248F52FECD57EBD0A7ADD3CD /* SwiftSpinner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E67B96E96C64B9FD2190C647091493EA /* SwiftSpinner-dummy.m */; };
+		504939CF36BF90517CC15207C4AB3B58 /* Pods-Hack2018-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4A302121D5C83C0B0BDA1CECB292D8 /* Pods-Hack2018-dummy.m */; };
+		8CF3143A73025CC264F6E2BEF3E95821 /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E584E46A865BBA01EF63FA02A7DE492D /* SwiftSpinner.swift */; };
+		91AF69B0527F44CFB14EFFBF118D5FCB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		A08FE480EAFEA18BC830082C05E11348 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		BC2E34A9118C91DF48D4A0A4CB3A4E3F /* SwiftSpinner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B561CA3D4D2237B03E47B174DDCF771 /* SwiftSpinner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEA683CF31A1E5DC4F9A9C24E219DD1E /* Pods-Hack2018-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE494AD4D57AC289E3AF8FA87BB80670 /* Pods-Hack2018-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE9E54EDD93F675F7E027CE0C6C6483A /* VideoSplashKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1105D9EB3AAEBC7700857514BE36FE /* VideoSplashKit-dummy.m */; };
+		E6AAB3196F5F9A9D390C39FB61561CD6 /* VideoSplashKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 44829CEB2C6F7C63AA7E90890E03FEEF /* VideoSplashKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6EA218A36CED8B0C78F1E9F7FAB70FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		F0336D8D6E8F07E6ACB6A2B98D190D04 /* VideoSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B729D4EF90C516172DDD4B7E62FDB6E /* VideoSplashViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		56254F097D5075BE58DA78B28A1E91A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C85D1501620EF2ABE81C09F5EFA4CE5;
+			remoteInfo = VideoSplashKit;
+		};
+		F30D5FB394A4960C6D3C0D83BB805B67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EC8DE477072EC8669DC32FB9E51EAE1;
+			remoteInfo = SwiftSpinner;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		0E913C97068EC035A01AEB3B1120D662 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10D1949809E1E78FFEEF64A32580C443 /* Pods-Hack2018-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hack2018-frameworks.sh"; sourceTree = "<group>"; };
+		1B729D4EF90C516172DDD4B7E62FDB6E /* VideoSplashViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoSplashViewController.swift; path = VideoSplashKit/Source/VideoSplashViewController.swift; sourceTree = "<group>"; };
 		26DC4885FA738A194D32DD7CDF7DDA84 /* Pods-Hack2018-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hack2018-acknowledgements.markdown"; sourceTree = "<group>"; };
 		29ABED1466F215DBE94A0E0DB6DF1EC8 /* Pods-Hack2018.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hack2018.release.xcconfig"; sourceTree = "<group>"; };
+		35F1A358170F8461F294E3593F8363C5 /* VideoCutter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoCutter.swift; path = VideoSplashKit/Source/VideoCutter.swift; sourceTree = "<group>"; };
 		3848F7DC378D5E846E7EEEF5B8152125 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E4A302121D5C83C0B0BDA1CECB292D8 /* Pods-Hack2018-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hack2018-dummy.m"; sourceTree = "<group>"; };
 		406EE37D0A3D7C24155BA60C67092055 /* Pods-Hack2018-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hack2018-acknowledgements.plist"; sourceTree = "<group>"; };
+		44829CEB2C6F7C63AA7E90890E03FEEF /* VideoSplashKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VideoSplashKit-umbrella.h"; sourceTree = "<group>"; };
 		50DCD5B726C753847CA51F4B8444C8CC /* Pods-Hack2018-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hack2018-resources.sh"; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		54D9A88C5A9DDC9AA76E5F0C7EFEECFE /* Pods_Hack2018.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Hack2018.framework; path = "Pods-Hack2018.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C13780E9A34308A86A206ADCC8E7CD0 /* SwiftSpinner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftSpinner.modulemap; sourceTree = "<group>"; };
+		63746F353F710BEDBBC10F21FDE473AC /* VideoSplashKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = VideoSplashKit.framework; path = VideoSplashKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B561CA3D4D2237B03E47B174DDCF771 /* SwiftSpinner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSpinner-umbrella.h"; sourceTree = "<group>"; };
+		6E64F79509CD726475986B3EE001DD4D /* SwiftSpinner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftSpinner.framework; path = SwiftSpinner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FBEB51DEEB5A99B662FC3CAEABA22D3 /* SwiftSpinner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSpinner-prefix.pch"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		97A5EA283C1247EBF48ED50AC1CBC3F3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B982E88D0018DA68646A3765C82A602 /* VideoSplashKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = VideoSplashKit.modulemap; sourceTree = "<group>"; };
+		A31314880FEA53F5BFC2D82DC30022F5 /* VideoSplashKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VideoSplashKit-prefix.pch"; sourceTree = "<group>"; };
+		B39B000D381D27200BB150DEBAC17151 /* SwiftSpinner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftSpinner.h; path = SwiftSpinner/SwiftSpinner.h; sourceTree = "<group>"; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		BD1105D9EB3AAEBC7700857514BE36FE /* VideoSplashKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VideoSplashKit-dummy.m"; sourceTree = "<group>"; };
+		C0A6811A7C432ABA21E2740A87280DE2 /* VideoSplashKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VideoSplashKit.xcconfig; sourceTree = "<group>"; };
 		C2C82CDAC9DCCD7E66AF8249606B254C /* Pods-Hack2018.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Hack2018.modulemap"; sourceTree = "<group>"; };
-		E37A0CB9EEE4428548D5187E7F84DEAB /* Pods_Hack2018.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Hack2018.framework; path = "Pods-Hack2018.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB110073844C111CB3269F5544A2C170 /* SwiftSpinner.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSpinner.xcconfig; sourceTree = "<group>"; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E584E46A865BBA01EF63FA02A7DE492D /* SwiftSpinner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSpinner.swift; path = SwiftSpinner/SwiftSpinner.swift; sourceTree = "<group>"; };
+		E67B96E96C64B9FD2190C647091493EA /* SwiftSpinner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSpinner-dummy.m"; sourceTree = "<group>"; };
 		E6C883579CEAF4230E82757F0A645889 /* Pods-Hack2018.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hack2018.debug.xcconfig"; sourceTree = "<group>"; };
 		EE494AD4D57AC289E3AF8FA87BB80670 /* Pods-Hack2018-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hack2018-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E0F3BE1094A57DE040765DA328492889 /* Frameworks */ = {
+		42F763DA85A4832B2A97F2B290DC470D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3428E6A0A9B72681842A1DF165972B56 /* Foundation.framework in Frameworks */,
+				1AFB0B0FC5D8A9994A8A41E8B81759DB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8414CFC5A851D4038A1A541959540CBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91AF69B0527F44CFB14EFFBF118D5FCB /* Foundation.framework in Frameworks */,
+				A08FE480EAFEA18BC830082C05E11348 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1098C9B770227D7B5DAC4A4BAFD38BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6EA218A36CED8B0C78F1E9F7FAB70FF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +122,30 @@
 			path = "Target Support Files/Pods-Hack2018";
 			sourceTree = "<group>";
 		};
+		151378A6BC4C0DD0233761C37F4EF29F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0E913C97068EC035A01AEB3B1120D662 /* Info.plist */,
+				9B982E88D0018DA68646A3765C82A602 /* VideoSplashKit.modulemap */,
+				C0A6811A7C432ABA21E2740A87280DE2 /* VideoSplashKit.xcconfig */,
+				BD1105D9EB3AAEBC7700857514BE36FE /* VideoSplashKit-dummy.m */,
+				A31314880FEA53F5BFC2D82DC30022F5 /* VideoSplashKit-prefix.pch */,
+				44829CEB2C6F7C63AA7E90890E03FEEF /* VideoSplashKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/VideoSplashKit";
+			sourceTree = "<group>";
+		};
+		18FFD89554A95A7BC3152211E95CCE68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54D9A88C5A9DDC9AA76E5F0C7EFEECFE /* Pods_Hack2018.framework */,
+				6E64F79509CD726475986B3EE001DD4D /* SwiftSpinner.framework */,
+				63746F353F710BEDBBC10F21FDE473AC /* VideoSplashKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		4239A9A6CDFA910956B3B0541D90025F /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -66,69 +154,161 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		7DB346D0F39D3F0E887471402A8071AB = {
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				FE978F1C7EED1574ABF0B376A6CD94E1 /* Products */,
-				4239A9A6CDFA910956B3B0541D90025F /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		FE978F1C7EED1574ABF0B376A6CD94E1 /* Products */ = {
+		521214D8BA69FC053F0E83D97AEC3EBF /* VideoSplashKit */ = {
 			isa = PBXGroup;
 			children = (
-				E37A0CB9EEE4428548D5187E7F84DEAB /* Pods_Hack2018.framework */,
+				35F1A358170F8461F294E3593F8363C5 /* VideoCutter.swift */,
+				1B729D4EF90C516172DDD4B7E62FDB6E /* VideoSplashViewController.swift */,
+				151378A6BC4C0DD0233761C37F4EF29F /* Support Files */,
 			);
-			name = Products;
+			name = VideoSplashKit;
+			path = VideoSplashKit;
+			sourceTree = "<group>";
+		};
+		55B27C3D1D4CE6D59B300DE6D07D541F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				97A5EA283C1247EBF48ED50AC1CBC3F3 /* Info.plist */,
+				5C13780E9A34308A86A206ADCC8E7CD0 /* SwiftSpinner.modulemap */,
+				CB110073844C111CB3269F5544A2C170 /* SwiftSpinner.xcconfig */,
+				E67B96E96C64B9FD2190C647091493EA /* SwiftSpinner-dummy.m */,
+				7FBEB51DEEB5A99B662FC3CAEABA22D3 /* SwiftSpinner-prefix.pch */,
+				6B561CA3D4D2237B03E47B174DDCF771 /* SwiftSpinner-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftSpinner";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				CC0119D626C9854880B8FA3B01DB18B6 /* Pods */,
+				18FFD89554A95A7BC3152211E95CCE68 /* Products */,
+				4239A9A6CDFA910956B3B0541D90025F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		CC0119D626C9854880B8FA3B01DB18B6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9530A845316E009D0B4F5AD4A3AC98A /* SwiftSpinner */,
+				521214D8BA69FC053F0E83D97AEC3EBF /* VideoSplashKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D9530A845316E009D0B4F5AD4A3AC98A /* SwiftSpinner */ = {
+			isa = PBXGroup;
+			children = (
+				B39B000D381D27200BB150DEBAC17151 /* SwiftSpinner.h */,
+				E584E46A865BBA01EF63FA02A7DE492D /* SwiftSpinner.swift */,
+				55B27C3D1D4CE6D59B300DE6D07D541F /* Support Files */,
+			);
+			name = SwiftSpinner;
+			path = SwiftSpinner;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		280CE0D83D17F055BD93D5F42F6B7EAE /* Headers */ = {
+		040E0CD642C7B7216EE20FF4A0DC8FB0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA46921CA63FE28856AB88D09F141B12 /* Pods-Hack2018-umbrella.h in Headers */,
+				CEA683CF31A1E5DC4F9A9C24E219DD1E /* Pods-Hack2018-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1041F88D46E7CF7E8C631C8ADAF9225F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC2E34A9118C91DF48D4A0A4CB3A4E3F /* SwiftSpinner-umbrella.h in Headers */,
+				251CE48D0B35C2733820862903DB6D95 /* SwiftSpinner.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4BB8A84CE13DCDFABD295AB26FE5404 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6AAB3196F5F9A9D390C39FB61561CD6 /* VideoSplashKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		BF4D6BE543998917AF021BEE1815264A /* Pods-Hack2018 */ = {
+		7EC8DE477072EC8669DC32FB9E51EAE1 /* SwiftSpinner */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4A203B9E50DA39A743A65AABB8F2DB6A /* Build configuration list for PBXNativeTarget "Pods-Hack2018" */;
+			buildConfigurationList = 64D2603E0FFE557E6D67246AAE6B19D2 /* Build configuration list for PBXNativeTarget "SwiftSpinner" */;
 			buildPhases = (
-				23C2106DAEE7ACDC1C5C42902E7303E0 /* Sources */,
-				E0F3BE1094A57DE040765DA328492889 /* Frameworks */,
-				280CE0D83D17F055BD93D5F42F6B7EAE /* Headers */,
+				B810932A6BBD6FAF3845CDADBF0A1E8C /* Sources */,
+				8414CFC5A851D4038A1A541959540CBA /* Frameworks */,
+				1041F88D46E7CF7E8C631C8ADAF9225F /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			name = SwiftSpinner;
+			productName = SwiftSpinner;
+			productReference = 6E64F79509CD726475986B3EE001DD4D /* SwiftSpinner.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		875C27A0CC2A553D03652A856C6ED9CB /* Pods-Hack2018 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69BD0AEE41AE7A91E331850D4E6BB1C4 /* Build configuration list for PBXNativeTarget "Pods-Hack2018" */;
+			buildPhases = (
+				AB72597510D6B16D9F2B954C4C17959F /* Sources */,
+				42F763DA85A4832B2A97F2B290DC470D /* Frameworks */,
+				040E0CD642C7B7216EE20FF4A0DC8FB0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86FA2C82CBB23781877502478159C304 /* PBXTargetDependency */,
+				879BA1B5692AA58B9FBF690306131448 /* PBXTargetDependency */,
+			);
 			name = "Pods-Hack2018";
 			productName = "Pods-Hack2018";
-			productReference = E37A0CB9EEE4428548D5187E7F84DEAB /* Pods_Hack2018.framework */;
+			productReference = 54D9A88C5A9DDC9AA76E5F0C7EFEECFE /* Pods_Hack2018.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8C85D1501620EF2ABE81C09F5EFA4CE5 /* VideoSplashKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5447C39349CD7F5373724E97F468E18 /* Build configuration list for PBXNativeTarget "VideoSplashKit" */;
+			buildPhases = (
+				5E4BA9552B834D6EDA20F7CE5B76F23D /* Sources */,
+				A1098C9B770227D7B5DAC4A4BAFD38BC /* Frameworks */,
+				D4BB8A84CE13DCDFABD295AB26FE5404 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VideoSplashKit;
+			productName = VideoSplashKit;
+			productReference = 63746F353F710BEDBBC10F21FDE473AC /* VideoSplashKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -148,27 +328,94 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = FE978F1C7EED1574ABF0B376A6CD94E1 /* Products */;
+			productRefGroup = 18FFD89554A95A7BC3152211E95CCE68 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BF4D6BE543998917AF021BEE1815264A /* Pods-Hack2018 */,
+				875C27A0CC2A553D03652A856C6ED9CB /* Pods-Hack2018 */,
+				7EC8DE477072EC8669DC32FB9E51EAE1 /* SwiftSpinner */,
+				8C85D1501620EF2ABE81C09F5EFA4CE5 /* VideoSplashKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		23C2106DAEE7ACDC1C5C42902E7303E0 /* Sources */ = {
+		5E4BA9552B834D6EDA20F7CE5B76F23D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43007AB217FA6F41C36B95A042D720E5 /* Pods-Hack2018-dummy.m in Sources */,
+				14509F6A21E49A4BC8ED72F94AA98158 /* VideoCutter.swift in Sources */,
+				DE9E54EDD93F675F7E027CE0C6C6483A /* VideoSplashKit-dummy.m in Sources */,
+				F0336D8D6E8F07E6ACB6A2B98D190D04 /* VideoSplashViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB72597510D6B16D9F2B954C4C17959F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				504939CF36BF90517CC15207C4AB3B58 /* Pods-Hack2018-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B810932A6BBD6FAF3845CDADBF0A1E8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BFC97B9248F52FECD57EBD0A7ADD3CD /* SwiftSpinner-dummy.m in Sources */,
+				8CF3143A73025CC264F6E2BEF3E95821 /* SwiftSpinner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		86FA2C82CBB23781877502478159C304 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftSpinner;
+			target = 7EC8DE477072EC8669DC32FB9E51EAE1 /* SwiftSpinner */;
+			targetProxy = F30D5FB394A4960C6D3C0D83BB805B67 /* PBXContainerItemProxy */;
+		};
+		879BA1B5692AA58B9FBF690306131448 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VideoSplashKit;
+			target = 8C85D1501620EF2ABE81C09F5EFA4CE5 /* VideoSplashKit */;
+			targetProxy = 56254F097D5075BE58DA78B28A1E91A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		37755077AA938FF67171C60EBE1FF7CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB110073844C111CB3269F5544A2C170 /* SwiftSpinner.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSpinner/SwiftSpinner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSpinner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftSpinner/SwiftSpinner.modulemap";
+				PRODUCT_NAME = SwiftSpinner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		39C5BC78A31CDE101068C530CAC7FA0F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -229,7 +476,7 @@
 			};
 			name = Debug;
 		};
-		7D23E568432E14FEE63E14FFDAF01BA4 /* Debug */ = {
+		83A23BF21DF0140CEBC4C53C1A588A43 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E6C883579CEAF4230E82757F0A645889 /* Pods-Hack2018.debug.xcconfig */;
 			buildSettings = {
@@ -255,6 +502,8 @@
 				PRODUCT_NAME = Pods_Hack2018;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -316,7 +565,102 @@
 			};
 			name = Release;
 		};
-		E8122E72B69946BC7DEAEF82131DA9DF /* Release */ = {
+		8EBAD272F380707E58334389484760AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0A6811A7C432ABA21E2740A87280DE2 /* VideoSplashKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VideoSplashKit/VideoSplashKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VideoSplashKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/VideoSplashKit/VideoSplashKit.modulemap";
+				PRODUCT_NAME = VideoSplashKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A1B799333CD2DE0DD357D27D9EF63DD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0A6811A7C432ABA21E2740A87280DE2 /* VideoSplashKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VideoSplashKit/VideoSplashKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VideoSplashKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/VideoSplashKit/VideoSplashKit.modulemap";
+				PRODUCT_NAME = VideoSplashKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AEF0B5FEB8758D5980A202112882EC02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB110073844C111CB3269F5544A2C170 /* SwiftSpinner.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSpinner/SwiftSpinner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSpinner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftSpinner/SwiftSpinner.modulemap";
+				PRODUCT_NAME = SwiftSpinner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C6FB2BA29F54E0A44AC7C4AD0622F7ED /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 29ABED1466F215DBE94A0E0DB6DF1EC8 /* Pods-Hack2018.release.xcconfig */;
 			buildSettings = {
@@ -342,6 +686,7 @@
 				PRODUCT_NAME = Pods_Hack2018;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -361,11 +706,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4A203B9E50DA39A743A65AABB8F2DB6A /* Build configuration list for PBXNativeTarget "Pods-Hack2018" */ = {
+		64D2603E0FFE557E6D67246AAE6B19D2 /* Build configuration list for PBXNativeTarget "SwiftSpinner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7D23E568432E14FEE63E14FFDAF01BA4 /* Debug */,
-				E8122E72B69946BC7DEAEF82131DA9DF /* Release */,
+				37755077AA938FF67171C60EBE1FF7CD /* Debug */,
+				AEF0B5FEB8758D5980A202112882EC02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69BD0AEE41AE7A91E331850D4E6BB1C4 /* Build configuration list for PBXNativeTarget "Pods-Hack2018" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83A23BF21DF0140CEBC4C53C1A588A43 /* Debug */,
+				C6FB2BA29F54E0A44AC7C4AD0622F7ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5447C39349CD7F5373724E97F468E18 /* Build configuration list for PBXNativeTarget "VideoSplashKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B799333CD2DE0DD357D27D9EF63DD3 /* Debug */,
+				8EBAD272F380707E58334389484760AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

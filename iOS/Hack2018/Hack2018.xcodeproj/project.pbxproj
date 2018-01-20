@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FA297C62013C196009C27D2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA297C52013C196009C27D2 /* LoginViewController.swift */; };
+		3FD7424E2013C7A400323F31 /* login_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3FD7424D2013C7A400323F31 /* login_video.mp4 */; };
+		3FD742502013C97B00323F31 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD7424F2013C97B00323F31 /* Extensions.swift */; };
+		3FD742522013CAFE00323F31 /* CString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD742512013CAFE00323F31 /* CString.swift */; };
+		3FD742542013CC9100323F31 /* GothamHTF-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3FD742532013CC9100323F31 /* GothamHTF-Bold.otf */; };
+		3FD742562013CC9800323F31 /* GothamHTF-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3FD742552013CC9800323F31 /* GothamHTF-Book.otf */; };
+		3FD742582013D59D00323F31 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD742572013D59D00323F31 /* User.swift */; };
 		684F44CBA865F71DBBCDD427 /* Pods_Hack2018.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0AD5B35FF712AC4B7B0ABEE /* Pods_Hack2018.framework */; };
 		A7358E8B2013B1CC0046AF3C /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7358E882013B1CC0046AF3C /* FBSDKCoreKit.framework */; };
 		A7358E8C2013B1CC0046AF3C /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7358E892013B1CC0046AF3C /* Bolts.framework */; };
@@ -22,6 +29,13 @@
 
 /* Begin PBXFileReference section */
 		2AA0FCDEC375869EDA6DF3D0 /* Pods-Hack2018.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hack2018.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hack2018/Pods-Hack2018.debug.xcconfig"; sourceTree = "<group>"; };
+		3FA297C52013C196009C27D2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3FD7424D2013C7A400323F31 /* login_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = login_video.mp4; sourceTree = "<group>"; };
+		3FD7424F2013C97B00323F31 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		3FD742512013CAFE00323F31 /* CString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CString.swift; sourceTree = "<group>"; };
+		3FD742532013CC9100323F31 /* GothamHTF-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamHTF-Bold.otf"; sourceTree = "<group>"; };
+		3FD742552013CC9800323F31 /* GothamHTF-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamHTF-Book.otf"; sourceTree = "<group>"; };
+		3FD742572013D59D00323F31 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		630322187A5FD0A6E9658A30 /* Pods-Hack2018.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hack2018.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hack2018/Pods-Hack2018.release.xcconfig"; sourceTree = "<group>"; };
 		A7358E882013B1CC0046AF3C /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		A7358E892013B1CC0046AF3C /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
@@ -91,6 +105,7 @@
 		A761245E20139FCA00D21004 /* Hack2018 */ = {
 			isa = PBXGroup;
 			children = (
+				3FD7424D2013C7A400323F31 /* login_video.mp4 */,
 				A761246E20139FCA00D21004 /* Info.plist */,
 				A791780D2013BB2B00635F27 /* Ressources */,
 				A79178092013B91B00635F27 /* FBSDKLoginKit.framework */,
@@ -98,6 +113,9 @@
 				A7358E882013B1CC0046AF3C /* FBSDKCoreKit.framework */,
 				A791780F2013BB5900635F27 /* Supporting Files */,
 				A791780E2013BB5200635F27 /* ViewController */,
+				3FD7424F2013C97B00323F31 /* Extensions.swift */,
+				3FD742512013CAFE00323F31 /* CString.swift */,
+				3FD742572013D59D00323F31 /* User.swift */,
 			);
 			path = Hack2018;
 			sourceTree = "<group>";
@@ -105,6 +123,8 @@
 		A791780D2013BB2B00635F27 /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
+				3FD742532013CC9100323F31 /* GothamHTF-Bold.otf */,
+				3FD742552013CC9800323F31 /* GothamHTF-Book.otf */,
 				A761246320139FCA00D21004 /* Main.storyboard */,
 				A761246920139FCA00D21004 /* Assets.xcassets */,
 				A761246B20139FCA00D21004 /* LaunchScreen.storyboard */,
@@ -116,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				A761246120139FCA00D21004 /* ViewController.swift */,
+				3FA297C52013C196009C27D2 /* LoginViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -192,7 +213,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FD742542013CC9100323F31 /* GothamHTF-Bold.otf in Resources */,
+				3FD742562013CC9800323F31 /* GothamHTF-Book.otf in Resources */,
 				A761246D20139FCA00D21004 /* LaunchScreen.storyboard in Resources */,
+				3FD7424E2013C7A400323F31 /* login_video.mp4 in Resources */,
 				A761246A20139FCA00D21004 /* Assets.xcassets in Resources */,
 				A761246520139FCA00D21004 /* Main.storyboard in Resources */,
 			);
@@ -240,9 +264,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Hack2018/Pods-Hack2018-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftSpinner/SwiftSpinner.framework",
+				"${BUILT_PRODUCTS_DIR}/VideoSplashKit/VideoSplashKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSpinner.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VideoSplashKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -257,8 +286,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A791780C2013B99200635F27 /* Global.swift in Sources */,
+				3FD742502013C97B00323F31 /* Extensions.swift in Sources */,
 				A761246220139FCA00D21004 /* ViewController.swift in Sources */,
+				3FD742522013CAFE00323F31 /* CString.swift in Sources */,
+				3FD742582013D59D00323F31 /* User.swift in Sources */,
 				A761246820139FCA00D21004 /* Hack2018.xcdatamodeld in Sources */,
+				3FA297C62013C196009C27D2 /* LoginViewController.swift in Sources */,
 				A761246020139FCA00D21004 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
