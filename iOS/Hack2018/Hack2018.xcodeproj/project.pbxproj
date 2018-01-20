@@ -13,6 +13,7 @@
 		3FD742522013CAFE00323F31 /* CString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD742512013CAFE00323F31 /* CString.swift */; };
 		3FD742542013CC9100323F31 /* GothamHTF-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3FD742532013CC9100323F31 /* GothamHTF-Bold.otf */; };
 		3FD742562013CC9800323F31 /* GothamHTF-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3FD742552013CC9800323F31 /* GothamHTF-Book.otf */; };
+		3FD742582013D59D00323F31 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD742572013D59D00323F31 /* User.swift */; };
 		684F44CBA865F71DBBCDD427 /* Pods_Hack2018.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0AD5B35FF712AC4B7B0ABEE /* Pods_Hack2018.framework */; };
 		A7358E8B2013B1CC0046AF3C /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7358E882013B1CC0046AF3C /* FBSDKCoreKit.framework */; };
 		A7358E8C2013B1CC0046AF3C /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7358E892013B1CC0046AF3C /* Bolts.framework */; };
@@ -34,6 +35,7 @@
 		3FD742512013CAFE00323F31 /* CString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CString.swift; sourceTree = "<group>"; };
 		3FD742532013CC9100323F31 /* GothamHTF-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamHTF-Bold.otf"; sourceTree = "<group>"; };
 		3FD742552013CC9800323F31 /* GothamHTF-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamHTF-Book.otf"; sourceTree = "<group>"; };
+		3FD742572013D59D00323F31 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		630322187A5FD0A6E9658A30 /* Pods-Hack2018.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hack2018.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hack2018/Pods-Hack2018.release.xcconfig"; sourceTree = "<group>"; };
 		A7358E882013B1CC0046AF3C /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		A7358E892013B1CC0046AF3C /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				A791780E2013BB5200635F27 /* ViewController */,
 				3FD7424F2013C97B00323F31 /* Extensions.swift */,
 				3FD742512013CAFE00323F31 /* CString.swift */,
+				3FD742572013D59D00323F31 /* User.swift */,
 			);
 			path = Hack2018;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				3FD742502013C97B00323F31 /* Extensions.swift in Sources */,
 				A761246220139FCA00D21004 /* ViewController.swift in Sources */,
 				3FD742522013CAFE00323F31 /* CString.swift in Sources */,
+				3FD742582013D59D00323F31 /* User.swift in Sources */,
 				A761246820139FCA00D21004 /* Hack2018.xcdatamodeld in Sources */,
 				3FA297C62013C196009C27D2 /* LoginViewController.swift in Sources */,
 				A761246020139FCA00D21004 /* AppDelegate.swift in Sources */,

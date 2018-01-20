@@ -12,12 +12,12 @@ import VideoSplashKit
 import SwiftSpinner
 
 class LoginViewController: VideoSplashViewController, FBSDKLoginButtonDelegate {
-
+    
     private let loginLabel = UILabel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         kWidth = self.view.frame.width
         kHeight = self.view.frame.height
         IPHONE_X = kHeight == 812
@@ -26,12 +26,12 @@ class LoginViewController: VideoSplashViewController, FBSDKLoginButtonDelegate {
         loginButton.center = self.view.center
         loginButton.readPermissions = ["public_profile", "email", "user_friends", "user_about_me"]
         loginButton.delegate = self
-    
-        if(FBSDKAccessToken.current() != nil) {
-            fetchUserInfo()
-            setupView()
-        } else {
-            setupView()
+        
+        setupView()
+        
+        self.fetchUserInfo { (succes: Bool, user: User?) in
+            
+            self.loginResult(success: succes, user: user)
         }
     }
     
@@ -93,17 +93,12 @@ class LoginViewController: VideoSplashViewController, FBSDKLoginButtonDelegate {
         updateLoginLabel()
         
     }
-//    
-//    override func viewDidAppear(_ animated: Bool) {
-//        updateLoginLabel()
-//    }
     
     @objc
     func login() {
         
         let loginManager = FBSDKLoginManager()
         
-        //  User is connected
         if(FBSDKAccessToken.current() != nil) {
             loginManager.logOut()
             updateLoginLabel()
@@ -114,9 +109,12 @@ class LoginViewController: VideoSplashViewController, FBSDKLoginButtonDelegate {
                     displayAlert(viewController: self, title: "Error", message: "Facebook Login - 02")
                     return
                 }
-
+                
                 self.updateLoginLabel()
-                self.fetchUserInfo()
+                self.fetchUserInfo { (succes: Bool, user: User?) in
+                    
+                    self.loginResult(success: succes, user: user)
+                }
             }
         }
     }
@@ -127,14 +125,13 @@ class LoginViewController: VideoSplashViewController, FBSDKLoginButtonDelegate {
     }
     
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
-        fetchUserInfo()
     }
     
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
-        print("Logout")
+        updateLoginLabel()
     }
     
-    func fetchUserInfo() {
+    func fetchUserInfo(callback: @escaping (_: Bool, _: User?) -> Void) {
         DispatchQueue.main.async {
             SwiftSpinner.show("FETCHING_USER_INFO".lz(), animated: true)
         }
@@ -142,24 +139,56 @@ class LoginViewController: VideoSplashViewController, FBSDKLoginButtonDelegate {
         if(FBSDKAccessToken.current() != nil) {
             print("USer is logged")
             
-            let fbRequest = FBSDKGraphRequest.init(graphPath: "me?fields=id,name,email,friends", parameters: nil)
+            let fbRequest = FBSDKGraphRequest.init(graphPath: "me?fields=id,name,email,friends,picture", parameters: nil)
             fbRequest!.start(completionHandler: { (_: FBSDKGraphRequestConnection?, result: Any?, error: Error?) in
                 
                 if error != nil {
                     print("Error")
                     print(error!)
                     
-                    displayAlert(viewController: self, title: "Erreur", message: "Fetching user info - 01")
+                    callback(false, nil)
+                    return
                 } else if (result != nil) {
-                    print(result!)
+                    
+                    if let result = result as? Dictionary<String, Any> {
+                        let name = result["name"]! as! String
+                        let email = result["email"]! as! String
+                        let id = result["id"]! as! String
+                        let pictureUrl = "https://graph.facebook.com/\(id)/picture?type=normal"
+                        
+                        let user = User(name: name, email: email, id: id, profilePictureUrl: pictureUrl)
+                        callback(true, user)
+                        return
+                    } else {
+                        print("Error - 0x1")
+                        callback(false, nil)
+                    }
                 }
             })
+        } else {
+            SwiftSpinner.hide()
         }
         
     }
+    
+    
+    private func loginResult(success: Bool, user: User?) {
+        SwiftSpinner.hide()
+        
+        if(!success) {
+            self.updateLoginLabel()
+            displayAlert(viewController: self, title: "Erreur", message: "Fetching user info - 02")
+            return
+        }
+        
+        else {
+            user!.printPretty()
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
 }
