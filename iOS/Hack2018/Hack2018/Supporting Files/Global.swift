@@ -11,6 +11,7 @@ import UIKit
 let kDebug = true
 var kWidth: CGFloat = 0
 var kHeight: CGFloat = 0
+var IPHONE_X = false
 
 func displayAlert(viewController: UIViewController, title: String, message: String) {
     if(kDebug) {

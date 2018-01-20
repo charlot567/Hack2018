@@ -54,6 +54,11 @@
 	<string>141375063212015</string>
 	<key>FacebookDisplayName</key>
 	<string>Hack2018</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>GothamHTF-Bold</string>
+		<string>GothamHTF-Book</string>
+	</array>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>fbapi</string>
