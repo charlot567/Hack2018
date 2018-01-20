@@ -177,6 +177,11 @@ class LoginViewController: VideoSplashViewController, FBSDKLoginButtonDelegate {
         
         else {
             user!.printPretty()
+            
+            if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MenuViewControllerID") as? MenuViewController {
+                
+                present(viewController, animated: true, completion: nil)
+            }
         }
     }
     

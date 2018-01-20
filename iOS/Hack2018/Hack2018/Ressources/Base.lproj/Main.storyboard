@@ -20,9 +20,28 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="uek-WA-YYZ" kind="show" id="IlV-CV-ttk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Title-->
+        <scene sceneID="Gfb-kT-FJc">
+            <objects>
+                <viewController storyboardIdentifier="MenuViewControllerID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uek-WA-YYZ" customClass="MenuViewController" customModule="Hack2018" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U1G-2u-BHI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.66666668653488159" green="0.25797644523815766" blue="0.091555192213725919" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="RkJ-8C-lVs"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="bA2-Y6-th0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xKP-fa-M2b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1183" y="110"/>
         </scene>
     </scenes>
 </document>
