@@ -35,7 +35,8 @@ extension String {
         let lang = "fr"
         let dict = [
             "LOGIN_FB": CString(fr: "Connexion avec Facebook", en: "Login with Facebook", es: "Iniciar sesión con Facebook"),
-            "NAO": CString(fr: "Nao", en: "Nao", es: "Nao")
+            "NAO": CString(fr: "Nao", en: "Nao", es: "Nao"),
+            "DISCONNECT_FB": CString(fr: "Déconnexion", en: "Sign Out", es: "Desconectar"),
         ]
         
         switch lang {

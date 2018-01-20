@@ -12,7 +12,7 @@ import VideoSplashKit
 
 class LoginViewController: VideoSplashViewController, FBSDKLoginButtonDelegate {
 
-    
+    private let loginLabel = UILabel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,16 +26,20 @@ class LoginViewController: VideoSplashViewController, FBSDKLoginButtonDelegate {
         loginButton.readPermissions = ["public_profile", "email", "user_friends", "user_about_me"]
         loginButton.delegate = self
     
-//        self.view.addSubview(loginButton)
-        
         fetchUserInfo()
         
-        setupView()
+        if(FBSDKAccessToken.current() != nil) {
+            fetchUserInfo()
+            setupView()
+        } else {
+            setupView()
+        }
+        
+        
         
     }
     
     func setupView() {
-        UIApplication.shared.statusBarStyle = .lightContent
         
         if let path = Bundle.main.path(forResource: "login_video", ofType: "mp4") {
             let url = URL(fileURLWithPath: path)
@@ -69,26 +73,54 @@ class LoginViewController: VideoSplashViewController, FBSDKLoginButtonDelegate {
         let buttonHeight: CGFloat = 100
         let spacing: CGFloat = 5
         
-        let buttonView = UIView()
+        let buttonView = UIButton()
         
         if(IPHONE_X) {
             buttonView.frame = CGRect(x: 0, y: kHeight - buttonHeight, width: kWidth, height: buttonHeight)
         } else {
             buttonView.frame = CGRect(x: 0, y: kHeight - buttonHeight - spacing, width: kWidth - spacing * 2, height: buttonHeight)
         }
-        
+        buttonView.addTarget(self, action: #selector(login), for: .touchUpInside)
         buttonView.backgroundColor = UIColor(red: 42 / 255, green: 93 / 255, blue: 149 / 255, alpha: 1)
         self.view.addSubview(buttonView)
         
-        let loginLabel = UILabel()
         loginLabel.frame = CGRect(x: 0, y: 0, width: kWidth, height: buttonHeight)
-        loginLabel.text = "LOGIN_FB".lz()
         loginLabel.textColor = .white
         loginLabel.textAlignment = .center
         loginLabel.font = UIFont(name: "Arial", size: 20)
         buttonView.addSubview(loginLabel)
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        updateLoginLabel()
+    }
+    
+    @objc
+    func login() {
+        let loginManager = FBSDKLoginManager()
         
+        //  User is connected
+        if(FBSDKAccessToken.current() != nil) {
+            loginManager.logOut()
+            updateLoginLabel()
+        } else {
+            loginManager.logIn(withReadPermissions:  ["public_profile", "email", "user_friends", "user_about_me"], from: nil) { (loginResult: FBSDKLoginManagerLoginResult?, error: Error?) in
+                
+                if(error != nil) {
+                    displayAlert(viewController: self, title: "Error", message: "Facebook Login - 02")
+                    return
+                }
+
+                self.updateLoginLabel()
+                self.fetchUserInfo()
+            }
+        }
+    }
+    
+    private func updateLoginLabel() {
+        let label: String = FBSDKAccessToken.current() != nil ? "DISCONNECT_FB".lz() : "LOGIN_FB".lz()
+        loginLabel.text = label
     }
     
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
