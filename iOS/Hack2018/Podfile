@@ -6,7 +6,7 @@ target 'Hack2018' do
   use_frameworks!
 
   # Pods for Hack2018
-  pod 'VideoSplashKit'
+  pod 'VideoSplashKit', :git => 'https://github.com/charlot567/VideoSplashKit.git'
   pod "SwiftSpinner"
 
 end
