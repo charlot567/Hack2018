@@ -16,6 +16,7 @@
 		3FD742582013D59D00323F31 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD742572013D59D00323F31 /* User.swift */; };
 		3FD7425A2013E1D400323F31 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD742592013E1D400323F31 /* MenuViewController.swift */; };
 		3FD7425C2013E46A00323F31 /* NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD7425B2013E46A00323F31 /* NavBar.swift */; };
+		3FD7425E20140BC900323F31 /* ControllerUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD7425D20140BC900323F31 /* ControllerUser.swift */; };
 		684F44CBA865F71DBBCDD427 /* Pods_Hack2018.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0AD5B35FF712AC4B7B0ABEE /* Pods_Hack2018.framework */; };
 		A7358E8B2013B1CC0046AF3C /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7358E882013B1CC0046AF3C /* FBSDKCoreKit.framework */; };
 		A7358E8C2013B1CC0046AF3C /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7358E892013B1CC0046AF3C /* Bolts.framework */; };
@@ -40,6 +41,7 @@
 		3FD742572013D59D00323F31 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3FD742592013E1D400323F31 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		3FD7425B2013E46A00323F31 /* NavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBar.swift; sourceTree = "<group>"; };
+		3FD7425D20140BC900323F31 /* ControllerUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerUser.swift; sourceTree = "<group>"; };
 		630322187A5FD0A6E9658A30 /* Pods-Hack2018.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hack2018.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hack2018/Pods-Hack2018.release.xcconfig"; sourceTree = "<group>"; };
 		A7358E882013B1CC0046AF3C /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		A7358E892013B1CC0046AF3C /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
@@ -78,6 +80,14 @@
 				630322187A5FD0A6E9658A30 /* Pods-Hack2018.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		3FD7425F20140BCD00323F31 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3FD7425D20140BC900323F31 /* ControllerUser.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		89DA7BBA99BD399BEDE3E12D /* Frameworks */ = {
@@ -121,6 +131,7 @@
 				3FD742512013CAFE00323F31 /* CString.swift */,
 				3FD742572013D59D00323F31 /* User.swift */,
 				3FD7425B2013E46A00323F31 /* NavBar.swift */,
+				3FD7425F20140BCD00323F31 /* Controller */,
 			);
 			path = Hack2018;
 			sourceTree = "<group>";
@@ -295,6 +306,7 @@
 				3FD742502013C97B00323F31 /* Extensions.swift in Sources */,
 				A761246220139FCA00D21004 /* ViewController.swift in Sources */,
 				3FD742522013CAFE00323F31 /* CString.swift in Sources */,
+				3FD7425E20140BC900323F31 /* ControllerUser.swift in Sources */,
 				3FD7425A2013E1D400323F31 /* MenuViewController.swift in Sources */,
 				3FD7425C2013E46A00323F31 /* NavBar.swift in Sources */,
 				3FD742582013D59D00323F31 /* User.swift in Sources */,

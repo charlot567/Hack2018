@@ -167,7 +167,6 @@ class LoginViewController: VideoSplashViewController, FBSDKLoginButtonDelegate {
     
     
     private func loginResult(success: Bool, user: User?) {
-        SwiftSpinner.hide()
         
         if(!success) {
             self.updateLoginLabel()
@@ -175,13 +174,42 @@ class LoginViewController: VideoSplashViewController, FBSDKLoginButtonDelegate {
             return
         }
         
-        else {
+        else if(user != nil) {
             user!.printPretty()
-            
-            if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MenuViewControllerID") as? MenuViewController {
+            ControllerUser.getUserBy(id: user!.id, completition: { (userAPI: User?) in
+                if(userAPI == nil) {
+                    
+                    ControllerUser.insert(user: user!, completition: { (succes: Bool) in
+                        
+                        if(!success) {
+                            displayAlert(viewController: self, title: "Error", message: "Fetchig user info ox#")
+                            return
+                        }
+                        
+                        DispatchQueue.main.async {
+                            self.goToMenu()
+                        }
+                        
+                    })
+                } else {
+                    DispatchQueue.main.async {
+                        self.goToMenu()
+                    }
+                }
                 
-                present(viewController, animated: true, completion: nil)
-            }
+             
+            })
+        } else {
+            displayAlert(viewController: self, title: "Error", message: "Fetchig user info ox#")
+        }
+    }
+    
+    private func goToMenu() {
+        SwiftSpinner.hide()
+        
+        if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MenuViewControllerID") as? MenuViewController {
+            
+            present(viewController, animated: true, completion: nil)
         }
     }
     

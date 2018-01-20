@@ -13,8 +13,11 @@ var kWidth: CGFloat = 0
 var kHeight: CGFloat = 0
 var IPHONE_X = false
 
+import SwiftSpinner
+
 func displayAlert(viewController: UIViewController, title: String, message: String) {
     if(kDebug) {
+        SwiftSpinner.hide()
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
         viewController.present(alert, animated: true, completion: nil)
