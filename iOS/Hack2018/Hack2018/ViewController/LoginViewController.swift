@@ -9,6 +9,7 @@
 import UIKit
 import FBSDKLoginKit
 import VideoSplashKit
+import SwiftSpinner
 
 class LoginViewController: VideoSplashViewController, FBSDKLoginButtonDelegate {
 
@@ -26,16 +27,15 @@ class LoginViewController: VideoSplashViewController, FBSDKLoginButtonDelegate {
         loginButton.readPermissions = ["public_profile", "email", "user_friends", "user_about_me"]
         loginButton.delegate = self
     
-        fetchUserInfo()
-        
         if(FBSDKAccessToken.current() != nil) {
             fetchUserInfo()
             setupView()
         } else {
             setupView()
         }
-        
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         
     }
     
@@ -100,6 +100,7 @@ class LoginViewController: VideoSplashViewController, FBSDKLoginButtonDelegate {
     
     @objc
     func login() {
+        
         let loginManager = FBSDKLoginManager()
         
         //  User is connected
@@ -134,6 +135,10 @@ class LoginViewController: VideoSplashViewController, FBSDKLoginButtonDelegate {
     }
     
     func fetchUserInfo() {
+        DispatchQueue.main.async {
+            SwiftSpinner.show("FETCHING_USER_INFO".lz(), animated: true)
+        }
+        
         if(FBSDKAccessToken.current() != nil) {
             print("USer is logged")
             
@@ -148,14 +153,10 @@ class LoginViewController: VideoSplashViewController, FBSDKLoginButtonDelegate {
                 } else if (result != nil) {
                     print(result!)
                 }
-                
             })
         }
         
     }
-    
-    
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

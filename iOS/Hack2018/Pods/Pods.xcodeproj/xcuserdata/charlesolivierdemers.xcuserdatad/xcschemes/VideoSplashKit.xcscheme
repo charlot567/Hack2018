@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'B360CAAA4CAB8D98BCEC3CF39BD31C3B'
+               BlueprintIdentifier = '8C85D1501620EF2ABE81C09F5EFA4CE5'
                BlueprintName = 'VideoSplashKit'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'VideoSplashKit.framework'>

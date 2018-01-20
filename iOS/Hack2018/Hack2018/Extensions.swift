@@ -37,6 +37,7 @@ extension String {
             "LOGIN_FB": CString(fr: "Connexion avec Facebook", en: "Login with Facebook", es: "Iniciar sesión con Facebook"),
             "NAO": CString(fr: "Nao", en: "Nao", es: "Nao"),
             "DISCONNECT_FB": CString(fr: "Déconnexion", en: "Sign Out", es: "Desconectar"),
+            "FETCHING_USER_INFO": CString(fr: "Récupération des infos", en: "Fetching infos", es: "Obteniendo información"),
         ]
         
         switch lang {
