@@ -90,11 +90,13 @@ class LoginViewController: VideoSplashViewController, FBSDKLoginButtonDelegate {
         loginLabel.font = UIFont(name: "Arial", size: 20)
         buttonView.addSubview(loginLabel)
         
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
         updateLoginLabel()
+        
     }
+//    
+//    override func viewDidAppear(_ animated: Bool) {
+//        updateLoginLabel()
+//    }
     
     @objc
     func login() {
@@ -144,12 +146,6 @@ class LoginViewController: VideoSplashViewController, FBSDKLoginButtonDelegate {
                     
                     displayAlert(viewController: self, title: "Erreur", message: "Fetching user info - 01")
                 } else if (result != nil) {
-                    //  NOM
-                    //  PHOTO
-                    //  FRIENDS
-                    //  ID
-                    //  EMAIL
-                    
                     print(result!)
                 }
                 
