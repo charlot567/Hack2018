@@ -71,15 +71,9 @@ class LoginViewController: VideoSplashViewController, FBSDKLoginButtonDelegate {
         self.view.addSubview(line)
         
         let buttonHeight: CGFloat = 100
-        let spacing: CGFloat = 5
         
         let buttonView = UIButton()
-        
-        if(IPHONE_X) {
-            buttonView.frame = CGRect(x: 0, y: kHeight - buttonHeight, width: kWidth, height: buttonHeight)
-        } else {
-            buttonView.frame = CGRect(x: 0, y: kHeight - buttonHeight - spacing, width: kWidth - spacing * 2, height: buttonHeight)
-        }
+        buttonView.frame = CGRect(x: 0, y: kHeight - buttonHeight, width: kWidth, height: buttonHeight)
         buttonView.addTarget(self, action: #selector(login), for: .touchUpInside)
         buttonView.backgroundColor = UIColor(red: 42 / 255, green: 93 / 255, blue: 149 / 255, alpha: 1)
         self.view.addSubview(buttonView)
