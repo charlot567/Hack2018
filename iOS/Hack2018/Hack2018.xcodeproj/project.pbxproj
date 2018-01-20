@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FA297C62013C196009C27D2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA297C52013C196009C27D2 /* LoginViewController.swift */; };
+		3FD7424E2013C7A400323F31 /* login_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3FD7424D2013C7A400323F31 /* login_video.mp4 */; };
 		684F44CBA865F71DBBCDD427 /* Pods_Hack2018.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0AD5B35FF712AC4B7B0ABEE /* Pods_Hack2018.framework */; };
 		A7358E8B2013B1CC0046AF3C /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7358E882013B1CC0046AF3C /* FBSDKCoreKit.framework */; };
 		A7358E8C2013B1CC0046AF3C /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7358E892013B1CC0046AF3C /* Bolts.framework */; };
@@ -22,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		2AA0FCDEC375869EDA6DF3D0 /* Pods-Hack2018.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hack2018.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hack2018/Pods-Hack2018.debug.xcconfig"; sourceTree = "<group>"; };
+		3FA297C52013C196009C27D2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3FD7424D2013C7A400323F31 /* login_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = login_video.mp4; sourceTree = "<group>"; };
 		630322187A5FD0A6E9658A30 /* Pods-Hack2018.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hack2018.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hack2018/Pods-Hack2018.release.xcconfig"; sourceTree = "<group>"; };
 		A7358E882013B1CC0046AF3C /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		A7358E892013B1CC0046AF3C /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
@@ -91,6 +95,7 @@
 		A761245E20139FCA00D21004 /* Hack2018 */ = {
 			isa = PBXGroup;
 			children = (
+				3FD7424D2013C7A400323F31 /* login_video.mp4 */,
 				A761246E20139FCA00D21004 /* Info.plist */,
 				A791780D2013BB2B00635F27 /* Ressources */,
 				A79178092013B91B00635F27 /* FBSDKLoginKit.framework */,
@@ -116,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				A761246120139FCA00D21004 /* ViewController.swift */,
+				3FA297C52013C196009C27D2 /* LoginViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -193,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A761246D20139FCA00D21004 /* LaunchScreen.storyboard in Resources */,
+				3FD7424E2013C7A400323F31 /* login_video.mp4 in Resources */,
 				A761246A20139FCA00D21004 /* Assets.xcassets in Resources */,
 				A761246520139FCA00D21004 /* Main.storyboard in Resources */,
 			);
@@ -240,9 +247,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Hack2018/Pods-Hack2018-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/VideoSplashKit/VideoSplashKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VideoSplashKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -259,6 +269,7 @@
 				A791780C2013B99200635F27 /* Global.swift in Sources */,
 				A761246220139FCA00D21004 /* ViewController.swift in Sources */,
 				A761246820139FCA00D21004 /* Hack2018.xcdatamodeld in Sources */,
+				3FA297C62013C196009C27D2 /* LoginViewController.swift in Sources */,
 				A761246020139FCA00D21004 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

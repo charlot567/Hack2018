@@ -7,33 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3428E6A0A9B72681842A1DF165972B56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		43007AB217FA6F41C36B95A042D720E5 /* Pods-Hack2018-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4A302121D5C83C0B0BDA1CECB292D8 /* Pods-Hack2018-dummy.m */; };
-		EA46921CA63FE28856AB88D09F141B12 /* Pods-Hack2018-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE494AD4D57AC289E3AF8FA87BB80670 /* Pods-Hack2018-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0782AB457F52EB365B419670646FB899 /* VideoSplashKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60820C65CCE3BD542F25BC6186926ED1 /* VideoSplashKit-dummy.m */; };
+		579C17EC3258964DF0430F5161D9561D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		7A91DF5F191D48D2767BD03B10387574 /* VideoSplashKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 15681A0BDE360C02497A875C9D551556 /* VideoSplashKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC3CD46D7C52448F8EE3BE2897E226A3 /* VideoSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118A5D88B59B97697B9B4B5228E9D5B9 /* VideoSplashViewController.swift */; };
+		B6135751C8BEB33EB8265FA3D745166A /* Pods-Hack2018-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4A302121D5C83C0B0BDA1CECB292D8 /* Pods-Hack2018-dummy.m */; };
+		B98C214ACE1DEBA3966C837FB111E7C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		C623D4361D5785DEAFD8E1B8AA5077A4 /* VideoCutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325487F5E36765ED79EF9D2638FED9C8 /* VideoCutter.swift */; };
+		D20420EFC6B2BF87D2129696F13BCF3A /* Pods-Hack2018-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE494AD4D57AC289E3AF8FA87BB80670 /* Pods-Hack2018-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6F579CD88E601C39CD6C56B000F101E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B360CAAA4CAB8D98BCEC3CF39BD31C3B;
+			remoteInfo = VideoSplashKit;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		06938E5F226770F114B19BAED5CD9672 /* VideoSplashKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = VideoSplashKit.modulemap; sourceTree = "<group>"; };
+		070BACBBF8B0226E94417DC23322BCA8 /* VideoSplashKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VideoSplashKit-prefix.pch"; sourceTree = "<group>"; };
 		10D1949809E1E78FFEEF64A32580C443 /* Pods-Hack2018-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hack2018-frameworks.sh"; sourceTree = "<group>"; };
+		118A5D88B59B97697B9B4B5228E9D5B9 /* VideoSplashViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoSplashViewController.swift; path = VideoSplashKit/Source/VideoSplashViewController.swift; sourceTree = "<group>"; };
+		15681A0BDE360C02497A875C9D551556 /* VideoSplashKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VideoSplashKit-umbrella.h"; sourceTree = "<group>"; };
 		26DC4885FA738A194D32DD7CDF7DDA84 /* Pods-Hack2018-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hack2018-acknowledgements.markdown"; sourceTree = "<group>"; };
 		29ABED1466F215DBE94A0E0DB6DF1EC8 /* Pods-Hack2018.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hack2018.release.xcconfig"; sourceTree = "<group>"; };
+		325487F5E36765ED79EF9D2638FED9C8 /* VideoCutter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoCutter.swift; path = VideoSplashKit/Source/VideoCutter.swift; sourceTree = "<group>"; };
 		3848F7DC378D5E846E7EEEF5B8152125 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E4A302121D5C83C0B0BDA1CECB292D8 /* Pods-Hack2018-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hack2018-dummy.m"; sourceTree = "<group>"; };
 		406EE37D0A3D7C24155BA60C67092055 /* Pods-Hack2018-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hack2018-acknowledgements.plist"; sourceTree = "<group>"; };
 		50DCD5B726C753847CA51F4B8444C8CC /* Pods-Hack2018-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hack2018-resources.sh"; sourceTree = "<group>"; };
+		60820C65CCE3BD542F25BC6186926ED1 /* VideoSplashKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VideoSplashKit-dummy.m"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7E529999E8F3B7073504F4EF3030EC86 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A2D6047416AB37A3A788432B30B084D6 /* Pods_Hack2018.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Hack2018.framework; path = "Pods-Hack2018.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4D6F5F4AD6E93CBAB8B42EE679CA989 /* VideoSplashKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VideoSplashKit.xcconfig; sourceTree = "<group>"; };
 		C2C82CDAC9DCCD7E66AF8249606B254C /* Pods-Hack2018.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Hack2018.modulemap"; sourceTree = "<group>"; };
-		E37A0CB9EEE4428548D5187E7F84DEAB /* Pods_Hack2018.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Hack2018.framework; path = "Pods-Hack2018.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA9AEE6E0CE59E88033C9C6E1BDE6C88 /* VideoSplashKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = VideoSplashKit.framework; path = VideoSplashKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C883579CEAF4230E82757F0A645889 /* Pods-Hack2018.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hack2018.debug.xcconfig"; sourceTree = "<group>"; };
 		EE494AD4D57AC289E3AF8FA87BB80670 /* Pods-Hack2018-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hack2018-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E0F3BE1094A57DE040765DA328492889 /* Frameworks */ = {
+		3519630678F389178F5B997C6849FA4F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3428E6A0A9B72681842A1DF165972B56 /* Foundation.framework in Frameworks */,
+				B98C214ACE1DEBA3966C837FB111E7C6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		700BA1EA4414A49C81B3ABEC8CB36B96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				579C17EC3258964DF0430F5161D9561D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +90,23 @@
 			path = "Target Support Files/Pods-Hack2018";
 			sourceTree = "<group>";
 		};
+		18AB4664D0AD731681C4183F2F776972 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA4E035D7A887A0A616403466DB2497B /* VideoSplashKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2A562D811D4D940C2D602192CA038E09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2D6047416AB37A3A788432B30B084D6 /* Pods_Hack2018.framework */,
+				CA9AEE6E0CE59E88033C9C6E1BDE6C88 /* VideoSplashKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		4239A9A6CDFA910956B3B0541D90025F /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -71,9 +120,35 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				FE978F1C7EED1574ABF0B376A6CD94E1 /* Products */,
+				18AB4664D0AD731681C4183F2F776972 /* Pods */,
+				2A562D811D4D940C2D602192CA038E09 /* Products */,
 				4239A9A6CDFA910956B3B0541D90025F /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		A105DD6D225B75A792B4FB8A545DB3FC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E529999E8F3B7073504F4EF3030EC86 /* Info.plist */,
+				06938E5F226770F114B19BAED5CD9672 /* VideoSplashKit.modulemap */,
+				A4D6F5F4AD6E93CBAB8B42EE679CA989 /* VideoSplashKit.xcconfig */,
+				60820C65CCE3BD542F25BC6186926ED1 /* VideoSplashKit-dummy.m */,
+				070BACBBF8B0226E94417DC23322BCA8 /* VideoSplashKit-prefix.pch */,
+				15681A0BDE360C02497A875C9D551556 /* VideoSplashKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/VideoSplashKit";
+			sourceTree = "<group>";
+		};
+		AA4E035D7A887A0A616403466DB2497B /* VideoSplashKit */ = {
+			isa = PBXGroup;
+			children = (
+				325487F5E36765ED79EF9D2638FED9C8 /* VideoCutter.swift */,
+				118A5D88B59B97697B9B4B5228E9D5B9 /* VideoSplashViewController.swift */,
+				A105DD6D225B75A792B4FB8A545DB3FC /* Support Files */,
+			);
+			name = VideoSplashKit;
+			path = VideoSplashKit;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -92,43 +167,61 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		FE978F1C7EED1574ABF0B376A6CD94E1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E37A0CB9EEE4428548D5187E7F84DEAB /* Pods_Hack2018.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		280CE0D83D17F055BD93D5F42F6B7EAE /* Headers */ = {
+		6FB1A0F74FFFE2C779A190535AA2518A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA46921CA63FE28856AB88D09F141B12 /* Pods-Hack2018-umbrella.h in Headers */,
+				D20420EFC6B2BF87D2129696F13BCF3A /* Pods-Hack2018-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C299F61943F9A02A95A4BFDF4F99952E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A91DF5F191D48D2767BD03B10387574 /* VideoSplashKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		BF4D6BE543998917AF021BEE1815264A /* Pods-Hack2018 */ = {
+		3CB4C05E7A80C7A5F9431B41BC6DD723 /* Pods-Hack2018 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4A203B9E50DA39A743A65AABB8F2DB6A /* Build configuration list for PBXNativeTarget "Pods-Hack2018" */;
+			buildConfigurationList = 8E8581DF065371B43334E2424D704B83 /* Build configuration list for PBXNativeTarget "Pods-Hack2018" */;
 			buildPhases = (
-				23C2106DAEE7ACDC1C5C42902E7303E0 /* Sources */,
-				E0F3BE1094A57DE040765DA328492889 /* Frameworks */,
-				280CE0D83D17F055BD93D5F42F6B7EAE /* Headers */,
+				DFA85622A320BF3C08EBFD5F7480436E /* Sources */,
+				3519630678F389178F5B997C6849FA4F /* Frameworks */,
+				6FB1A0F74FFFE2C779A190535AA2518A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2E114AC5AB146B0B70E90A29E790A24 /* PBXTargetDependency */,
+			);
+			name = "Pods-Hack2018";
+			productName = "Pods-Hack2018";
+			productReference = A2D6047416AB37A3A788432B30B084D6 /* Pods_Hack2018.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B360CAAA4CAB8D98BCEC3CF39BD31C3B /* VideoSplashKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15D51EEA318FFB331D6ABEE22CF84190 /* Build configuration list for PBXNativeTarget "VideoSplashKit" */;
+			buildPhases = (
+				6A9F3C62697C66547245373D801FBD18 /* Sources */,
+				700BA1EA4414A49C81B3ABEC8CB36B96 /* Frameworks */,
+				C299F61943F9A02A95A4BFDF4F99952E /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-Hack2018";
-			productName = "Pods-Hack2018";
-			productReference = E37A0CB9EEE4428548D5187E7F84DEAB /* Pods_Hack2018.framework */;
+			name = VideoSplashKit;
+			productName = VideoSplashKit;
+			productReference = CA9AEE6E0CE59E88033C9C6E1BDE6C88 /* VideoSplashKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -148,27 +241,112 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = FE978F1C7EED1574ABF0B376A6CD94E1 /* Products */;
+			productRefGroup = 2A562D811D4D940C2D602192CA038E09 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BF4D6BE543998917AF021BEE1815264A /* Pods-Hack2018 */,
+				3CB4C05E7A80C7A5F9431B41BC6DD723 /* Pods-Hack2018 */,
+				B360CAAA4CAB8D98BCEC3CF39BD31C3B /* VideoSplashKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		23C2106DAEE7ACDC1C5C42902E7303E0 /* Sources */ = {
+		6A9F3C62697C66547245373D801FBD18 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43007AB217FA6F41C36B95A042D720E5 /* Pods-Hack2018-dummy.m in Sources */,
+				C623D4361D5785DEAFD8E1B8AA5077A4 /* VideoCutter.swift in Sources */,
+				0782AB457F52EB365B419670646FB899 /* VideoSplashKit-dummy.m in Sources */,
+				AC3CD46D7C52448F8EE3BE2897E226A3 /* VideoSplashViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFA85622A320BF3C08EBFD5F7480436E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6135751C8BEB33EB8265FA3D745166A /* Pods-Hack2018-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		E2E114AC5AB146B0B70E90A29E790A24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VideoSplashKit;
+			target = B360CAAA4CAB8D98BCEC3CF39BD31C3B /* VideoSplashKit */;
+			targetProxy = 6F579CD88E601C39CD6C56B000F101E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		17F6692D1EFE9D5AE94877D1EA26CC32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6C883579CEAF4230E82757F0A645889 /* Pods-Hack2018.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Hack2018/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Hack2018/Pods-Hack2018.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Hack2018;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		38A49DA92C88EA42423608BBEC884B23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4D6F5F4AD6E93CBAB8B42EE679CA989 /* VideoSplashKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VideoSplashKit/VideoSplashKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VideoSplashKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/VideoSplashKit/VideoSplashKit.modulemap";
+				PRODUCT_NAME = VideoSplashKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		39C5BC78A31CDE101068C530CAC7FA0F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -229,9 +407,9 @@
 			};
 			name = Debug;
 		};
-		7D23E568432E14FEE63E14FFDAF01BA4 /* Debug */ = {
+		4016D3843EC1DF4FA2680400827F46B7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6C883579CEAF4230E82757F0A645889 /* Pods-Hack2018.debug.xcconfig */;
+			baseConfigurationReference = A4D6F5F4AD6E93CBAB8B42EE679CA989 /* VideoSplashKit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -242,24 +420,24 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Hack2018/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/VideoSplashKit/VideoSplashKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VideoSplashKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Hack2018/Pods-Hack2018.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Hack2018;
+				MODULEMAP_FILE = "Target Support Files/VideoSplashKit/VideoSplashKit.modulemap";
+				PRODUCT_NAME = VideoSplashKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -316,7 +494,7 @@
 			};
 			name = Release;
 		};
-		E8122E72B69946BC7DEAEF82131DA9DF /* Release */ = {
+		BBD00A4E5A879BCD516821E666D16C17 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 29ABED1466F215DBE94A0E0DB6DF1EC8 /* Pods-Hack2018.release.xcconfig */;
 			buildSettings = {
@@ -342,6 +520,7 @@
 				PRODUCT_NAME = Pods_Hack2018;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -352,6 +531,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		15D51EEA318FFB331D6ABEE22CF84190 /* Build configuration list for PBXNativeTarget "VideoSplashKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38A49DA92C88EA42423608BBEC884B23 /* Debug */,
+				4016D3843EC1DF4FA2680400827F46B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -361,11 +549,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4A203B9E50DA39A743A65AABB8F2DB6A /* Build configuration list for PBXNativeTarget "Pods-Hack2018" */ = {
+		8E8581DF065371B43334E2424D704B83 /* Build configuration list for PBXNativeTarget "Pods-Hack2018" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7D23E568432E14FEE63E14FFDAF01BA4 /* Debug */,
-				E8122E72B69946BC7DEAEF82131DA9DF /* Release */,
+				17F6692D1EFE9D5AE94877D1EA26CC32 /* Debug */,
+				BBD00A4E5A879BCD516821E666D16C17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

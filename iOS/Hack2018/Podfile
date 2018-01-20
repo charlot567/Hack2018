@@ -6,5 +6,6 @@ target 'Hack2018' do
   use_frameworks!
 
   # Pods for Hack2018
+  pod 'VideoSplashKit', :git => 'https://github.com/svtek/VideoSplashKit/VideoSplashKit.git', :branch => 'swift4'
 
 end
