@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 import FBSDKLoginKit
 import FBSDKCoreKit
+import NotificationCenter
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,6 +22,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
+//        let center = NotificationCenter
+//        center.requestAuthorization([.alert, .sound]) { (granted, error) in
+//            // Enable or disable features based on authorization.
+//        }
         return true
     }
 

@@ -24,6 +24,10 @@ class MenuViewController: UIViewController {
         
         NotificationCenter.default.addObserver(self, selector: #selector(goToProfile), name: notifShowProfileName, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(logout), name: logoutNotifName, object: nil)
+        
+        ControllerDidYouKnow.get { (dyns: [DidYouKnow]) in
+            
+        }
     }
     
     private func initAllView() {

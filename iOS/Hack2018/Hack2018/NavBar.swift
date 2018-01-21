@@ -39,7 +39,7 @@ class NavBar: UIView {
         self.addSubview(coinImg)
         
         let coinLabel = UILabel()
-        coinLabel.frame = CGRect(x: 0, y: coinImg.frame.maxY, width: 80, height: 20)
+        coinLabel.frame = CGRect(x: 0, y: coinImg.frame.maxY - 5, width: 80, height: 20)
         coinLabel.font = UIFont(name: "Arial", size: 15)
         coinLabel.textAlignment = .center
         coinLabel.text = "\(kCurrentUser.score)"
