@@ -40,7 +40,7 @@ class MenuViewController: UIViewController, UNUserNotificationCenterDelegate {
         let height = (kHeight - navBar.frame.height) / 3
         let topButton = UIButton()
         topButton.frame = CGRect(x: 0, y: navBar.frame.maxY, width: kWidth, height: height)
-        topButton.backgroundColor = UIColor.blue
+        topButton.backgroundColor = UIColor(red: 6 / 255, green: 70 / 255, blue: 91 / 255, alpha: 1)
         topButton.layer.borderWidth = 1
         topButton.layer.borderColor = UIColor.white.cgColor
         topButton.setTitle("TABLEVIEW".lz(), for: .normal)
@@ -51,7 +51,7 @@ class MenuViewController: UIViewController, UNUserNotificationCenterDelegate {
         
         let middleButton = UIButton()
         middleButton.frame = CGRect(x: 0, y: topButton.frame.maxY, width: kWidth, height: height)
-        middleButton.backgroundColor = UIColor.green
+        middleButton.backgroundColor = UIColor(red: 18 / 255, green: 129 / 255, blue: 158 / 255, alpha: 1)
         middleButton.layer.borderWidth = 1
         middleButton.layer.borderColor = UIColor.white.cgColor
         middleButton.setTitle("NAO".lz(), for: .normal)
@@ -62,7 +62,7 @@ class MenuViewController: UIViewController, UNUserNotificationCenterDelegate {
         
         let bottomButton = UIButton()
         bottomButton.frame = CGRect(x: 0, y: middleButton.frame.maxY, width: kWidth, height: height)
-        bottomButton.backgroundColor = UIColor.red
+        bottomButton.backgroundColor = UIColor(red: 29 / 255, green: 180 / 255, blue: 222 / 255, alpha: 1)
         bottomButton.layer.borderWidth = 1
         bottomButton.layer.borderColor = UIColor.white.cgColor
         bottomButton.setTitle("PROFILE".lz(), for: .normal)
