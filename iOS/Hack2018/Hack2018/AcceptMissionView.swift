@@ -30,8 +30,6 @@ class AcceptMissionView: UIView, CLLocationManagerDelegate {
         locationManager.delegate = self
         locationManager.startUpdatingLocation()
         
-        
-        
         scrollView = UIScrollView()
         scrollView.frame = CGRect(x: 0, y: navBar.frame.height, width: kWidth, height: kHeight - navBar.frame.height)
         self.addSubview(scrollView)
@@ -137,7 +135,7 @@ class AcceptMissionView: UIView, CLLocationManagerDelegate {
     }
     
     func popQuestion() {
-        //  CALL ARVIEW WITH MISSION IN PARAMETER
+        // ALEX: CALL ARVIEW WITH MISSION IN PARAMETER
     }
     
     @objc
