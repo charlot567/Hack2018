@@ -8,5 +8,6 @@ target 'Hack2018' do
   # Pods for Hack2018
   pod 'VideoSplashKit', :git => 'https://github.com/charlot567/VideoSplashKit.git'
   pod "SwiftSpinner"
+  pod 'Alamofire', '~> 4.5'
 
 end

@@ -7,33 +7,24 @@
 //
 
 import Foundation
+import Alamofire
 
 class ControllerUser {
     
     static func getUserBy(id: String, completition: (_: User?) -> Void) {
         
-        let request = URLRequest(url: NSURL(string: "\(apiAdress)/")! as URL)
-        do {
-            // Perform the request
-            let response: AutoreleasingUnsafeMutablePointer<URLResponse?>? = nil
+        Alamofire.request("\(apiAdress)/getUser").responseJSON { response in
+            print("Result: \(response.result)")                         // response serialization result
             
-            do {
-                
-                NSURLConnection.sendA
-                let data = try NSURLConnection.sendSynchronousRequest(request, returning: response)
-                
-                // Convert the data to JSON
-                let jsonSerialized = try JSONSerialization.jsonObject(with: data, options: []) as? [String : Any]
-                
-                if let json = jsonSerialized, let url = json["url"], let explanation = json["explanation"] {
-                    print(url)
-                    print(explanation)
-                }
-            } catch {
-                completition(nil)
+            if let json = response.result.value {
+                print("JSON: \(json)") // serialized json response
             }
             
+            if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
+                print("Data: \(utf8Text)") // original server data as UTF8 string
+            }
         }
+        
     }
     
     static func insert(user user: User, completition: (_: Bool) -> Void) {
