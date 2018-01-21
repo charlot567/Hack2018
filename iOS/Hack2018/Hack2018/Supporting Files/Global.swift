@@ -7,11 +7,18 @@
 //
 
 import UIKit
+import UserNotifications
 
 let kDebug = true
 var kWidth: CGFloat = 0
 var kHeight: CGFloat = 0
 var IPHONE_X = false
+
+var kCurrentUser: User!
+
+let notifShowProfileName = NSNotification.Name(rawValue: "notifShowProfileName")
+let logoutNotifName = NSNotification.Name(rawValue: "logoutNotifName")
+let backMissionNotifName = NSNotification.Name(rawValue: "backMissionNotifName")
 
 import SwiftSpinner
 
@@ -22,4 +29,25 @@ func displayAlert(viewController: UIViewController, title: String, message: Stri
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
         viewController.present(alert, animated: true, completion: nil)
     }
+}
+
+func addNotification(title: String, body: String, timeInteval: TimeInterval) {
+    let center = UNUserNotificationCenter.current()
+    
+    let content = UNMutableNotificationContent()
+    content.title = title
+    content.body = body
+    content.sound = UNNotificationSound.default()
+    let trigger = UNTimeIntervalNotificationTrigger(timeInterval: timeInteval,
+                                                    repeats: false)
+    
+    let identifier = "UYLLocalNotification\(timeInteval)-\(Date())"
+    let request = UNNotificationRequest(identifier: identifier,
+                                        content: content, trigger: trigger)
+    
+    center.add(request, withCompletionHandler: { (error) in
+        if let error = error {
+            print(error)
+        }
+    })
 }

@@ -14,6 +14,7 @@ import SwiftSpinner
 class LoginViewController: VideoSplashViewController, FBSDKLoginButtonDelegate {
     
     private let loginLabel = UILabel()
+    var logoutPlease = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,9 +30,13 @@ class LoginViewController: VideoSplashViewController, FBSDKLoginButtonDelegate {
         
         setupView()
         
-        self.fetchUserInfo { (succes: Bool, user: User?) in
-            
-            self.loginResult(success: succes, user: user)
+        if(!logoutPlease) {
+            self.fetchUserInfo { (succes: Bool, user: User?) in
+                
+                self.loginResult(success: succes, user: user)
+            }
+        } else {
+            self.logout()
         }
     }
     
@@ -148,9 +153,10 @@ class LoginViewController: VideoSplashViewController, FBSDKLoginButtonDelegate {
                         let name = result["name"]! as! String
                         let email = result["email"]! as! String
                         let id = result["id"]! as! String
+                        
                         let pictureUrl = "https://graph.facebook.com/\(id)/picture?type=normal"
                         
-                        let user = User(name: name, email: email, id: id, profilePictureUrl: pictureUrl)
+                        let user = User(name: name, email: email, id: id, profilePictureUrl: pictureUrl, lang: "Français")
                         callback(true, user)
                         return
                     } else {
@@ -175,29 +181,28 @@ class LoginViewController: VideoSplashViewController, FBSDKLoginButtonDelegate {
         }
         
         else if(user != nil) {
+            kCurrentUser = user
             user!.printPretty()
-            ControllerUser.getUserBy(id: user!.id, completition: { (userAPI: User?) in
-                if(userAPI == nil) {
-                    
+            ControllerUser.getUserBy(id: user!.id, completition: { (exist: Bool) in
+                if(!exist) {
+
                     ControllerUser.insert(user: user!, completition: { (succes: Bool) in
-                        
+
                         if(!success) {
                             displayAlert(viewController: self, title: "Error", message: "Fetchig user info ox#")
                             return
                         }
-                        
+
                         DispatchQueue.main.async {
                             self.goToMenu()
                         }
-                        
+
                     })
                 } else {
                     DispatchQueue.main.async {
                         self.goToMenu()
                     }
                 }
-                
-             
             })
         } else {
             displayAlert(viewController: self, title: "Error", message: "Fetchig user info ox#")
@@ -211,6 +216,14 @@ class LoginViewController: VideoSplashViewController, FBSDKLoginButtonDelegate {
             
             present(viewController, animated: true, completion: nil)
         }
+    }
+    
+    private func logout() {
+        let loginManager = FBSDKLoginManager()
+        loginManager.logOut()
+        updateLoginLabel()
+        
+        logoutPlease = false
     }
     
     override func didReceiveMemoryWarning() {
