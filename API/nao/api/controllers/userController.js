@@ -21,3 +21,14 @@ exports.addUser = function(req, res) {
     res.json(user);
   });
 };
+
+exports.addAccomplishedMission = function(req, res) {
+  const userId = req.body.userId;
+  const missionId = req.body.missionId;
+  console.log(missionId);
+  User.update({"userId": userId}, {$set:{"missonAccomplished": [missionId]}}, function(err, user) {
+    if (err)
+      res.send(err);
+      res.json(user);
+  });
+};
