@@ -4,16 +4,19 @@ provides-top-level:
 - "Question"
 - "Answer"
 - "Status"
+- "Feedback"
 provides-nominal:
 - "8Hack20187MissionC"
 - "8Hack20188QuestionV"
 - "8Hack20186AnswerV"
 - "8Hack20186StatusO"
+- "8Hack20188FeedbackV"
 provides-member:
 - ["8Hack20187MissionC", ""]
 - ["8Hack20188QuestionV", ""]
 - ["8Hack20186AnswerV", ""]
 - ["8Hack20186StatusO", ""]
+- ["8Hack20188FeedbackV", ""]
 provides-dynamic-lookup:
 depends-top-level:
 - "=="
@@ -21,6 +24,7 @@ depends-top-level:
 - "AssignmentPrecedence"
 - "Bool"
 - "CLLocationCoordinate2D"
+- "Feedback"
 - !private "FloatLiteralType"
 - "Int"
 - !private "IntegerLiteralType"
@@ -55,6 +59,10 @@ depends-member:
 - ["s9EquatableP", ""]
 - ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s27ExpressibleByIntegerLiteralP", "hashValue"]
+- ["8Hack20188FeedbackV", "String"]
+- ["8Hack20188FeedbackV", "good"]
+- ["8Hack20188FeedbackV", "init"]
+- ["8Hack20188FeedbackV", "wrong"]
 - !private ["s17FixedWidthIntegerP", "hashValue"]
 - ["s8HashableP", "hashValue"]
 - ["s8HashableP", ""]
@@ -62,6 +70,7 @@ depends-member:
 - !private ["s25LosslessStringConvertibleP", "hashValue"]
 - !private ["s10MirrorPathP", "hashValue"]
 - ["8Hack20187MissionC", "CLLocationCoordinate2D"]
+- ["8Hack20187MissionC", "Feedback"]
 - ["8Hack20187MissionC", "Int"]
 - ["8Hack20187MissionC", "Question"]
 - ["8Hack20187MissionC", "Status"]
@@ -69,6 +78,7 @@ depends-member:
 - ["8Hack20187MissionC", "deinit"]
 - ["8Hack20187MissionC", "description"]
 - ["8Hack20187MissionC", "feedback"]
+- ["8Hack20187MissionC", "id"]
 - ["8Hack20187MissionC", "init"]
 - ["8Hack20187MissionC", "lang"]
 - ["8Hack20187MissionC", "position"]
@@ -125,6 +135,7 @@ depends-nominal:
 - "s9EquatableP"
 - "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
+- "8Hack20188FeedbackV"
 - !private "s17FixedWidthIntegerP"
 - "s8HashableP"
 - !private "Si"
@@ -160,6 +171,7 @@ depends-external:
 - "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/SwiftSpinner.swiftmodule/arm64.swiftmodule"
 - "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/VideoSplashKit/VideoSplashKit.framework/Modules/VideoSplashKit.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ModelIO.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/simd.swiftmodule"
@@ -177,9 +189,16 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/GLKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ARKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SceneKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SpriteKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MapKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
 - "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFURL.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-umbrella.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/VideoSplashKit/VideoSplashKit.framework/Headers/VideoSplashKit-umbrella.h"
 - "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFCancellationTokenSource.h"
 - "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFTaskCompletionSource.h"
 - "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
@@ -199,6 +218,7 @@ depends-external:
 - "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
 - "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
 - "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner.h"
 - "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
 - "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
 - "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
@@ -211,6 +231,9 @@ depends-external:
 - "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
 - "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
 - "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-Swift.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/VideoSplashKit/VideoSplashKit.framework/Headers/VideoSplashKit-Swift.h"
 - "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
 - "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
 - "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
@@ -223,11 +246,18 @@ depends-external:
 - "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
 - "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
 - "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/module.modulemap"
 - "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Modules/module.modulemap"
 - "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/VideoSplashKit/VideoSplashKit.framework/Modules/module.modulemap"
 - "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/SceneKit.framework/Headers/SceneKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
-interface-hash: "e967c4c322f85437176d34ed4e10a422"
+interface-hash: "7db35b62272dde0297402fdffcace9db"

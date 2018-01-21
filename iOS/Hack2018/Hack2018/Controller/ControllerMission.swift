@@ -14,16 +14,9 @@ class ControllerMission {
     
     static func get(completition: @escaping (_: [Mission]) -> Void) {
 
-        let user = UserDefaults.standard
-        var lang = user.value(forKey: "LANGUAGE") as? String
+        let parameters = ["userId": kCurrentUser.id, "lang": "fr"]
         
-        if(lang == nil) {
-            lang = "fr"
-        }
-        
-        let parameters = ["userId": kCurrentUser.id, "lang": lang]
-        
-        guard let url = URL(string: "\(apiAdress)/mission/getByLang") else { return }
+        guard let url = URL(string: "\(apiAdress)/mission/getAll") else { return }
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -56,14 +49,16 @@ class ControllerMission {
                             let answersArr = questionsArr["answers"] as! [String]
                             let correctIndex = questionsArr["correctAnswerIndex"] as! Int
                             let accomplished = (info["accomplished"] as! Int)
-                            print(info)
+                            
                             print(accomplished)
                             
                             var questionAnswerFinal = [Answer]()
-                            let tempIndex = 0
-                             
+                            var tempIndex = 0
+                            
+                            
                             for ans in answersArr {
                                 questionAnswerFinal.append(Answer(text: ans, isCorrect: tempIndex == correctIndex))
+                                tempIndex += 1 
                             }
                             
                             let q1 = Question(title: question, answer: questionAnswerFinal)

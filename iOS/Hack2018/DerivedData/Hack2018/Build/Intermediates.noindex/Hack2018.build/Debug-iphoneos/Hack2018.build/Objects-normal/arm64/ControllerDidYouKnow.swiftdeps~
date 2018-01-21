@@ -7,6 +7,7 @@ provides-member:
 - ["8Hack201820ControllerDidYouKnowC", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "!"
 - !private "+="
 - !private ">"
 - !private "AppDelegate"
