@@ -103,6 +103,12 @@ class MenuViewController: UIViewController, UNUserNotificationCenterDelegate {
                 self.setUserLang(lang: "es")
             }
         }))
+        
+        alert.addAction(UIAlertAction(title: "Italien", style: .default, handler: { (_) in
+            DispatchQueue.main.async {
+                self.setUserLang(lang: "it")
+            }
+        }))
         self.present(alert, animated: true, completion: nil)
     }
     
