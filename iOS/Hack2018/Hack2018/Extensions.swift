@@ -33,7 +33,16 @@ extension String {
     func lz() -> String {
         let key = self
         
-        let lang = "fr"
+        
+        let user = UserDefaults.standard
+        var lang = user.value(forKey: "LANGUAGE") as? String
+        
+        if(lang == nil) {
+            lang = "fr"
+            
+            user.set("fr", forKey: "LANGUAGE")
+        }
+        
         let dict = [
             "LOGIN_FB": CString(fr: "Connexion avec Facebook", en: "Login with Facebook", es: "Iniciar sesión con Facebook"),
             "NAO": CString(fr: "Nao", en: "Nao", es: "Nao"),
@@ -54,9 +63,10 @@ extension String {
             "BRAVO": CString(fr: "Félicitations!", en: "Congratulations!", es: "Felicitaciones"),
             "TABLEVIEW": CString(fr: "Liste de missions", en: "Missions list", es: "Lista de misiones"),
             "PROFILE": CString(fr: "Profile", en: "Profil", es: "Perfil"),
+            "USE_LANG": CString(fr: "En quelle langue voulez-vous utiliser l'application?", en: "In wich language would you like to use the app?", es: "¿En qué idioma quieres usar la aplicación?"),
         ]
         
-        switch lang {
+        switch lang! {
         case "fr":
             return dict[key]!.fr
         case "en":

@@ -96,7 +96,7 @@ class NavBar: UIView {
         self.addSubview(backButton)
     }
     
-    private func updateTitle(title: String) {
+    func updateTitle(title: String) {
         DispatchQueue.main.async {
             self.titleLabel.text = title
         }

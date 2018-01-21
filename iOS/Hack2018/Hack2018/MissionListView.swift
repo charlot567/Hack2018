@@ -23,6 +23,7 @@ class MissionListView: UIView, UITableViewDelegate, UITableViewDataSource {
         
         self.navBar = NavBar()
         self.navBar.setForTableview(title: "TABLEVIEW".lz(), missionListView: self)
+        
         self.addSubview(navBar)
         
         tableView = UITableView(frame: CGRect(x: 0, y: navBar.frame.height, width: kWidth, height: kHeight - navBar.frame.height))
@@ -38,6 +39,10 @@ class MissionListView: UIView, UITableViewDelegate, UITableViewDataSource {
         }) { (_: Bool) in
             self.removeFromSuperview()
         }
+    }
+    
+    func updateBar() {
+        self.navBar.updateTitle(title: "TABLEVIEW".lz())
     }
     
     required init?(coder aDecoder: NSCoder) {
