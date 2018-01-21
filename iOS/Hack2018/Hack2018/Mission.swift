@@ -14,12 +14,12 @@ class Mission {
     var description: String!
     var position: CLLocationCoordinate2D!
     var reward: Int!
-    var questions = [Question]()
+    var questions: Question!
     var feedback: String!
     var lang: String!
     var status: Status!
     
-    init(title: String, description: String, position: CLLocationCoordinate2D, reward: Int, questions: [Question], feedback: String, lang: String, status: Status) {
+    init(title: String, description: String, position: CLLocationCoordinate2D, reward: Int, questions: Question, feedback: String, lang: String, status: Status) {
         
         self.title = title
         self.description = description

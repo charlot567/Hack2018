@@ -130,7 +130,7 @@ class AcceptMissionView: UIScrollView, CLLocationManagerDelegate {
     }
     
     func popQuestion() {
-        print("POP")
+        //  CALL ARVIEW WITH MISSION IN PARAMETER
     }
     
     @objc
