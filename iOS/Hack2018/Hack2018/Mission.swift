@@ -15,20 +15,21 @@ class Mission {
     var position: CLLocationCoordinate2D!
     var reward: Int!
     var questions: Question!
-    var feedback: String!
     var lang: String!
     var status: Status!
+    var feedback: Feedback!
     
-    init(title: String, description: String, position: CLLocationCoordinate2D, reward: Int, questions: Question, feedback: String, lang: String, status: Status) {
+    init(title: String, description: String, position: CLLocationCoordinate2D, reward: Int, questions: Question, lang: String, status: Status, feedback: Feedback) {
         
         self.title = title
         self.description = description
         self.position = position
         self.reward = reward
         self.questions = questions
-        self.feedback = feedback
+    
         self.lang = lang
         self.status = status
+        self.feedback = feedback
     }
 }
 
@@ -46,4 +47,9 @@ enum Status {
     case inProgress
     case completed
     case toDo
+}
+
+struct Feedback {
+    var good: String!
+    var wrong: String!
 }

@@ -57,8 +57,8 @@ class ControllerMission {
                             
                             let q1 = Question(title: question, answer: questionAnswerFinal)
                             let coord = CLLocationCoordinate2D(latitude: lat, longitude: long)
-                            
-                            missions.append(Mission(title: title, description: "", position: coord, reward: reward, questions: q1, feedback: correct, lang: kCurrentUser.lang, status: .toDo))
+                            let feedback = Feedback(good: correct, wrong: wrong)
+                            missions.append(Mission(title: title, description: "", position: coord, reward: reward, questions: q1, lang: kCurrentUser.lang, status: .toDo, feedback: feedback))
                             
                             
                         }
