@@ -63,7 +63,43 @@ class NavBar: UIView {
     
     @objc
     func buyCoin() {
-        displayAlert(viewController: menuViewController, title: "Buy Coin", message: "")
+        
+        let alert = UIAlertController(title: "SELECTED".lz(), message: "", preferredStyle: UIAlertControllerStyle.alert)
+        
+        alert.addAction(UIAlertAction(title: "Gray", style: .default, handler: { (_) in
+            DispatchQueue.main.async {
+                self.setSkin(value: "1")
+            }
+        }))
+        alert.addAction(UIAlertAction(title: "White & Brown", style: .default, handler:{ (_) in
+            DispatchQueue.main.async {
+                self.setSkin(value: "2")
+            }
+        }))
+        alert.addAction(UIAlertAction(title: "Brown", style: .default, handler: { (_) in
+            DispatchQueue.main.async {
+                self.setSkin(value: "3")
+            }
+        }))
+        
+        alert.addAction(UIAlertAction(title: "White", style: .default, handler: { (_) in
+            DispatchQueue.main.async {
+                self.setSkin(value: "4")
+            }
+        }))
+        menuViewController.present(alert, animated: true, completion: nil)
+        
+    }
+    
+    private func setSkin(value: String) {
+        DispatchQueue.main.async {
+            let user = UserDefaults.standard
+            user.set(value, forKey: "SKINVALUE")
+            user.synchronize()
+            
+            ControllerUser.updateScore(score: -8)
+        }
+        
     }
     
     func setForMissionView(title: String, acceptMissionView: AcceptMissionView) {

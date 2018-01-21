@@ -68,6 +68,7 @@ extension String {
             "COMPLETED": CString(fr: "Completé", en: "Complete", es: "Terminado", it: "Completare"),
             "SHOW": CString(fr: "Afficher", en: "Show", es: "Visualización", it: "Affiggere"),
             "Continuer": CString(fr: "Continuer", en: "Continue", es: "Seguir", it: "Coninuare"),
+            "SELECTED": CString(fr: "Sélection", en: "Selection", es: "Selección", it: "Selezione"),
             ]
 
         

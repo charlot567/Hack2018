@@ -14,9 +14,15 @@ class ControllerMission {
     
     static func get(completition: @escaping (_: [Mission]) -> Void) {
 
-        let parameters = ["userId": kCurrentUser.id, "lang": "fr"]
+        var lang = UserDefaults.standard.value(forKey: "LANGUAGE") as? String
         
-        guard let url = URL(string: "\(apiAdress)/mission/getAll") else { return }
+        if(lang == nil) {
+            lang = "fr"
+        }
+        
+        let parameters = ["userId": kCurrentUser.id, "lang": lang]
+        
+        guard let url = URL(string: "\(apiAdress)/mission/getByLang") else { return }
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")

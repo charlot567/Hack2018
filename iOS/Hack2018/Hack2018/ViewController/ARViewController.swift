@@ -422,9 +422,40 @@ extension ARViewController: ARSCNViewDelegate {
         
         guard let dogScene = SCNScene(named: "art.scnassets/Chien.scn"),
             let dogNode = dogScene.rootNode.childNode(withName: "Chien", recursively: false)
+            
+           
             else {
                 print("Error")
                 return }
+        
+        let user = UserDefaults.standard
+        var val = user.value(forKey: "SKINVALUE") as? String
+        
+        if(val == nil) {
+            val = "2"
+        }
+        
+        if(val! == "1") {
+            let material = SCNMaterial()
+            material.diffuse.contents = UIImage(named: "1.png")
+            dogNode.geometry?.materials = [material]
+        }
+        if(val! == "2") {
+            let material = SCNMaterial()
+            material.diffuse.contents = UIImage(named: "2.png")
+            dogNode.geometry?.materials = [material]
+        }
+        if(val! == "3") {
+            let material = SCNMaterial()
+            material.diffuse.contents = UIImage(named: "3.png")
+            dogNode.geometry?.materials = [material]
+        }
+        if(val! == "4") {
+            let material = SCNMaterial()
+            material.diffuse.contents = UIImage(named: "4.png")
+            dogNode.geometry?.materials = [material]
+        }
+        
         
         
         

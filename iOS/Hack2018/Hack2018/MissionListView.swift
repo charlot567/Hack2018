@@ -56,6 +56,7 @@ class MissionListView: UIView, UITableViewDelegate, UITableViewDataSource {
         
         cell.title.text = missions[indexPath.row].title
         cell.status.text = getStatusLabel(status: missions[indexPath.row].status)
+        cell.status.textColor = missions[indexPath.row].status == .completed ? .green : .red
         
         return cell
     }
