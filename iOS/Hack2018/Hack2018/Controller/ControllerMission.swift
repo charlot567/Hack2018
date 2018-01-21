@@ -23,7 +23,7 @@ class ControllerMission {
         arrAwnser.append(a3)
         
         let Q1 = Question(title: "Quel est ton nom?", answer: arrAwnser)
-        let coord = CLLocationCoordinate2D(latitude: 40, longitude: 40)
+        let coord = CLLocationCoordinate2D(latitude: 45.504384, longitude: -73.612883)
         let mission = Mission(title: "Mission Centro", description: "Description de la mission super cool au centro", position: coord, reward: 10, questions: [Q1], feedback: "Je suis le feedback pas utile", lang: kCurrentUser.lang, completed: false)
         
         completition([mission])

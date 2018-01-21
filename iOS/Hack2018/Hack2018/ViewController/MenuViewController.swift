@@ -9,6 +9,7 @@
 import UIKit
 import UserNotifications
 import SwiftSpinner
+import CoreLocation
 
 class MenuViewController: UIViewController, UNUserNotificationCenterDelegate {
 
