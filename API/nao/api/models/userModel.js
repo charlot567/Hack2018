@@ -17,6 +17,7 @@ var UserSchema = new Schema({
     },
     score:{
         type: String,
+        default: "0"
     }
 });
 

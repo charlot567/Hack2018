@@ -15,9 +15,16 @@ var MissionSchema = new Schema({
     },
     question: {
         question: String,
-        answer: Array,
+        answers: Array,
         correctAnswerIndex: Number,
     },
+    postQuestion: {
+        correct: String,
+        wrong: String,
+    },
+    lang: {
+        type: String,
+    }
 
 });
 

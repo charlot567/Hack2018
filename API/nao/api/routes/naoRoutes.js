@@ -3,6 +3,7 @@ module.exports = function(app) {
     var interestPoint = require('../controllers/interestPointController');
     var user = require('../controllers/userController');
     var didYouKnow = require('../controllers/didYouKnowController');
+    var mission = require('../controllers/missionController');
 
     // Interest Points
     app.route('/interestPoint/getAll')
@@ -26,4 +27,13 @@ module.exports = function(app) {
 
     app.route('/didYouKnow/add')
     .post(didYouKnow.add);
+
+    app.route('/mission/getAll')
+    .post(mission.getAll);
+
+    app.route('/mission/getByLang')
+    .post(mission.getByLang);
+
+    app.route('/mission/add')
+    .post(mission.add);
 };
