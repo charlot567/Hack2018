@@ -17,9 +17,9 @@ class Mission {
     var questions = [Question]()
     var feedback: String!
     var lang: String!
-    var completed: Bool!
+    var status: Status!
     
-    init(title: String, description: String, position: CLLocationCoordinate2D, reward: Int, questions: [Question], feedback: String, lang: String, completed: Bool) {
+    init(title: String, description: String, position: CLLocationCoordinate2D, reward: Int, questions: [Question], feedback: String, lang: String, status: Status) {
         
         self.title = title
         self.description = description
@@ -28,7 +28,7 @@ class Mission {
         self.questions = questions
         self.feedback = feedback
         self.lang = lang
-        self.completed = completed
+        self.status = status
     }
 }
 
@@ -40,4 +40,10 @@ struct Question {
 struct Answer {
     var text: String!
     var isCorrect: Bool!
+}
+
+enum Status {
+    case inProgress
+    case completed
+    case toDo
 }

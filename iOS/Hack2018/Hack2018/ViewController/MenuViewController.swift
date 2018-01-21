@@ -37,6 +37,7 @@ class MenuViewController: UIViewController, UNUserNotificationCenterDelegate {
         goToMissionsListView()
         
         UNUserNotificationCenter.current().delegate = self
+        //  CHOIX DES LANGUES .... \\\\\\\\\\\\\\\
     }
     
     private func initAllView() {
