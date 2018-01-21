@@ -11,7 +11,10 @@ import UIKit
 class ProfileView: UIScrollView {
     
     private var navBar: NavBar!
-    
+    private let scoreLabel = UILabel()
+    let scoreTitle = UILabel()
+    let langTitle = UILabel()
+    let logoutButton = UIButton()
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -32,7 +35,7 @@ class ProfileView: UIScrollView {
         name.textColor = UIColor.white
         self.addSubview(name)
         
-        let langTitle = UILabel()
+        
         langTitle.frame = CGRect(x: name.frame.minX, y: profileImageView.frame.maxY + 35, width: kWidth, height: 25)
         langTitle.font = UIFont(name: "Arial-BoldMT", size: 20)
         langTitle.text = "LANG".lz()
@@ -46,14 +49,14 @@ class ProfileView: UIScrollView {
         langTitleUser.textColor = UIColor.black
         self.addSubview(langTitleUser)
         
-        let scoreTitle = UILabel()
+        
         scoreTitle.frame = CGRect(x: name.frame.minX, y: langTitleUser.frame.maxY + 35, width: kWidth, height: 25)
         scoreTitle.font = UIFont(name: "Arial-BoldMT", size: 20)
         scoreTitle.text = "SCORE".lz()
         scoreTitle.textColor = UIColor.black
         self.addSubview(scoreTitle)
         
-        let scoreLabel = UILabel()
+        
         scoreLabel.frame = CGRect(x: name.frame.minX, y: scoreTitle.frame.maxY, width: kWidth, height: 25)
         scoreLabel.font = UIFont(name: "Arial", size: 16)
         scoreLabel.text = "\(kCurrentUser.score)"
@@ -66,7 +69,6 @@ class ProfileView: UIScrollView {
         backButton.addTarget(self, action: #selector(back), for: .touchUpInside)
         self.addSubview(backButton)
         
-        let logoutButton = UIButton()
         logoutButton.frame = CGRect(x: 0, y: scoreLabel.frame.maxY + 35, width: kWidth, height: 35)
         logoutButton.setTitle("DISCONNECT_FB".lz(), for: .normal)
         logoutButton.addTarget(self, action: #selector(logout), for: .touchUpInside)
@@ -77,6 +79,14 @@ class ProfileView: UIScrollView {
         let swipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(back))
         swipeGesture.direction = .right
         self.addGestureRecognizer(swipeGesture)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(updateScore), name: updateScoreNotifName, object: nil)
+    }
+    
+    func updateUI() {
+        logoutButton.setTitle("DISCONNECT_FB".lz(), for: .normal)
+        scoreTitle.text = "SCORE".lz()
+        langTitle.text = "LANG".lz()
     }
     
     @objc
@@ -86,6 +96,13 @@ class ProfileView: UIScrollView {
             self.frame.origin.x = kWidth
         }) { (_: Bool) in
             self.removeFromSuperview()
+        }
+    }
+    
+    @objc
+    func updateScore() {
+        DispatchQueue.main.async {
+            self.scoreLabel.text = "\(kCurrentUser.score)"
         }
     }
     

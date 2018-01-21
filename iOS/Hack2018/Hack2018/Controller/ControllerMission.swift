@@ -12,25 +12,11 @@ import CoreLocation
 class ControllerMission {
     
     
-    static func get(completition: (_: [Mission]) -> Void) {
-//
-//        let a1 = Answer(text: "Roger", isCorrect: true)
-//        let a2 = Answer(text: "Lapin", isCorrect: false)
-//        let a3 = Answer(text: "Bob", isCorrect: false)
-//        var arrAwnser = [Answer]()
-//        arrAwnser.append(a1)
-//        arrAwnser.append(a2)
-//        arrAwnser.append(a3)
-//
-//        let Q1 = Question(title: "Quel est ton nom?", answer: arrAwnser)
-//        let coord = CLLocationCoordinate2D(latitude: 45.504384, longitude: -73.612883)
-//        let mission = Mission(title: "Mission Centro", description: "Description de la mission super cool au centro", position: coord, reward: 10, questions: Q1, feedback: "Je suis le feedback pas utile", lang: kCurrentUser.lang, status: .toDo)
-//
-//        completition([mission])
+    static func get(completition: @escaping (_: [Mission]) -> Void) {
+
+        let parameters = ["userId": kCurrentUser.id, "lang": "fr"]
         
-        let parameters = ["userId": kCurrentUser.id]
-        
-        guard let url = URL(string: "\(apiAdress)/user/addUser") else { return }
+        guard let url = URL(string: "\(apiAdress)/mission/getAll") else { return }
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -44,13 +30,44 @@ class ControllerMission {
                 do {
                     let json = try JSONSerialization.jsonObject(with: data, options: [])
                     
-                    print(json)
-                    if let json = json as? Dictionary<String, Any> {
-                       
-                       
+                    var missions = [Mission]()
+                    
+                    if let json = json as? [Dictionary<String, Any>] {
+                        for info in json {
+                            let reward = info["reward"] as! Int
+                            let title = info["title"] as! String
+                            let pos = info["position"] as! Dictionary<String, Any>
+                            let lat = pos["lat"] as! Double
+                            let long = pos["long"] as! Double
+                            let postQuestion = info["postQuestion"] as! Dictionary<String, Any>
+                            let correct = postQuestion["correct"] as! String
+                            let wrong = postQuestion["wrong"] as! String
+                            let questionsArr = info["question"] as! Dictionary<String, Any>
+                            let question = questionsArr["question"] as! String
+                            let answersArr = questionsArr["answers"] as! [String]
+                            let correctIndex = questionsArr["correctAnswerIndex"] as! Int
+                            
+                            var questionAnswerFinal = [Answer]()
+                            let tempIndex = 0
+                            
+                            for ans in answersArr {
+                                questionAnswerFinal.append(Answer(text: ans, isCorrect: tempIndex == correctIndex))
+                            }
+                            
+                            let q1 = Question(title: question, answer: questionAnswerFinal)
+                            let coord = CLLocationCoordinate2D(latitude: lat, longitude: long)
+                            
+                            missions.append(Mission(title: title, description: "", position: coord, reward: reward, questions: q1, feedback: correct, lang: kCurrentUser.lang, status: .toDo))
+                            
+                            
+                        }
+                        
+                        
+                        completition(missions)
                     }
                     
                 } catch {
+                    print("error")
                     
                 }
             }

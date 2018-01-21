@@ -18,10 +18,14 @@ class MenuViewController: UIViewController, UNUserNotificationCenterDelegate {
     private var profileView: ProfileView!
     private var missionListView: MissionListView!
     
+    let topButton = UIButton()
+    let middleButton = UIButton()
+    let bottomButton = UIButton()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        menuViewController = self
         initAllView()
         self.navBar = NavBar()
         self.view.addSubview(navBar)
@@ -33,10 +37,41 @@ class MenuViewController: UIViewController, UNUserNotificationCenterDelegate {
             ControllerDidYouKnow.save(dyns: dyns)
         }
         
-        
-        goToMissionsListView()
+    
         
         UNUserNotificationCenter.current().delegate = self
+        
+        let height = (kHeight - navBar.frame.height) / 3
+        topButton.frame = CGRect(x: 0, y: navBar.frame.maxY, width: kWidth, height: height)
+        topButton.backgroundColor = UIColor(red: 6 / 255, green: 70 / 255, blue: 91 / 255, alpha: 1)
+        topButton.layer.borderWidth = 1
+        topButton.layer.borderColor = UIColor.white.cgColor
+        topButton.setTitle("TABLEVIEW".lz(), for: .normal)
+        topButton.titleLabel?.font = UIFont(name: "Arial-BoldMT", size: 35)
+        topButton.addTarget(self, action: #selector(goToMissionsListView), for: .touchUpInside)
+        topButton.setTitleColor(.white, for: .normal)
+        self.view.addSubview(topButton)
+        
+        middleButton.frame = CGRect(x: 0, y: topButton.frame.maxY, width: kWidth, height: height)
+        middleButton.backgroundColor = UIColor(red: 18 / 255, green: 129 / 255, blue: 158 / 255, alpha: 1)
+        middleButton.layer.borderWidth = 1
+        middleButton.layer.borderColor = UIColor.white.cgColor
+        middleButton.setTitle("NAO".lz(), for: .normal)
+        middleButton.setTitleColor(.white, for: .normal)
+        middleButton.titleLabel?.font = UIFont(name: "Arial-BoldMT", size: 35)
+        middleButton.addTarget(self, action: #selector(goToNao), for: .touchUpInside)
+        self.view.addSubview(middleButton)
+        
+        bottomButton.frame = CGRect(x: 0, y: middleButton.frame.maxY, width: kWidth, height: height)
+        bottomButton.backgroundColor = UIColor(red: 29 / 255, green: 180 / 255, blue: 222 / 255, alpha: 1)
+        bottomButton.layer.borderWidth = 1
+        bottomButton.layer.borderColor = UIColor.white.cgColor
+        bottomButton.setTitle("LANG".lz(), for: .normal)
+        bottomButton.setTitleColor(.white, for: .normal)
+        bottomButton.titleLabel?.font = UIFont(name: "Arial-BoldMT", size: 35)
+        bottomButton.addTarget(self, action: #selector(askLanguage), for: .touchUpInside)
+        self.view.addSubview(bottomButton)
+        
         //  CHOIX DES LANGUES .... \\\\\\\\\\\\\\\
     }
     
@@ -44,6 +79,46 @@ class MenuViewController: UIViewController, UNUserNotificationCenterDelegate {
         
         profileView = ProfileView(frame: self.view.frame)
         missionListView = MissionListView(frame: self.view.frame)
+    }
+    
+    @objc func askLanguage() {
+        let alert = UIAlertController(title: "LANG".lz(), message: "USE_LANG".lz(), preferredStyle: UIAlertControllerStyle.alert)
+        
+        alert.addAction(UIAlertAction(title: "Français", style: .default, handler: { (_) in
+            DispatchQueue.main.async {
+                self.setUserLang(lang: "fr")
+            }
+        }))
+        alert.addAction(UIAlertAction(title: "Anglais", style: .default, handler:{ (_) in
+            DispatchQueue.main.async {
+                self.setUserLang(lang: "en")
+            }
+        }))
+        alert.addAction(UIAlertAction(title: "Espagnol", style: .default, handler: { (_) in
+            DispatchQueue.main.async {
+                self.setUserLang(lang: "es")
+            }
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func setUserLang(lang: String) {
+        let user = UserDefaults.standard
+        user.set("\(lang)", forKey: "LANGUAGE")
+        user.synchronize()
+        
+        updateUI()
+    }
+    
+    func updateUI() {
+        DispatchQueue.main.async {
+            self.topButton.setTitle("TABLEVIEW".lz(), for: .normal)
+            self.middleButton.setTitle("NAO".lz(), for: .normal)
+            self.bottomButton.setTitle("LANG".lz(), for: .normal)
+            
+            self.missionListView.updateBar()
+            self.profileView.updateUI()
+        }
     }
     
     @objc private func goToProfile() {
@@ -70,14 +145,17 @@ class MenuViewController: UIViewController, UNUserNotificationCenterDelegate {
         print("OpenAmigo")
     }
     
-    func goToMissionsListView() {
+    @objc func goToMissionsListView() {
         SwiftSpinner.show("FETCHING_USER_INFO".lz())
         
         ControllerMission.get { (missions: [Mission]) in
             DispatchQueue.main.async {
+                SwiftSpinner.hide()
+                
                 self.missionListView.missions = missions
                 self.missionListView.frame.origin.x = kWidth
                 self.view.addSubview(self.missionListView)
+                
                 UIView.animate(withDuration: 0.3, animations: {
                     self.missionListView.frame.origin.x = 0
                 }) { (_: Bool) in
@@ -85,8 +163,11 @@ class MenuViewController: UIViewController, UNUserNotificationCenterDelegate {
                 }
             }
         }
-        
-        
+    }
+    
+    @objc
+    func goToNao() {
+        print("NAO")
     }
     
     override func didReceiveMemoryWarning() {

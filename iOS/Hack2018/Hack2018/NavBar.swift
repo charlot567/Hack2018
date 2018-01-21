@@ -11,7 +11,7 @@ import UIKit
 class NavBar: UIView {
     
     private var titleLabel: UILabel!
-    private let coinImg = UIImageView()
+    private let coinImg = UIButton()
     private let coinLabel = UILabel()
     private let profileButton = UIButton()
     private var acceptMissionView: AcceptMissionView!
@@ -37,9 +37,12 @@ class NavBar: UIView {
         profileButton.clipsToBounds = true
         profileButton.layer.cornerRadius = imageSize / 2
         self.addSubview(profileButton)
-     
+        
+        
+        
         coinImg.frame = CGRect(x: 20, y: 40, width: 40, height: 40)
-        coinImg.image = UIImage(named: "coin")
+        coinImg.setImage(UIImage(named: "coin"), for: .normal)
+        coinImg.addTarget(self, action: #selector(buyCoin), for: .touchUpInside)
         self.addSubview(coinImg)
         
         coinLabel.frame = CGRect(x: 0, y: coinImg.frame.maxY - 5, width: 80, height: 20)
@@ -47,6 +50,20 @@ class NavBar: UIView {
         coinLabel.textAlignment = .center
         coinLabel.text = "\(kCurrentUser.score)"
         self.addSubview(coinLabel)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(updateScore), name: updateScoreNotifName, object: nil)
+    }
+    
+    @objc
+    func updateScore() {
+        DispatchQueue.main.async {
+            self.coinLabel.text = "\(kCurrentUser.score)"
+        }
+    }
+    
+    @objc
+    func buyCoin() {
+        displayAlert(viewController: menuViewController, title: "Buy Coin", message: "")
     }
     
     func setForMissionView(title: String, acceptMissionView: AcceptMissionView) {
@@ -79,7 +96,7 @@ class NavBar: UIView {
         self.addSubview(backButton)
     }
     
-    private func updateTitle(title: String) {
+    func updateTitle(title: String) {
         DispatchQueue.main.async {
             self.titleLabel.text = title
         }
@@ -98,7 +115,7 @@ class NavBar: UIView {
             acceptMissionView = nil
         } else if(missionListView != nil) {
             missionListView.back()
-            missionListView = nil
+//            missionListView = nil
         }
     }
     
