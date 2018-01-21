@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F04B45A2014495C0020E1D6 /* MissionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04B4592014495C0020E1D6 /* MissionListView.swift */; };
+		3F04B45C201449680020E1D6 /* ControllerMission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04B45B201449680020E1D6 /* ControllerMission.swift */; };
+		3F04B45E201449950020E1D6 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04B45D201449950020E1D6 /* Mission.swift */; };
+		3F04B46020144C690020E1D6 /* MissionListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04B45F20144C690020E1D6 /* MissionListViewCell.swift */; };
+		3F04B46220144FBB0020E1D6 /* AcceptMissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04B46120144FBB0020E1D6 /* AcceptMissionView.swift */; };
 		3FA297C62013C196009C27D2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA297C52013C196009C27D2 /* LoginViewController.swift */; };
 		3FD7424E2013C7A400323F31 /* login_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3FD7424D2013C7A400323F31 /* login_video.mp4 */; };
 		3FD742502013C97B00323F31 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD7424F2013C97B00323F31 /* Extensions.swift */; };
@@ -36,6 +41,11 @@
 
 /* Begin PBXFileReference section */
 		2AA0FCDEC375869EDA6DF3D0 /* Pods-Hack2018.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hack2018.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hack2018/Pods-Hack2018.debug.xcconfig"; sourceTree = "<group>"; };
+		3F04B4592014495C0020E1D6 /* MissionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionListView.swift; sourceTree = "<group>"; };
+		3F04B45B201449680020E1D6 /* ControllerMission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerMission.swift; sourceTree = "<group>"; };
+		3F04B45D201449950020E1D6 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
+		3F04B45F20144C690020E1D6 /* MissionListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionListViewCell.swift; sourceTree = "<group>"; };
+		3F04B46120144FBB0020E1D6 /* AcceptMissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptMissionView.swift; sourceTree = "<group>"; };
 		3FA297C52013C196009C27D2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3FD7424D2013C7A400323F31 /* login_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = login_video.mp4; sourceTree = "<group>"; };
 		3FD7424F2013C97B00323F31 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -96,6 +106,7 @@
 				3FD7425D20140BC900323F31 /* ControllerUser.swift */,
 				3FD7426020140D4E00323F31 /* API.swift */,
 				3FD7426420143AAA00323F31 /* ControllerDidYouKnow.swift */,
+				3F04B45B201449680020E1D6 /* ControllerMission.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -144,6 +155,10 @@
 				3FD7425F20140BCD00323F31 /* Controller */,
 				3FD742622014270400323F31 /* ProfileView.swift */,
 				3FD7426620143C0E00323F31 /* DidYouKnow.swift */,
+				3F04B4592014495C0020E1D6 /* MissionListView.swift */,
+				3F04B45D201449950020E1D6 /* Mission.swift */,
+				3F04B45F20144C690020E1D6 /* MissionListViewCell.swift */,
+				3F04B46120144FBB0020E1D6 /* AcceptMissionView.swift */,
 			);
 			path = Hack2018;
 			sourceTree = "<group>";
@@ -322,15 +337,20 @@
 				3FD742632014270400323F31 /* ProfileView.swift in Sources */,
 				3FD742502013C97B00323F31 /* Extensions.swift in Sources */,
 				A761246220139FCA00D21004 /* ViewController.swift in Sources */,
+				3F04B45E201449950020E1D6 /* Mission.swift in Sources */,
 				3FD742522013CAFE00323F31 /* CString.swift in Sources */,
 				3FD7425E20140BC900323F31 /* ControllerUser.swift in Sources */,
 				3FD7425A2013E1D400323F31 /* MenuViewController.swift in Sources */,
+				3F04B45A2014495C0020E1D6 /* MissionListView.swift in Sources */,
 				3FD7425C2013E46A00323F31 /* NavBar.swift in Sources */,
+				3F04B46020144C690020E1D6 /* MissionListViewCell.swift in Sources */,
+				3F04B45C201449680020E1D6 /* ControllerMission.swift in Sources */,
 				3FD742582013D59D00323F31 /* User.swift in Sources */,
 				A761246820139FCA00D21004 /* Hack2018.xcdatamodeld in Sources */,
 				3FA297C62013C196009C27D2 /* LoginViewController.swift in Sources */,
 				3FD7426120140D4E00323F31 /* API.swift in Sources */,
 				A761246020139FCA00D21004 /* AppDelegate.swift in Sources */,
+				3F04B46220144FBB0020E1D6 /* AcceptMissionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

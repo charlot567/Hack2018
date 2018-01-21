@@ -8,12 +8,14 @@
 
 import UIKit
 import UserNotifications
+import SwiftSpinner
 
 class MenuViewController: UIViewController, UNUserNotificationCenterDelegate {
 
     private var navBar: NavBar!
     
     private var profileView: ProfileView!
+    private var missionListView: MissionListView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,12 +32,16 @@ class MenuViewController: UIViewController, UNUserNotificationCenterDelegate {
             ControllerDidYouKnow.save(dyns: dyns)
         }
         
+        
+        goToMissionsListView()
+        
         UNUserNotificationCenter.current().delegate = self
     }
     
     private func initAllView() {
         
         profileView = ProfileView(frame: self.view.frame)
+        missionListView = MissionListView(frame: self.view.frame)
     }
     
     @objc private func goToProfile() {
@@ -60,6 +66,25 @@ class MenuViewController: UIViewController, UNUserNotificationCenterDelegate {
 
     @objc func openAmigo() {
         print("OpenAmigo")
+    }
+    
+    func goToMissionsListView() {
+        SwiftSpinner.show("FETCHING_USER_INFO".lz())
+        
+        ControllerMission.get { (missions: [Mission]) in
+            DispatchQueue.main.async {
+                self.missionListView.missions = missions
+                self.missionListView.frame.origin.x = kWidth
+                self.view.addSubview(self.missionListView)
+                UIView.animate(withDuration: 0.3, animations: {
+                    self.missionListView.frame.origin.x = 0
+                }) { (_: Bool) in
+                    
+                }
+            }
+        }
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
