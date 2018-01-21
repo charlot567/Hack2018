@@ -11,6 +11,7 @@ import UIKit
 class ProfileView: UIScrollView {
     
     private var navBar: NavBar!
+    private let scoreLabel = UILabel()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -53,7 +54,7 @@ class ProfileView: UIScrollView {
         scoreTitle.textColor = UIColor.black
         self.addSubview(scoreTitle)
         
-        let scoreLabel = UILabel()
+        
         scoreLabel.frame = CGRect(x: name.frame.minX, y: scoreTitle.frame.maxY, width: kWidth, height: 25)
         scoreLabel.font = UIFont(name: "Arial", size: 16)
         scoreLabel.text = "\(kCurrentUser.score)"
@@ -77,6 +78,8 @@ class ProfileView: UIScrollView {
         let swipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(back))
         swipeGesture.direction = .right
         self.addGestureRecognizer(swipeGesture)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(updateScore), name: updateScoreNotifName, object: nil)
     }
     
     @objc
@@ -86,6 +89,13 @@ class ProfileView: UIScrollView {
             self.frame.origin.x = kWidth
         }) { (_: Bool) in
             self.removeFromSuperview()
+        }
+    }
+    
+    @objc
+    func updateScore() {
+        DispatchQueue.main.async {
+            self.scoreLabel.text = "\(kCurrentUser.score)"
         }
     }
     

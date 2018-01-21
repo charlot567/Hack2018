@@ -115,7 +115,7 @@ class NavBar: UIView {
             acceptMissionView = nil
         } else if(missionListView != nil) {
             missionListView.back()
-            missionListView = nil
+//            missionListView = nil
         }
     }
     
