@@ -20,6 +20,9 @@ class AcceptMissionView: UIView, CLLocationManagerDelegate {
     private let rewardLbl = UILabel()
     private let startBtn = UIButton()
     let title = UILabel()
+    let status = UILabel()
+    let reward = UILabel()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -51,7 +54,7 @@ class AcceptMissionView: UIView, CLLocationManagerDelegate {
         subtitle.textColor = UIColor.black
         scrollView.addSubview(subtitle)
         
-        let status = UILabel()
+        
         status.frame = CGRect(x: 20, y: subtitle.frame.maxY + 35, width: kWidth, height: 30)
         status.font = UIFont(name: "Arial-BoldMT", size: 25)
         status.text = "STATUS".lz()
@@ -63,7 +66,7 @@ class AcceptMissionView: UIView, CLLocationManagerDelegate {
         statusLbl.textColor = UIColor.black
         scrollView.addSubview(statusLbl)
         
-        let reward = UILabel()
+        
         reward.frame = CGRect(x: 20, y: statusLbl.frame.maxY + 35, width: kWidth, height: 30)
         reward.font = UIFont(name: "Arial-BoldMT", size: 25)
         reward.text = "REWARD".lz()
@@ -120,6 +123,8 @@ class AcceptMissionView: UIView, CLLocationManagerDelegate {
             self.rewardLbl.text = "\(self.mission.reward!) \("POINT".lz())"
             self.statusLbl.text = (self.mission.status == .completed) ? "COMPLETE".lz() : "TODO".lz()
             self.title.text = "MISSION".lz()
+            status.text = "STATUS".lz()
+            reward.text = "REWARD".lz()
         }
     }
     
