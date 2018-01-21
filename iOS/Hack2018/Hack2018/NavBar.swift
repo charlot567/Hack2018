@@ -53,10 +53,11 @@ class NavBar: UIView {
         coinImg.removeFromSuperview()
         coinLabel.removeFromSuperview()
         profileButton.removeFromSuperview()
+        self.acceptMissionView = acceptMissionView
         
         let backButton = UIButton()
         backButton.frame = CGRect(x: 10, y: 50, width: 30, height: 30)
-        backButton.setImage(UIImage(named: "arrow"), for: .normal)
+        backButton.setImage(UIImage(named: "arrow_black"), for: .normal)
         backButton.addTarget(self, action: #selector(back), for: .touchUpInside)
         self.addSubview(backButton)
     }
@@ -65,6 +66,10 @@ class NavBar: UIView {
         DispatchQueue.main.async {
             self.titleLabel.text = title
         }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        back()
     }
     
     @objc
