@@ -5,6 +5,7 @@ DidYouKnow = mongoose.model('DidYouKnow');
 
 exports.getAll = function(req, res) {
   DidYouKnow.find({}, function(err, fact) {
+    console.log("didYouKnow find");
     if (err)
       res.send(err);
     res.json(fact);
