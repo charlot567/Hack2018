@@ -68,7 +68,8 @@ class NavBar: UIView {
     
     func setForMissionView(title: String, acceptMissionView: AcceptMissionView) {
         updateTitle(title: title)
-        
+        self.titleLabel.frame.size = CGSize(width: kWidth / 2, height: titleLabel.frame.height)
+        self.titleLabel.frame.origin = CGPoint(x: kWidth / 4, y: self.titleLabel.frame.origin.y)
         coinImg.removeFromSuperview()
         coinLabel.removeFromSuperview()
         profileButton.removeFromSuperview()

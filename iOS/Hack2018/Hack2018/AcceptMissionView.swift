@@ -49,7 +49,7 @@ class AcceptMissionView: UIView, CLLocationManagerDelegate {
         title.textColor = UIColor.black
         scrollView.addSubview(title)
         
-        subtitle.frame = CGRect(x: 20, y: title.frame.maxY, width: kWidth, height: 20)
+        subtitle.frame = CGRect(x: 20, y: title.frame.maxY, width: kWidth - 40, height: 20)
         subtitle.font = UIFont(name: "Arial", size: 18)
         subtitle.textColor = UIColor.black
         scrollView.addSubview(subtitle)
@@ -90,6 +90,7 @@ class AcceptMissionView: UIView, CLLocationManagerDelegate {
     }
     
     func setupView() {
+        var title = mission.title
         
         navBar.setForMissionView(title: mission.title, acceptMissionView: self)
         self.addSubview(navBar)

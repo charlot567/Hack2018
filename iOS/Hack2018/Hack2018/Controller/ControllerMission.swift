@@ -49,12 +49,12 @@ class ControllerMission {
                             let answersArr = questionsArr["answers"] as! [String]
                             let correctIndex = questionsArr["correctAnswerIndex"] as! Int
                             let accomplished = (info["accomplished"] as! Int)
-                            
+                            print(info)
                             print(accomplished)
                             
                             var questionAnswerFinal = [Answer]()
                             let tempIndex = 0
-                            
+                             
                             for ans in answersArr {
                                 questionAnswerFinal.append(Answer(text: ans, isCorrect: tempIndex == correctIndex))
                             }
