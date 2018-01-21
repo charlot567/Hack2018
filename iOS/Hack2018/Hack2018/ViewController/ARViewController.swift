@@ -473,7 +473,7 @@ extension ARViewController: ARSCNViewDelegate {
         
         //node.addChildNode(generateMessage(message: "This is a right answer of course you knew it was number 3 or maybe 2 it does not really matter!"))
         
-        sceneView.scene.isPaused = true
+        sceneView.scene.isPaused = false
         
         
         let configuration = ARWorldTrackingConfiguration()
