@@ -78,7 +78,7 @@ class ControllerDidYouKnow {
                 d.setValue(dyn.id, forKey: "id")
                 d.setValue(dyn.text, forKey: "title")
                 
-                addNotification(title: "FUN_FACT".lz(), body: dyn.text, timeInteval: timeInteval, userInfo: ["openDYN": dyn.id])
+                addNotification(title: "FUN_FACT".lz(), body: dyn.text, timeInteval: timeInteval, userInfo: ["openDYN": dyn.text])
                 timeInteval += skip
                 
                 do {

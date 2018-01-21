@@ -198,7 +198,7 @@ class MenuViewController: UIViewController, UNUserNotificationCenterDelegate {
         if motion == .motionShake {
             
             let dyn = self.dynsGlobal[Int(arc4random_uniform(UInt32(self.dynsGlobal.count - 1)))]
-            addNotification(title: "FUN_FACT".lz(), body: "SHOW".lz(), timeInteval: 1, userInfo: ["openDYN": dyn.id])
+            addNotification(title: "FUN_FACT".lz(), body: "SHOW".lz(), timeInteval: 1, userInfo: ["openDYN": dyn.text])
         }
     }
 }

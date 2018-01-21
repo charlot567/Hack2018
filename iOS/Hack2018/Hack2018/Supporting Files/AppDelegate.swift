@@ -27,6 +27,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
+    func application(_ application: UIApplication, didReceive notification: UILocalNotification) {
+        print("lol")
+        
+        print(notification.userInfo!["openDYN"]!)
+        
+//        var ARVC = ARViewController(
+        menuViewController.parentViewController?.present(ARVC, animated: true, completion: nil)
+        
+        //  OPEN FUN FACT
+    }
+    
+    
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
         return FBSDKApplicationDelegate.sharedInstance().application(app, open: url, options: options)
     }
