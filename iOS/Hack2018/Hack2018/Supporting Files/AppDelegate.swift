@@ -28,12 +28,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, didReceive notification: UILocalNotification) {
-        print("lol")
         
-        print(notification.userInfo!["openDYN"]!)
-        
-//        var ARVC = ARViewController(
-        menuViewController.parentViewController?.present(ARVC, animated: true, completion: nil)
+        let ARVC = ARViewController(fact: notification.userInfo!["openDYN"]! as! String)
+        menuViewController!.present(ARVC, animated: true, completion: nil)
         
         //  OPEN FUN FACT
     }
