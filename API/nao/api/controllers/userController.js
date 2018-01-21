@@ -26,9 +26,24 @@ exports.addAccomplishedMission = function(req, res) {
   const userId = req.body.userId;
   const missionId = req.body.missionId;
   console.log(missionId);
-  User.update({"userId": userId}, {$set:{"missonAccomplished": [missionId]}}, function(err, user) {
+  User.update({"userId": userId}, {$push:{"missonAccomplished": missionId}}, function(err, user) {
     if (err)
       res.send(err);
       res.json(user);
   });
+};
+
+exports.addPoint = function(req, res) {
+  const userId = req.body.userId;
+  var points = req.body.points;
+
+    User.update({"userId": userId}, {$inc:{"score": points}}, function(err, user) {
+      if (err)
+        res.send(err);
+        else {
+
+          res.json(user);
+        }
+    });
+
 };

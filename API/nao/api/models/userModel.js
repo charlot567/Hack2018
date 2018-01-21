@@ -16,8 +16,8 @@ var UserSchema = new Schema({
         type: String,
     },
     score:{
-        type: String,
-        default: "0"
+        type: Number,
+        default: 0
     },
     missonAccomplished:{
         type: Array,

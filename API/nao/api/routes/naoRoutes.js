@@ -22,6 +22,9 @@ module.exports = function(app) {
     app.route('/user/addAccomplishedMission')
     .post(user.addAccomplishedMission);
 
+    app.route('/user/addPoint')
+    .post(user.addPoint);
+
     app.route('/didYouKnow/getAll')
     .post(didYouKnow.getAll);
 
