@@ -34,13 +34,17 @@ func displayAlert(viewController: UIViewController, title: String, message: Stri
     }
 }
 
-func addNotification(title: String, body: String, timeInteval: TimeInterval) {
+func addNotification(title: String, body: String, timeInteval: TimeInterval, userInfo: [String: Any]?) {
     let center = UNUserNotificationCenter.current()
     
     let content = UNMutableNotificationContent()
     content.title = title
     content.body = body
     content.sound = UNNotificationSound.default()
+    if(userInfo != nil) {
+        content.userInfo = userInfo!
+    }
+    
     let trigger = UNTimeIntervalNotificationTrigger(timeInterval: timeInteval,
                                                     repeats: false)
     
