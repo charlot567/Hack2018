@@ -33,7 +33,8 @@ class ControllerMission {
                     var missions = [Mission]()
                     
                     if let json = json as? [Dictionary<String, Any>] {
-                        for info in json {
+                        //for info in json {
+                        var info = json[0];
                             let reward = info["reward"] as! Int
                             let title = info["title"] as! String
                             let pos = info["position"] as! Dictionary<String, Any>
@@ -60,7 +61,7 @@ class ControllerMission {
                             missions.append(Mission(title: title, description: "", position: coord, reward: reward, questions: q1, feedback: correct, lang: kCurrentUser.lang, status: .toDo))
                             
                             
-                        }
+                        //}
                         
                         
                         completition(missions)

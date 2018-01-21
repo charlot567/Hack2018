@@ -1,0 +1,412 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ControllerMission"
+provides-nominal:
+- "8Hack201817ControllerMissionC"
+provides-member:
+- ["8Hack201817ControllerMissionC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "=="
+- !private "Answer"
+- !private "Array"
+- "AssignmentPrecedence"
+- !private "CLLocationCoordinate2D"
+- !private "CastingPrecedence"
+- "ControllerMission"
+- !private "Dictionary"
+- !private "Double"
+- !private "Int"
+- !private "JSONSerialization"
+- "Mission"
+- !private "Question"
+- !private "String"
+- !private "StringLiteralType"
+- !private "URL"
+- !private "URLRequest"
+- !private "URLSession"
+- "Void"
+- !private "apiAdress"
+- !private "kCurrentUser"
+- !private "print"
+depends-member:
+- !private ["8Hack20186AnswerV", "init"]
+- !private ["Sa", "append"]
+- !private ["Sa", "init"]
+- !private ["Sa", "subscript"]
+- !private ["s23BidirectionalCollectionP", "append"]
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["s23BidirectionalCollectionP", "subscript"]
+- !private ["SC22CLLocationCoordinate2DV", "init"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "data"]
+- !private ["s7CVarArgP", "dataTask"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "jsonObject"]
+- !private ["s7CVarArgP", "resume"]
+- !private ["s7CVarArgP", "shared"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s10CollectionP", "append"]
+- !private ["s10CollectionP", "init"]
+- !private ["s10CollectionP", "subscript"]
+- !private ["s10ComparableP", "init"]
+- !private ["8Hack201817ControllerMissionC", "Answer"]
+- !private ["8Hack201817ControllerMissionC", "CLLocationCoordinate2D"]
+- !private ["8Hack201817ControllerMissionC", "Dictionary"]
+- !private ["8Hack201817ControllerMissionC", "Double"]
+- !private ["8Hack201817ControllerMissionC", "Int"]
+- !private ["8Hack201817ControllerMissionC", "JSONSerialization"]
+- ["8Hack201817ControllerMissionC", "Mission"]
+- !private ["8Hack201817ControllerMissionC", "Question"]
+- !private ["8Hack201817ControllerMissionC", "String"]
+- !private ["8Hack201817ControllerMissionC", "URL"]
+- !private ["8Hack201817ControllerMissionC", "URLRequest"]
+- !private ["8Hack201817ControllerMissionC", "URLSession"]
+- ["8Hack201817ControllerMissionC", "Void"]
+- !private ["8Hack201817ControllerMissionC", "apiAdress"]
+- ["8Hack201817ControllerMissionC", "deinit"]
+- ["8Hack201817ControllerMissionC", "get"]
+- ["8Hack201817ControllerMissionC", "init"]
+- !private ["8Hack201817ControllerMissionC", "kCurrentUser"]
+- !private ["8Hack201817ControllerMissionC", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "addValue"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "data"]
+- !private ["s28CustomDebugStringConvertibleP", "dataTask"]
+- !private ["s28CustomDebugStringConvertibleP", "httpBody"]
+- !private ["s28CustomDebugStringConvertibleP", "httpMethod"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "jsonObject"]
+- !private ["s28CustomDebugStringConvertibleP", "resume"]
+- !private ["s28CustomDebugStringConvertibleP", "shared"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "addValue"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "httpBody"]
+- !private ["s17CustomReflectableP", "httpMethod"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "addValue"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "data"]
+- !private ["s23CustomStringConvertibleP", "dataTask"]
+- !private ["s23CustomStringConvertibleP", "httpBody"]
+- !private ["s23CustomStringConvertibleP", "httpMethod"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "jsonObject"]
+- !private ["s23CustomStringConvertibleP", "resume"]
+- !private ["s23CustomStringConvertibleP", "shared"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s9DecodableP", "append"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "subscript"]
+- !private ["s10DictionaryV", "subscript"]
+- !private ["s9EncodableP", "append"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "subscript"]
+- !private ["s9EquatableP", "addValue"]
+- !private ["s9EquatableP", "data"]
+- !private ["s9EquatableP", "dataTask"]
+- !private ["s9EquatableP", "httpBody"]
+- !private ["s9EquatableP", "httpMethod"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "jsonObject"]
+- !private ["s9EquatableP", "resume"]
+- !private ["s9EquatableP", "shared"]
+- !private ["s9EquatableP", "toDo"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s8HashableP", "addValue"]
+- !private ["s8HashableP", "data"]
+- !private ["s8HashableP", "dataTask"]
+- !private ["s8HashableP", "httpBody"]
+- !private ["s8HashableP", "httpMethod"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "jsonObject"]
+- !private ["s8HashableP", "resume"]
+- !private ["s8HashableP", "shared"]
+- !private ["s8HashableP", "toDo"]
+- !private ["So17JSONSerializationC", "data"]
+- !private ["So17JSONSerializationC", "jsonObject"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["8Hack20187MissionC", "init"]
+- !private ["s17MutableCollectionP", "append"]
+- !private ["s17MutableCollectionP", "init"]
+- !private ["s17MutableCollectionP", "subscript"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "resume"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So16NSMutableCopyingP", "init"]
+- !private ["So8NSObjectC", "data"]
+- !private ["So8NSObjectC", "dataTask"]
+- !private ["So8NSObjectC", "jsonObject"]
+- !private ["So8NSObjectC", "resume"]
+- !private ["So8NSObjectC", "shared"]
+- !private ["So16NSObjectProtocolP", "data"]
+- !private ["So16NSObjectProtocolP", "dataTask"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "jsonObject"]
+- !private ["So16NSObjectProtocolP", "resume"]
+- !private ["So16NSObjectProtocolP", "shared"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So8NSStringC", "init"]
+- !private ["So17ProgressReportingP", "resume"]
+- !private ["8Hack20188QuestionV", "init"]
+- !private ["s22RandomAccessCollectionP", "append"]
+- !private ["s22RandomAccessCollectionP", "init"]
+- !private ["s22RandomAccessCollectionP", "subscript"]
+- !private ["s26RangeReplaceableCollectionP", "append"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s26RangeReplaceableCollectionP", "subscript"]
+- !private ["10Foundation20ReferenceConvertibleP", "addValue"]
+- !private ["10Foundation20ReferenceConvertibleP", "httpBody"]
+- !private ["10Foundation20ReferenceConvertibleP", "httpMethod"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["s8SequenceP", "append"]
+- !private ["s8SequenceP", "init"]
+- !private ["s8SequenceP", "subscript"]
+- !private ["8Hack20186StatusO", "toDo"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["10Foundation3URLV", "init"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
+- !private ["10Foundation10URLRequestV", "addValue"]
+- !private ["10Foundation10URLRequestV", "httpBody"]
+- !private ["10Foundation10URLRequestV", "httpMethod"]
+- !private ["10Foundation10URLRequestV", "init"]
+- !private ["9Alamofire21URLRequestConvertibleP", "addValue"]
+- !private ["9Alamofire21URLRequestConvertibleP", "httpBody"]
+- !private ["9Alamofire21URLRequestConvertibleP", "httpMethod"]
+- !private ["9Alamofire21URLRequestConvertibleP", "init"]
+- !private ["So10URLSessionC", "dataTask"]
+- !private ["So10URLSessionC", "shared"]
+- !private ["So18URLSessionDataTaskC", "resume"]
+- !private ["So14URLSessionTaskC", "resume"]
+- !private ["8Hack20184UserC", "id"]
+- !private ["8Hack20184UserC", "lang"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s14_ArrayProtocolP", "init"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s23_BidirectionalIndexableP", "append"]
+- !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s23_BidirectionalIndexableP", "subscript"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "init"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s10_IndexableP", "append"]
+- !private ["s10_IndexableP", "init"]
+- !private ["s10_IndexableP", "subscript"]
+- !private ["s14_IndexableBaseP", "append"]
+- !private ["s14_IndexableBaseP", "init"]
+- !private ["s14_IndexableBaseP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "data"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dataTask"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "jsonObject"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "resume"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
+- !private ["s17_MutableIndexableP", "append"]
+- !private ["s17_MutableIndexableP", "init"]
+- !private ["s17_MutableIndexableP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "addValue"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "httpBody"]
+- !private ["s21_ObjectiveCBridgeableP", "httpMethod"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s22_RandomAccessIndexableP", "append"]
+- !private ["s22_RandomAccessIndexableP", "init"]
+- !private ["s22_RandomAccessIndexableP", "subscript"]
+- !private ["s26_RangeReplaceableIndexableP", "append"]
+- !private ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s26_RangeReplaceableIndexableP", "subscript"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "8Hack20186AnswerV"
+- !private "Sa"
+- !private "s23BidirectionalCollectionP"
+- !private "SC22CLLocationCoordinate2DV"
+- !private "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "8Hack201817ControllerMissionC"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s10DictionaryV"
+- !private "s9EncodableP"
+- !private "s9EquatableP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s8HashableP"
+- !private "So17JSONSerializationC"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "8Hack20187MissionC"
+- !private "s17MutableCollectionP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- !private "So8NSObjectC"
+- !private "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "So17ProgressReportingP"
+- !private "8Hack20188QuestionV"
+- !private "s22RandomAccessCollectionP"
+- !private "s26RangeReplaceableCollectionP"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "s8SequenceP"
+- !private "8Hack20186StatusO"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "10Foundation3URLV"
+- !private "9Alamofire14URLConvertibleP"
+- !private "10Foundation10URLRequestV"
+- !private "9Alamofire21URLRequestConvertibleP"
+- !private "So10URLSessionC"
+- !private "So18URLSessionDataTaskC"
+- !private "So14URLSessionTaskC"
+- !private "8Hack20184UserC"
+- !private "s14_ArrayProtocolP"
+- !private "s23_BidirectionalIndexableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s34_ExpressibleByFileReferenceLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s10_IndexableP"
+- !private "s14_IndexableBaseP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s17_MutableIndexableP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s22_RandomAccessIndexableP"
+- !private "s26_RangeReplaceableIndexableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/SwiftSpinner.swiftmodule/arm64.swiftmodule"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/VideoSplashKit/VideoSplashKit.framework/Modules/VideoSplashKit.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ModelIO.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MediaPlayer.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/GLKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ARKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SceneKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SpriteKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MapKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFURL.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-umbrella.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/VideoSplashKit/VideoSplashKit.framework/Headers/VideoSplashKit-umbrella.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFTask.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFTask+Exceptions.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/Bolts.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-Swift.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/VideoSplashKit/VideoSplashKit.framework/Headers/VideoSplashKit-Swift.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/VideoSplashKit/VideoSplashKit.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/SceneKit.framework/Headers/SceneKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
+interface-hash: "45a7bf0020c1cc9cc69ec1b2244203c0"

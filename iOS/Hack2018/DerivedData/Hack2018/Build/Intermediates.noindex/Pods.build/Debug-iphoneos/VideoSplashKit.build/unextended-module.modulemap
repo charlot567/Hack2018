@@ -1,0 +1,10 @@
+framework module VideoSplashKit {
+  umbrella header "VideoSplashKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module VideoSplashKit.__Swift {
+    exclude header "VideoSplashKit-Swift.h"
+}
