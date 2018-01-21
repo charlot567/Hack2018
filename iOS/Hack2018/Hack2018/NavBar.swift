@@ -15,6 +15,8 @@ class NavBar: UIView {
     private let coinLabel = UILabel()
     private let profileButton = UIButton()
     private var acceptMissionView: AcceptMissionView!
+    private var missionListView: MissionListView!
+    
     init() {
         let navBarHeight: CGFloat = 100
         super.init(frame: CGRect(x: 0, y: 0, width: kWidth, height: navBarHeight))
@@ -62,6 +64,21 @@ class NavBar: UIView {
         self.addSubview(backButton)
     }
     
+    func setForTableview(title: String, missionListView: MissionListView) {
+        updateTitle(title: title)
+        
+        coinImg.removeFromSuperview()
+        coinLabel.removeFromSuperview()
+        profileButton.removeFromSuperview()
+        self.missionListView = missionListView
+        
+        let backButton = UIButton()
+        backButton.frame = CGRect(x: 10, y: 50, width: 30, height: 30)
+        backButton.setImage(UIImage(named: "arrow_black"), for: .normal)
+        backButton.addTarget(self, action: #selector(back), for: .touchUpInside)
+        self.addSubview(backButton)
+    }
+    
     private func updateTitle(title: String) {
         DispatchQueue.main.async {
             self.titleLabel.text = title
@@ -72,10 +89,16 @@ class NavBar: UIView {
         back()
     }
     
+    
     @objc
     func back() {
         if(acceptMissionView != nil) {
             acceptMissionView.back()
+            
+            acceptMissionView = nil
+        } else if(missionListView != nil) {
+            missionListView.back()
+            missionListView = nil
         }
     }
     

@@ -52,6 +52,7 @@ extension String {
             "IN_PROGRESS":CString(fr: "En cours", en: "In progress", es: "En curso"),
             "ARRIVE": CString(fr: "Arrivé à destination", en: "Arrived to destination", es: "Llegada a destino"),
             "BRAVO": CString(fr: "Félicitations!", en: "Congratulations!", es: "Felicitaciones"),
+            "TABLEVIEW": CString(fr: "Liste de missions", en: "Missions list", es: "Lista de misiones"),
         ]
         
         switch lang {

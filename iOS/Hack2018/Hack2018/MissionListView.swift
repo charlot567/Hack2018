@@ -14,16 +14,29 @@ class MissionListView: UIView, UITableViewDelegate, UITableViewDataSource {
     var missions = [Mission]()
     
     private var acceptMissionView: AcceptMissionView!
+    private var navBar: NavBar!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
         acceptMissionView = AcceptMissionView(frame: self.frame)
         
-        tableView = UITableView(frame: frame)
+        self.navBar = NavBar()
+        self.navBar.setForTableview(title: "TABLEVIEW".lz(), missionListView: self)
+        self.addSubview(navBar)
+        
+        tableView = UITableView(frame: CGRect(x: 0, y: navBar.frame.height, width: kWidth, height: kHeight - navBar.frame.height))
         tableView.dataSource = self
         tableView.delegate = self
         self.addSubview(tableView)
+    }
+    
+    func back() {
+        UIView.animate(withDuration: 0.3, animations: {
+            self.frame.origin.x = kWidth
+        }) { (_: Bool) in
+            self.removeFromSuperview()
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {

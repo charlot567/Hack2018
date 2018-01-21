@@ -9,8 +9,9 @@
 import UIKit
 import MapKit
 
-class AcceptMissionView: UIScrollView, CLLocationManagerDelegate {
+class AcceptMissionView: UIView, CLLocationManagerDelegate {
     
+    var scrollView: UIScrollView!
     var mission: Mission!
     private var mapView: MKMapView!
     private let navBar = NavBar()
@@ -29,46 +30,52 @@ class AcceptMissionView: UIScrollView, CLLocationManagerDelegate {
         locationManager.delegate = self
         locationManager.startUpdatingLocation()
         
+        
+        
+        scrollView = UIScrollView()
+        scrollView.frame = CGRect(x: 0, y: navBar.frame.height, width: kWidth, height: kHeight - navBar.frame.height)
+        self.addSubview(scrollView)
+        
         mapView = MKMapView()
-        mapView.frame = CGRect(x: 0, y: navBar.frame.maxY, width: kWidth, height: kWidth)
+        mapView.frame = CGRect(x: 0, y: 0, width: kWidth, height: kWidth)
         mapView.showsUserLocation = true
-        self.addSubview(mapView)
+        scrollView.addSubview(mapView)
         
         let title = UILabel()
         title.frame = CGRect(x: 20, y: mapView.frame.maxY + 35, width: kWidth, height: 30)
         title.font = UIFont(name: "Arial-BoldMT", size: 25)
         title.text = "MISSION".lz()
         title.textColor = UIColor.black
-        self.addSubview(title)
+        scrollView.addSubview(title)
         
         subtitle.frame = CGRect(x: 20, y: title.frame.maxY, width: kWidth, height: 20)
         subtitle.font = UIFont(name: "Arial", size: 18)
         subtitle.textColor = UIColor.black
-        self.addSubview(subtitle)
+        scrollView.addSubview(subtitle)
         
         let status = UILabel()
         status.frame = CGRect(x: 20, y: subtitle.frame.maxY + 35, width: kWidth, height: 30)
         status.font = UIFont(name: "Arial-BoldMT", size: 25)
         status.text = "STATUS".lz()
         status.textColor = UIColor.black
-        self.addSubview(status)
+        scrollView.addSubview(status)
         
         statusLbl.frame = CGRect(x: 20, y: status.frame.maxY, width: kWidth, height: 20)
         statusLbl.font = UIFont(name: "Arial", size: 18)
         statusLbl.textColor = UIColor.black
-        self.addSubview(statusLbl)
+        scrollView.addSubview(statusLbl)
         
         let reward = UILabel()
         reward.frame = CGRect(x: 20, y: statusLbl.frame.maxY + 35, width: kWidth, height: 30)
         reward.font = UIFont(name: "Arial-BoldMT", size: 25)
         reward.text = "REWARD".lz()
         reward.textColor = UIColor.black
-        self.addSubview(reward)
+        scrollView.addSubview(reward)
         
         rewardLbl.frame = CGRect(x: 20, y: reward.frame.maxY, width: kWidth, height: 20)
         rewardLbl.font = UIFont(name: "Arial", size: 18)
         rewardLbl.textColor = UIColor.black
-        self.addSubview(rewardLbl)
+        scrollView.addSubview(rewardLbl)
         
         
         startBtn.frame = CGRect(x: 0, y: rewardLbl.frame.maxY + 35, width: kWidth, height: 100)
@@ -76,9 +83,9 @@ class AcceptMissionView: UIScrollView, CLLocationManagerDelegate {
         startBtn.setTitle("START_MISSION".lz(), for: .normal)
         startBtn.setTitleColor(.white, for: .normal)
         startBtn.backgroundColor = UIColor(red: 42 / 255, green: 93 / 255, blue: 149 / 255, alpha: 1)
-        self.addSubview(startBtn)
+        scrollView.addSubview(startBtn)
         
-        self.contentSize = CGSize(width: kWidth, height: startBtn.frame.maxY - 20)
+        scrollView.contentSize = CGSize(width: kWidth, height: startBtn.frame.maxY - 20)
     }
     
     func setupView() {
