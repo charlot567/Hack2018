@@ -21,8 +21,7 @@ exports.getAll = function(req, res) {
       res.send(err);
 
     mission.map((m)=>{
-      console.log("Includes ", missonAccomplished.includes(`${m._id}`), " - ", m._id);
-      if(missonAccomplished.includes(`${m._id}`)){
+      if(~missonAccomplished.indexOf(`${m._id}`)){
         m.accomplished = true;
       }
     });
@@ -47,8 +46,7 @@ exports.getByLang = function(req, res) {
       res.send(err);
 
       mission.map((m)=>{
-        console.log("Includes ", missonAccomplished.includes(`${m._id}`), " - ", m._id);
-        if(missonAccomplished.includes(`${m._id}`)){
+        if(~missonAccomplished.indexOf(`${m._id}`)){
           m.accomplished = true;
         }
       });
