@@ -10,6 +10,9 @@ var MissionSchema = new Schema({
         lat: Number,
         long: Number,
     },
+    titre: {
+
+    },
     description: {
         type: String,
     },
@@ -24,6 +27,10 @@ var MissionSchema = new Schema({
     },
     lang: {
         type: String,
+    },
+    accomplished: {
+        type: Boolean,
+        default: false
     }
 
 });
