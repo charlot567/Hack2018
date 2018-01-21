@@ -14,12 +14,15 @@ class User {
     var id: String!
     var profilePictureUrl: String!
     var image: UIImage!
+    var lang: String!
+    var score: Int = 0
     
-    init(name: String, email: String, id: String, profilePictureUrl: String) {
+    init(name: String, email: String, id: String, profilePictureUrl: String, lang: String) {
         self.name = name
         self.email = email
         self.id = id
         self.profilePictureUrl = profilePictureUrl
+        self.lang = lang
         
         do {
             self.image = try UIImage(data: Data(contentsOf: URL(string: profilePictureUrl)!))

@@ -11,23 +11,104 @@ import Alamofire
 
 class ControllerUser {
     
-    static func getUserBy(id: String, completition: (_: User?) -> Void) {
+    static func getUserBy(id: String, completition: @escaping (_: Bool, _: Int) -> Void) {
+        let parameters = ["userId": id]
         
-        Alamofire.request("\(apiAdress)/getUser").responseJSON { response in
-            print("Result: \(response.result)")                         // response serialization result
-            
-            if let json = response.result.value {
-                print("JSON: \(json)") // serialized json response
+        guard let url = URL(string: "\(apiAdress)/user/getById") else { return }
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        guard let httpBody = try? JSONSerialization.data(withJSONObject: parameters, options: []) else { return }
+        request.httpBody = httpBody
+        
+        let session = URLSession.shared
+        session.dataTask(with: request) { (data, response, error) in
+
+            if let data = data {
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data, options: [])
+                    
+                    
+                    if let json = json as? Dictionary<String, Any> {
+                        let score = json["score"] as? Int
+                        if(score != nil) {
+                            completition(true, score!)
+                        }
+                    }
+                    
+                } catch {
+                    completition(false, -1)
+                }
             }
             
-            if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
-                print("Data: \(utf8Text)") // original server data as UTF8 string
-            }
-        }
-        
+        }.resume()
     }
     
-    static func insert(user user: User, completition: (_: Bool) -> Void) {
+    static func insert(user: User, completition: @escaping (_: Bool) -> Void) {
         
+        let parameters = ["userId": user.id, "name": user.name, "email": user.email, "lang": user.lang]
+        
+        guard let url = URL(string: "\(apiAdress)/user/addUser") else { return }
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        guard let httpBody = try? JSONSerialization.data(withJSONObject: parameters, options: []) else { return }
+        request.httpBody = httpBody
+        
+        let session = URLSession.shared
+        session.dataTask(with: request) { (data, response, error) in
+            
+            if let data = data {
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data, options: [])
+                    
+                    
+                    if let json = json as? Dictionary<String, Any> {
+                        let name = json["name"] as? String
+                        if(name != nil) {
+                            completition(true)
+                        }
+                    }
+                    
+                } catch {
+                    completition(false)
+                }
+            }
+            
+        }.resume()
+    }
+    
+    static func updateScore(score: Int) {
+        let parameters = ["userId": kCurrentUser.id, "points": score] as [String : Any]
+        
+        guard let url = URL(string: "\(apiAdress)/user/addPoint") else { return }
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        guard let httpBody = try? JSONSerialization.data(withJSONObject: parameters, options: []) else { return }
+        request.httpBody = httpBody
+        
+        let session = URLSession.shared
+        session.dataTask(with: request) { (data, response, error) in
+            
+            if let data = data {
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data, options: [])
+                    
+                    
+                    if let json = json as? Dictionary<String, Any> {
+                       print(json)
+                        
+                        NotificationCenter.default.post(name: updateScoreNotifName, object: nil)
+                        
+                        kCurrentUser.score += score
+                    }
+                    
+                } catch {
+                    
+                }
+            }
+            
+            }.resume()
     }
 }
