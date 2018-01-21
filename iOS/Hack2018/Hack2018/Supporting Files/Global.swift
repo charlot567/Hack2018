@@ -30,19 +30,20 @@ func displayAlert(viewController: UIViewController, title: String, message: Stri
     }
 }
 
-func addNotification(title: String, body: String) {
+func addNotification(title: String, body: String, timeInteval: TimeInterval) {
     let center = UNUserNotificationCenter.current()
     
     let content = UNMutableNotificationContent()
     content.title = title
     content.body = body
     content.sound = UNNotificationSound.default()
-    let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5,
+    let trigger = UNTimeIntervalNotificationTrigger(timeInterval: timeInteval,
                                                     repeats: false)
     
-    let identifier = "UYLLocalNotification"
+    let identifier = "UYLLocalNotification\(timeInteval)-\(Date())"
     let request = UNNotificationRequest(identifier: identifier,
                                         content: content, trigger: trigger)
+    
     center.add(request, withCompletionHandler: { (error) in
         if let error = error {
             print(error)

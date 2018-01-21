@@ -56,6 +56,8 @@ class ControllerDidYouKnow {
     static func save(dyns: [DidYouKnow]) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
+        var timeInteval: TimeInterval = 60
+        let skip: TimeInterval = 120
         
         for dyn in dyns {
             
@@ -69,7 +71,8 @@ class ControllerDidYouKnow {
                 d.setValue(dyn.id, forKey: "id")
                 d.setValue(dyn.text, forKey: "title")
                 
-                addNotification(title: "FUN_FACT".lz(), body: dyn.text)
+                addNotification(title: "FUN_FACT".lz(), body: dyn.text, timeInteval: timeInteval)
+                timeInteval += skip
                 
                 do {
                     try context.save()
