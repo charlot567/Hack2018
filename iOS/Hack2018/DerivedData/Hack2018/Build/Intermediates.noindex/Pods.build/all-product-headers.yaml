@@ -1,0 +1,119 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Alamofire-Swift.h",
+          'external-contents': "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "Alamofire-umbrella.h",
+          'external-contents': "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Alamofire.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/Pods_Hack2018.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-Hack2018-umbrella.h",
+          'external-contents': "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Pods/Target Support Files/Pods-Hack2018/Pods-Hack2018-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_Hack2018-Swift.h",
+          'external-contents': "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/Pods_Hack2018.framework/Headers/Pods_Hack2018-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/Pods_Hack2018.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/Pods-Hack2018.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "SwiftSpinner-Swift.h",
+          'external-contents': "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "SwiftSpinner-umbrella.h",
+          'external-contents': "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Pods/Target Support Files/SwiftSpinner/SwiftSpinner-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "SwiftSpinner.h",
+          'external-contents': "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Pods/SwiftSpinner/SwiftSpinner/SwiftSpinner.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/SwiftSpinner.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/VideoSplashKit/VideoSplashKit.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "VideoSplashKit-Swift.h",
+          'external-contents': "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/VideoSplashKit/VideoSplashKit.framework/Headers/VideoSplashKit-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "VideoSplashKit-umbrella.h",
+          'external-contents': "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Pods/Target Support Files/VideoSplashKit/VideoSplashKit-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/VideoSplashKit/VideoSplashKit.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/VideoSplashKit.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}
