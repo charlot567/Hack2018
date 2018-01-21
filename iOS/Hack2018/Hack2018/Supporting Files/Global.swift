@@ -15,6 +15,8 @@ var IPHONE_X = false
 
 var kCurrentUser: User!
 
+let notifShowProfileName = NSNotification.Name(rawValue: "notifShowProfileName")
+
 import SwiftSpinner
 
 func displayAlert(viewController: UIViewController, title: String, message: String) {

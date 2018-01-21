@@ -18,12 +18,27 @@ class NavBar: UIView {
         self.backgroundColor = UIColor.white
         
         titleLabel = UILabel()
-        titleLabel.frame = CGRect(x: 0, y: navBarHeight - 20, width: kWidth, height: 20)
+        titleLabel.frame = CGRect(x: 0, y: navBarHeight - 40, width: kWidth, height: 20)
         titleLabel.font = UIFont(name: "Arial", size: 20)
         titleLabel.textAlignment = .center
-        titleLabel.text = "Salut"
+        titleLabel.text = kCurrentUser.name
         self.addSubview(titleLabel)
         
+        let imageSize: CGFloat = 40
+        let profileButton = UIButton()
+        profileButton.frame = CGRect(x: kWidth - imageSize * 1.5, y: navBarHeight - imageSize - 15, width: imageSize, height: imageSize)
+        profileButton.setImage(kCurrentUser.image, for: .normal)
+        profileButton.addTarget(self, action: #selector(showProfile), for: .touchUpInside)
+        profileButton.clipsToBounds = true
+        profileButton.layer.cornerRadius = imageSize / 2
+        self.addSubview(profileButton)
+     
+        
+    }
+    
+    @objc func showProfile() {
+        print("Show profile")
+        NotificationCenter.default.post(name: notifShowProfileName, object: nil)
     }
     
     required init?(coder aDecoder: NSCoder) {

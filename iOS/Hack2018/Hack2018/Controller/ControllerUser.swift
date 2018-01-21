@@ -46,7 +46,7 @@ class ControllerUser {
     
     static func insert(user: User, completition: @escaping (_: Bool) -> Void) {
         
-        let parameters = ["userId": user.id, "name": user.name, "email": user.email]
+        let parameters = ["userId": user.id, "name": user.name, "email": user.email, "lang": user.lang]
         
         guard let url = URL(string: "\(apiAdress)/user/addUser") else { return }
         var request = URLRequest(url: url)
@@ -64,8 +64,6 @@ class ControllerUser {
                     
                     
                     if let json = json as? Dictionary<String, Any> {
-                        
-                        print("JSON: \(json)")
                         let name = json["name"] as? String
                         if(name != nil) {
                             completition(true)

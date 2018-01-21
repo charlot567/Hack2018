@@ -22,7 +22,7 @@ class MenuViewController: UIViewController {
         self.navBar = NavBar()
         self.view.addSubview(navBar)
         
-        goToProfile()
+        NotificationCenter.default.addObserver(self, selector: #selector(goToProfile), name: notifShowProfileName, object: nil)
     }
     
     private func initAllView() {
@@ -30,8 +30,14 @@ class MenuViewController: UIViewController {
         profileView = ProfileView(frame: self.view.frame)
     }
     
-    private func goToProfile() {
+    @objc private func goToProfile() {
+        self.profileView.frame.origin.x = kWidth
         self.view.addSubview(profileView)
+        UIView.animate(withDuration: 0.3, animations: {
+            self.profileView.frame.origin.x = 0
+        }) { (_: Bool) in
+            
+        }
     }
 
     @objc func openAmigo() {

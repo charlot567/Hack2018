@@ -38,6 +38,8 @@ extension String {
             "NAO": CString(fr: "Nao", en: "Nao", es: "Nao"),
             "DISCONNECT_FB": CString(fr: "Déconnexion", en: "Sign Out", es: "Desconectar"),
             "FETCHING_USER_INFO": CString(fr: "Récupération des infos", en: "Fetching infos", es: "Obteniendo información"),
+            "LANG": CString(fr: "Language", en: "Language", es: "Idioma"),
+            "SCORE": CString(fr: "Score", en: "Score", es: "Puntuación"),
         ]
         
         switch lang {

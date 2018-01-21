@@ -148,9 +148,10 @@ class LoginViewController: VideoSplashViewController, FBSDKLoginButtonDelegate {
                         let name = result["name"]! as! String
                         let email = result["email"]! as! String
                         let id = result["id"]! as! String
+                        
                         let pictureUrl = "https://graph.facebook.com/\(id)/picture?type=normal"
                         
-                        let user = User(name: name, email: email, id: id, profilePictureUrl: pictureUrl)
+                        let user = User(name: name, email: email, id: id, profilePictureUrl: pictureUrl, lang: "Français")
                         callback(true, user)
                         return
                     } else {

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProfileView: UIView {
+class ProfileView: UIScrollView {
     
     private var navBar: NavBar!
     
@@ -19,26 +19,79 @@ class ProfileView: UIView {
 //        self.addSubview(navBar)
         
         self.backgroundColor = UIColor.white
-//        let topView = UIView()
-//        topView.frame = CGRect(x: 0, y: navBar.frame.height, width: kWidth, height: 250)
-//        topView.backgroundColor = UIColor(red: 0, green: 101 / 255, blue: 255 / 255, alpha: 1)
-//        self.addSubview(topView)
         
         let profileImageView = UIImageView()
         profileImageView.frame = CGRect(x: 0, y: 0, width: kWidth, height: kWidth)
-//        profileImageView.layer.cornerRadius = imageSize / 2
         profileImageView.image = kCurrentUser.image
         self.addSubview(profileImageView)
         
         let name = UILabel()
         name.frame = CGRect(x: 20, y: profileImageView.frame.maxY - 35, width: kWidth, height: 30)
-        name.font = UIFont(name: "Arial", size: 25)
+        name.font = UIFont(name: "Arial-BoldMT", size: 25)
         name.text = kCurrentUser.name
         name.textColor = UIColor.white
         self.addSubview(name)
+        
+        let langTitle = UILabel()
+        langTitle.frame = CGRect(x: name.frame.minX, y: profileImageView.frame.maxY + 35, width: kWidth, height: 25)
+        langTitle.font = UIFont(name: "Arial-BoldMT", size: 20)
+        langTitle.text = "LANG".lz()
+        langTitle.textColor = UIColor.black
+        self.addSubview(langTitle)
+        
+        let langTitleUser = UILabel()
+        langTitleUser.frame = CGRect(x: name.frame.minX, y: langTitle.frame.maxY, width: kWidth, height: 25)
+        langTitleUser.font = UIFont(name: "Arial", size: 16)
+        langTitleUser.text = kCurrentUser.lang
+        langTitleUser.textColor = UIColor.black
+        self.addSubview(langTitleUser)
+        
+        let scoreTitle = UILabel()
+        scoreTitle.frame = CGRect(x: name.frame.minX, y: langTitleUser.frame.maxY + 35, width: kWidth, height: 25)
+        scoreTitle.font = UIFont(name: "Arial-BoldMT", size: 20)
+        scoreTitle.text = "SCORE".lz()
+        scoreTitle.textColor = UIColor.black
+        self.addSubview(scoreTitle)
+        
+        let scoreLabel = UILabel()
+        scoreLabel.frame = CGRect(x: name.frame.minX, y: scoreTitle.frame.maxY, width: kWidth, height: 25)
+        scoreLabel.font = UIFont(name: "Arial", size: 16)
+        scoreLabel.text = "\(kCurrentUser.score)"
+        scoreLabel.textColor = UIColor.black
+        self.addSubview(scoreLabel)
+        
+        let backButton = UIButton()
+        backButton.frame = CGRect(x: 10, y: 30, width: 30, height: 30)
+        backButton.setImage(UIImage(named: "arrow"), for: .normal)
+        backButton.addTarget(self, action: #selector(back), for: .touchUpInside)
+        self.addSubview(backButton)
+        
+        let swipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(back))
+        swipeGesture.direction = .right
+        self.addGestureRecognizer(swipeGesture)
+    }
+    
+    @objc
+    func back() {
+        
+        UIView.animate(withDuration: 0.3, animations: {
+            self.frame.origin.x = kWidth
+        }) { (_: Bool) in
+            self.removeFromSuperview()
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func printFonts() {
+        let fontFamilyNames = UIFont.familyNames
+        for familyName in fontFamilyNames {
+            print("------------------------------")
+            print("Font Family Name = [\(familyName)]")
+            let names = UIFont.fontNames(forFamilyName: familyName as String)
+            print("Font Names = [\(names)]")
+        }
     }
 }
