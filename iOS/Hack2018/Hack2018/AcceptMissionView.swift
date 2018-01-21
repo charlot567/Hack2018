@@ -10,8 +10,30 @@ import UIKit
 
 class AcceptMissionView: UIView {
     
+    var mission: Mission!
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
+        self.backgroundColor = .red
+        
+        
+    }
+    
+    func setupView() {
+        let navBar = NavBar()
+        navBar.setForMissionView(title: mission.title, acceptMissionView: self)
+        self.addSubview(navBar)
+    }
+    
+    @objc
+    func back() {
+        
+        UIView.animate(withDuration: 0.3, animations: {
+            self.frame.origin.x = kWidth
+        }) { (_: Bool) in
+            self.removeFromSuperview()
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {

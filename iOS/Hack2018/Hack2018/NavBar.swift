@@ -11,7 +11,10 @@ import UIKit
 class NavBar: UIView {
     
     private var titleLabel: UILabel!
-    
+    private let coinImg = UIImageView()
+    private let coinLabel = UILabel()
+    private let profileButton = UIButton()
+    private var acceptMissionView: AcceptMissionView!
     init() {
         let navBarHeight: CGFloat = 100
         super.init(frame: CGRect(x: 0, y: 0, width: kWidth, height: navBarHeight))
@@ -25,7 +28,7 @@ class NavBar: UIView {
         self.addSubview(titleLabel)
         
         let imageSize: CGFloat = 40
-        let profileButton = UIButton()
+        
         profileButton.frame = CGRect(x: kWidth - imageSize * 1.5, y: navBarHeight - imageSize - 15, width: imageSize, height: imageSize)
         profileButton.setImage(kCurrentUser.image, for: .normal)
         profileButton.addTarget(self, action: #selector(showProfile), for: .touchUpInside)
@@ -33,12 +36,10 @@ class NavBar: UIView {
         profileButton.layer.cornerRadius = imageSize / 2
         self.addSubview(profileButton)
      
-        let coinImg = UIImageView()
         coinImg.frame = CGRect(x: 20, y: 40, width: 40, height: 40)
         coinImg.image = UIImage(named: "coin")
         self.addSubview(coinImg)
         
-        let coinLabel = UILabel()
         coinLabel.frame = CGRect(x: 0, y: coinImg.frame.maxY - 5, width: 80, height: 20)
         coinLabel.font = UIFont(name: "Arial", size: 15)
         coinLabel.textAlignment = .center
@@ -46,7 +47,35 @@ class NavBar: UIView {
         self.addSubview(coinLabel)
     }
     
-    @objc func showProfile() {
+    func setForMissionView(title: String, acceptMissionView: AcceptMissionView) {
+        updateTitle(title: title)
+        
+        coinImg.removeFromSuperview()
+        coinLabel.removeFromSuperview()
+        profileButton.removeFromSuperview()
+        
+        let backButton = UIButton()
+        backButton.frame = CGRect(x: 10, y: 50, width: 30, height: 30)
+        backButton.setImage(UIImage(named: "arrow"), for: .normal)
+        backButton.addTarget(self, action: #selector(back), for: .touchUpInside)
+        self.addSubview(backButton)
+    }
+    
+    private func updateTitle(title: String) {
+        DispatchQueue.main.async {
+            self.titleLabel.text = title
+        }
+    }
+    
+    @objc
+    func back() {
+        if(acceptMissionView != nil) {
+            acceptMissionView.back()
+        }
+    }
+    
+    @objc
+    func showProfile() {
         print("Show profile")
         NotificationCenter.default.post(name: notifShowProfileName, object: nil)
     }

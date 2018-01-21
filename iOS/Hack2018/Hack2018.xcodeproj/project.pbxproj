@@ -10,7 +10,6 @@
 		3F04B45A2014495C0020E1D6 /* MissionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04B4592014495C0020E1D6 /* MissionListView.swift */; };
 		3F04B45C201449680020E1D6 /* ControllerMission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04B45B201449680020E1D6 /* ControllerMission.swift */; };
 		3F04B45E201449950020E1D6 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04B45D201449950020E1D6 /* Mission.swift */; };
-		3F04B46020144C690020E1D6 /* MissionListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04B45F20144C690020E1D6 /* MissionListViewCell.swift */; };
 		3F04B46220144FBB0020E1D6 /* AcceptMissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04B46120144FBB0020E1D6 /* AcceptMissionView.swift */; };
 		3FA297C62013C196009C27D2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA297C52013C196009C27D2 /* LoginViewController.swift */; };
 		3FD7424E2013C7A400323F31 /* login_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3FD7424D2013C7A400323F31 /* login_video.mp4 */; };
@@ -44,7 +43,6 @@
 		3F04B4592014495C0020E1D6 /* MissionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionListView.swift; sourceTree = "<group>"; };
 		3F04B45B201449680020E1D6 /* ControllerMission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerMission.swift; sourceTree = "<group>"; };
 		3F04B45D201449950020E1D6 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
-		3F04B45F20144C690020E1D6 /* MissionListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionListViewCell.swift; sourceTree = "<group>"; };
 		3F04B46120144FBB0020E1D6 /* AcceptMissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptMissionView.swift; sourceTree = "<group>"; };
 		3FA297C52013C196009C27D2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3FD7424D2013C7A400323F31 /* login_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = login_video.mp4; sourceTree = "<group>"; };
@@ -157,7 +155,6 @@
 				3FD7426620143C0E00323F31 /* DidYouKnow.swift */,
 				3F04B4592014495C0020E1D6 /* MissionListView.swift */,
 				3F04B45D201449950020E1D6 /* Mission.swift */,
-				3F04B45F20144C690020E1D6 /* MissionListViewCell.swift */,
 				3F04B46120144FBB0020E1D6 /* AcceptMissionView.swift */,
 			);
 			path = Hack2018;
@@ -343,7 +340,6 @@
 				3FD7425A2013E1D400323F31 /* MenuViewController.swift in Sources */,
 				3F04B45A2014495C0020E1D6 /* MissionListView.swift in Sources */,
 				3FD7425C2013E46A00323F31 /* NavBar.swift in Sources */,
-				3F04B46020144C690020E1D6 /* MissionListViewCell.swift in Sources */,
 				3F04B45C201449680020E1D6 /* ControllerMission.swift in Sources */,
 				3FD742582013D59D00323F31 /* User.swift in Sources */,
 				A761246820139FCA00D21004 /* Hack2018.xcdatamodeld in Sources */,

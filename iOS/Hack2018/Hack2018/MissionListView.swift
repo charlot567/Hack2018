@@ -12,8 +12,13 @@ class MissionListView: UIView, UITableViewDelegate, UITableViewDataSource {
     
     private var tableView: UITableView!
     var missions = [Mission]()
+    
+    private var acceptMissionView: AcceptMissionView!
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
+        acceptMissionView = AcceptMissionView(frame: self.frame)
         
         tableView = UITableView(frame: frame)
         tableView.dataSource = self
@@ -34,7 +39,16 @@ class MissionListView: UIView, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        acceptMissionView.mission = missions[indexPath.row]
+        acceptMissionView.setupView()
+        self.acceptMissionView.frame.origin.x = kWidth
+        self.addSubview(self.acceptMissionView)
+        UIView.animate(withDuration: 0.3, animations: {
+            self.acceptMissionView.frame.origin.x = 0
+        }) { (_: Bool) in
+            
+        }
+
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
