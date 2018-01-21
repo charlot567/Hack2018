@@ -22,6 +22,8 @@ class MenuViewController: UIViewController, UNUserNotificationCenterDelegate {
     let middleButton = UIButton()
     let bottomButton = UIButton()
     
+    var dynsGlobal = [DidYouKnow]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,10 +36,12 @@ class MenuViewController: UIViewController, UNUserNotificationCenterDelegate {
         NotificationCenter.default.addObserver(self, selector: #selector(logout), name: logoutNotifName, object: nil)
         
         ControllerDidYouKnow.get { (dyns: [DidYouKnow]) in
+            self.dynsGlobal = dyns
             ControllerDidYouKnow.save(dyns: dyns)
         }
         
     
+        self.becomeFirstResponder()
         
         UNUserNotificationCenter.current().delegate = self
         
@@ -180,5 +184,21 @@ class MenuViewController: UIViewController, UNUserNotificationCenterDelegate {
         
     
         completionHandler([.alert, .badge, .sound])
+    }
+    
+    // We are willing to become first responder to get shake motion
+    override var canBecomeFirstResponder: Bool {
+        get {
+            return true
+        }
+    }
+    
+    // Enable detection of shake motion
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+        if motion == .motionShake {
+            
+            let dyn = self.dynsGlobal[Int(arc4random_uniform(UInt32(self.dynsGlobal.count - 1)))]
+            addNotification(title: "FUN_FACT".lz(), body: "SHOW".lz(), timeInteval: 1, userInfo: ["openDYN": dyn.id])
+        }
     }
 }

@@ -51,6 +51,7 @@ extension String {
             "LANG": CString(fr: "Langage", en: "Language", es: "Idioma"),
             "SCORE": CString(fr: "Score", en: "Score", es: "Puntuación"),
             "FUN_FACT": CString(fr: "Fait intéréssant", en: "Fun fact", es: "Hecho de la diversión"),
+            "SHOW": CString(fr: "Afficher", en: "Show", es: "Visualización"),
             "MISSION": CString(fr: "Mission", en: "Mission", es: "Misión"),
             "STATUS": CString(fr: "Progression", en: "Progression", es: "Progresión"),
             "COMPLETE": CString(fr: "Status", en: "Status", es: "Estatus"),
