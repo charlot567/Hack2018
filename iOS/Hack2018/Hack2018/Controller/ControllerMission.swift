@@ -34,6 +34,7 @@ class ControllerMission {
                     
                     if let json = json as? [Dictionary<String, Any>] {
                         for info in json {
+                        
                             let reward = info["reward"] as! Int
                             let title = info["title"] as! String
                             let pos = info["position"] as! Dictionary<String, Any>

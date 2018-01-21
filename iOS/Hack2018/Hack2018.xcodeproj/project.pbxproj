@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F1C35AB2014AC3900120361 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F1C35AA2014AC3900120361 /* art.scnassets */; };
+		2F1C35AD2014AC8B00120361 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1C35AC2014AC8B00120361 /* ARViewController.swift */; };
 		3F04B45A2014495C0020E1D6 /* MissionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04B4592014495C0020E1D6 /* MissionListView.swift */; };
 		3F04B45C201449680020E1D6 /* ControllerMission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04B45B201449680020E1D6 /* ControllerMission.swift */; };
 		3F04B45E201449950020E1D6 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04B45D201449950020E1D6 /* Mission.swift */; };
@@ -41,6 +43,8 @@
 
 /* Begin PBXFileReference section */
 		2AA0FCDEC375869EDA6DF3D0 /* Pods-Hack2018.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hack2018.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hack2018/Pods-Hack2018.debug.xcconfig"; sourceTree = "<group>"; };
+		2F1C35AA2014AC3900120361 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		2F1C35AC2014AC8B00120361 /* ARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		3F04B4592014495C0020E1D6 /* MissionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionListView.swift; sourceTree = "<group>"; };
 		3F04B45B201449680020E1D6 /* ControllerMission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerMission.swift; sourceTree = "<group>"; };
 		3F04B45D201449950020E1D6 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
@@ -142,6 +146,7 @@
 			children = (
 				3FD7424D2013C7A400323F31 /* login_video.mp4 */,
 				A761246E20139FCA00D21004 /* Info.plist */,
+				2F1C35AA2014AC3900120361 /* art.scnassets */,
 				A791780D2013BB2B00635F27 /* Ressources */,
 				A79178092013B91B00635F27 /* FBSDKLoginKit.framework */,
 				A7358E892013B1CC0046AF3C /* Bolts.framework */,
@@ -178,6 +183,7 @@
 		A791780E2013BB5200635F27 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				2F1C35AC2014AC8B00120361 /* ARViewController.swift */,
 				A761246120139FCA00D21004 /* ViewController.swift */,
 				3FA297C52013C196009C27D2 /* LoginViewController.swift */,
 				3FD742592013E1D400323F31 /* MenuViewController.swift */,
@@ -260,6 +266,7 @@
 				3FD742542013CC9100323F31 /* GothamHTF-Bold.otf in Resources */,
 				3FD742562013CC9800323F31 /* GothamHTF-Book.otf in Resources */,
 				A761246D20139FCA00D21004 /* LaunchScreen.storyboard in Resources */,
+				2F1C35AB2014AC3900120361 /* art.scnassets in Resources */,
 				3FD7424E2013C7A400323F31 /* login_video.mp4 in Resources */,
 				A761246A20139FCA00D21004 /* Assets.xcassets in Resources */,
 				A761246520139FCA00D21004 /* Main.storyboard in Resources */,
@@ -331,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F1C35AD2014AC8B00120361 /* ARViewController.swift in Sources */,
 				3FD7426720143C0E00323F31 /* DidYouKnow.swift in Sources */,
 				3FD7426520143AAA00323F31 /* ControllerDidYouKnow.swift in Sources */,
 				3F04B4642014621B0020E1D6 /* CustomCell.swift in Sources */,

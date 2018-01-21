@@ -1,0 +1,5 @@
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
+options: "d9c4b9d33fa39f829c0bbe1dfa9e755d"
+build_time: [1516532897, 909881000]
+inputs:
+  "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Pods/SwiftSpinner/SwiftSpinner/SwiftSpinner.swift": [1516532864, 0]

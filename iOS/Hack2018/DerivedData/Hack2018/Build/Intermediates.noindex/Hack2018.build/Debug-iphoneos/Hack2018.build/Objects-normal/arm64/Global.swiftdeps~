@@ -1,0 +1,472 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "kDebug"
+- "kWidth"
+- "kHeight"
+- "IPHONE_X"
+- "kCurrentUser"
+- "notifShowProfileName"
+- "logoutNotifName"
+- "backMissionNotifName"
+- "updateScoreNotifName"
+- "menuViewController"
+- "displayAlert"
+- "addNotification"
+provides-nominal:
+provides-member:
+provides-dynamic-lookup:
+depends-top-level:
+- "AssignmentPrecedence"
+- "BooleanLiteralType"
+- "CGFloat"
+- !private "Date"
+- "IPHONE_X"
+- "MenuViewController"
+- "NSNotification"
+- "String"
+- "StringLiteralType"
+- !private "SwiftSpinner"
+- "TimeInterval"
+- !private "UIAlertAction"
+- !private "UIAlertController"
+- !private "UIAlertControllerStyle"
+- "UIViewController"
+- !private "UNMutableNotificationContent"
+- !private "UNNotificationRequest"
+- !private "UNNotificationSound"
+- !private "UNTimeIntervalNotificationTrigger"
+- !private "UNUserNotificationCenter"
+- !private "UnicodeScalarType"
+- "User"
+- "addNotification"
+- "backMissionNotifName"
+- "displayAlert"
+- "kCurrentUser"
+- "kDebug"
+- "kHeight"
+- "kWidth"
+- "logoutNotifName"
+- "menuViewController"
+- "notifShowProfileName"
+- !private "print"
+- "updateScoreNotifName"
+depends-member:
+- ["s23BidirectionalCollectionP", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So15CALayerDelegateP", "hide"]
+- ["s7CVarArgP", "Name"]
+- !private ["s7CVarArgP", "add"]
+- !private ["s7CVarArgP", "addAction"]
+- !private ["s7CVarArgP", "body"]
+- !private ["s7CVarArgP", "current"]
+- !private ["s7CVarArgP", "default"]
+- !private ["s7CVarArgP", "hide"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "present"]
+- !private ["s7CVarArgP", "sound"]
+- !private ["s7CVarArgP", "title"]
+- ["s10CollectionP", "init"]
+- ["s10ComparableP", "init"]
+- ["s28CustomDebugStringConvertibleP", "Name"]
+- !private ["s28CustomDebugStringConvertibleP", "add"]
+- !private ["s28CustomDebugStringConvertibleP", "addAction"]
+- !private ["s28CustomDebugStringConvertibleP", "body"]
+- !private ["s28CustomDebugStringConvertibleP", "current"]
+- !private ["s28CustomDebugStringConvertibleP", "default"]
+- !private ["s28CustomDebugStringConvertibleP", "hide"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "present"]
+- !private ["s28CustomDebugStringConvertibleP", "sound"]
+- !private ["s28CustomDebugStringConvertibleP", "title"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- ["s17CustomReflectableP", "init"]
+- ["s23CustomStringConvertibleP", "Name"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "add"]
+- !private ["s23CustomStringConvertibleP", "addAction"]
+- !private ["s23CustomStringConvertibleP", "body"]
+- !private ["s23CustomStringConvertibleP", "current"]
+- !private ["s23CustomStringConvertibleP", "default"]
+- !private ["s23CustomStringConvertibleP", "hide"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "present"]
+- !private ["s23CustomStringConvertibleP", "sound"]
+- !private ["s23CustomStringConvertibleP", "title"]
+- !private ["10Foundation4DateV", "init"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- ["s9DecodableP", "init"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- ["s9EncodableP", "init"]
+- ["s9EquatableP", "Name"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "add"]
+- !private ["s9EquatableP", "addAction"]
+- !private ["s9EquatableP", "alert"]
+- !private ["s9EquatableP", "body"]
+- !private ["s9EquatableP", "current"]
+- !private ["s9EquatableP", "default"]
+- !private ["s9EquatableP", "hide"]
+- ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "present"]
+- !private ["s9EquatableP", "sound"]
+- !private ["s9EquatableP", "title"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s8HashableP", "Name"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "add"]
+- !private ["s8HashableP", "addAction"]
+- !private ["s8HashableP", "alert"]
+- !private ["s8HashableP", "body"]
+- !private ["s8HashableP", "current"]
+- !private ["s8HashableP", "default"]
+- !private ["s8HashableP", "hide"]
+- ["s8HashableP", "init"]
+- !private ["s8HashableP", "present"]
+- !private ["s8HashableP", "sound"]
+- !private ["s8HashableP", "title"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s10MirrorPathP", "init"]
+- ["So8NSCodingP", "Name"]
+- !private ["So8NSCodingP", "addAction"]
+- !private ["So8NSCodingP", "body"]
+- !private ["So8NSCodingP", "default"]
+- !private ["So8NSCodingP", "hide"]
+- ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "present"]
+- !private ["So8NSCodingP", "sound"]
+- !private ["So8NSCodingP", "title"]
+- ["So9NSCopyingP", "Name"]
+- !private ["So9NSCopyingP", "body"]
+- !private ["So9NSCopyingP", "default"]
+- ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "sound"]
+- !private ["So9NSCopyingP", "title"]
+- !private ["So26NSExtensionRequestHandlingP", "addAction"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "present"]
+- ["So21NSItemProviderReadingP", "init"]
+- ["So21NSItemProviderWritingP", "init"]
+- !private ["So16NSMutableCopyingP", "body"]
+- ["So16NSMutableCopyingP", "init"]
+- !private ["So16NSMutableCopyingP", "sound"]
+- !private ["So16NSMutableCopyingP", "title"]
+- ["So14NSNotificationC", "Name"]
+- ["So8NSObjectC", "Name"]
+- !private ["So8NSObjectC", "add"]
+- !private ["So8NSObjectC", "addAction"]
+- !private ["So8NSObjectC", "body"]
+- !private ["So8NSObjectC", "current"]
+- !private ["So8NSObjectC", "default"]
+- !private ["So8NSObjectC", "hide"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "present"]
+- !private ["So8NSObjectC", "sound"]
+- !private ["So8NSObjectC", "title"]
+- ["So16NSObjectProtocolP", "Name"]
+- !private ["So16NSObjectProtocolP", "add"]
+- !private ["So16NSObjectProtocolP", "addAction"]
+- !private ["So16NSObjectProtocolP", "body"]
+- !private ["So16NSObjectProtocolP", "current"]
+- !private ["So16NSObjectProtocolP", "default"]
+- !private ["So16NSObjectProtocolP", "hide"]
+- ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "present"]
+- !private ["So16NSObjectProtocolP", "sound"]
+- !private ["So16NSObjectProtocolP", "title"]
+- !private ["So14NSSecureCodingP", "body"]
+- !private ["So14NSSecureCodingP", "default"]
+- ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "sound"]
+- !private ["So14NSSecureCodingP", "title"]
+- ["So8NSStringC", "init"]
+- ["So14NSNotificationC4NameV", "init"]
+- ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s16RawRepresentableP", "alert"]
+- !private ["s16RawRepresentableP", "default"]
+- ["s16RawRepresentableP", "init"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- ["s8SequenceP", "init"]
+- ["SS", "init"]
+- ["s14StringProtocolP", "init"]
+- !private ["12SwiftSpinnerAAC", "hide"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "hide"]
+- !private ["So13UIAlertActionC", "init"]
+- !private ["SC18UIAlertActionStyleO", "default"]
+- !private ["So17UIAlertControllerC", "addAction"]
+- !private ["So17UIAlertControllerC", "init"]
+- !private ["SC22UIAlertControllerStyleO", "alert"]
+- !private ["So12UIAppearanceP", "hide"]
+- !private ["So21UIAppearanceContainerP", "addAction"]
+- !private ["So21UIAppearanceContainerP", "hide"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "present"]
+- !private ["So18UIContentContainerP", "addAction"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "present"]
+- !private ["So17UICoordinateSpaceP", "hide"]
+- !private ["So13UIDynamicItemP", "hide"]
+- !private ["So18UIFocusEnvironmentP", "addAction"]
+- !private ["So18UIFocusEnvironmentP", "hide"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "present"]
+- !private ["So11UIFocusItemP", "hide"]
+- !private ["So30UIPasteConfigurationSupportingP", "addAction"]
+- !private ["So30UIPasteConfigurationSupportingP", "hide"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "present"]
+- !private ["So11UIResponderC", "addAction"]
+- !private ["So11UIResponderC", "hide"]
+- !private ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "present"]
+- !private ["So30UIResponderStandardEditActionsP", "addAction"]
+- !private ["So30UIResponderStandardEditActionsP", "hide"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "present"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "addAction"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "init"]
+- !private ["So16UIStateRestoringP", "addAction"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "present"]
+- !private ["So18UITraitEnvironmentP", "addAction"]
+- !private ["So18UITraitEnvironmentP", "hide"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "present"]
+- !private ["So6UIViewC", "hide"]
+- !private ["So16UIViewControllerC", "addAction"]
+- !private ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "present"]
+- !private ["So28UNMutableNotificationContentC", "body"]
+- !private ["So28UNMutableNotificationContentC", "init"]
+- !private ["So28UNMutableNotificationContentC", "sound"]
+- !private ["So28UNMutableNotificationContentC", "title"]
+- !private ["So21UNNotificationContentC", "body"]
+- !private ["So21UNNotificationContentC", "init"]
+- !private ["So21UNNotificationContentC", "sound"]
+- !private ["So21UNNotificationContentC", "title"]
+- !private ["So21UNNotificationRequestC", "init"]
+- !private ["So19UNNotificationSoundC", "default"]
+- !private ["So21UNNotificationTriggerC", "init"]
+- !private ["So33UNTimeIntervalNotificationTriggerC", "init"]
+- !private ["So24UNUserNotificationCenterC", "add"]
+- !private ["So24UNUserNotificationCenterC", "current"]
+- ["9Alamofire14URLConvertibleP", "init"]
+- ["s23_BidirectionalIndexableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "hide"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s35_HasCustomAnyHashableRepresentationP", "Name"]
+- ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- ["s10_IndexableP", "init"]
+- ["s14_IndexableBaseP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "Name"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "add"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addAction"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "body"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "current"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "default"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "hide"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "present"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "sound"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "title"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- ["s26_RangeReplaceableIndexableP", "init"]
+- ["s20_SwiftNewtypeWrapperP", "init"]
+- ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- "s23BidirectionalCollectionP"
+- !private "Sb"
+- !private "So15CALayerDelegateP"
+- "s7CVarArgP"
+- "s10CollectionP"
+- "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "10Foundation4DateV"
+- "s9DecodableP"
+- "s9EncodableP"
+- "s9EquatableP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
+- "So8NSCodingP"
+- "So9NSCopyingP"
+- !private "So26NSExtensionRequestHandlingP"
+- "So21NSItemProviderReadingP"
+- "So21NSItemProviderWritingP"
+- "So16NSMutableCopyingP"
+- "So14NSNotificationC"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- "So14NSSecureCodingP"
+- "So8NSStringC"
+- "So14NSNotificationC4NameV"
+- "s26RangeReplaceableCollectionP"
+- "s16RawRepresentableP"
+- !private "10Foundation20ReferenceConvertibleP"
+- "s8SequenceP"
+- "SS"
+- "s14StringProtocolP"
+- !private "12SwiftSpinnerAAC"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So13UIAlertActionC"
+- !private "SC18UIAlertActionStyleO"
+- !private "So17UIAlertControllerC"
+- !private "SC22UIAlertControllerStyleO"
+- !private "So12UIAppearanceP"
+- !private "So21UIAppearanceContainerP"
+- !private "So18UIContentContainerP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So30UIPasteConfigurationSupportingP"
+- !private "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So35UISpringLoadedInteractionSupportingP"
+- !private "So16UIStateRestoringP"
+- !private "So18UITraitEnvironmentP"
+- !private "So6UIViewC"
+- !private "So16UIViewControllerC"
+- !private "So28UNMutableNotificationContentC"
+- !private "So21UNNotificationContentC"
+- !private "So21UNNotificationRequestC"
+- !private "So19UNNotificationSoundC"
+- !private "So21UNNotificationTriggerC"
+- !private "So33UNTimeIntervalNotificationTriggerC"
+- !private "So24UNUserNotificationCenterC"
+- "9Alamofire14URLConvertibleP"
+- "s23_BidirectionalIndexableP"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s33_ExpressibleByStringInterpolationP"
+- "s35_HasCustomAnyHashableRepresentationP"
+- "s10_IndexableP"
+- "s14_IndexableBaseP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "s21_ObjectiveCBridgeableP"
+- "s26_RangeReplaceableIndexableP"
+- "s20_SwiftNewtypeWrapperP"
+- "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/SwiftSpinner.swiftmodule/arm64.swiftmodule"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/VideoSplashKit/VideoSplashKit.framework/Modules/VideoSplashKit.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ModelIO.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MediaPlayer.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/GLKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ARKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SceneKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SpriteKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MapKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFURL.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-umbrella.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/VideoSplashKit/VideoSplashKit.framework/Headers/VideoSplashKit-umbrella.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFTask.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFTask+Exceptions.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/Bolts.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-Swift.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/VideoSplashKit/VideoSplashKit.framework/Headers/VideoSplashKit-Swift.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/VideoSplashKit/VideoSplashKit.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/SceneKit.framework/Headers/SceneKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
+interface-hash: "45f5e7d22435277fa338a9e8b3a7660f"

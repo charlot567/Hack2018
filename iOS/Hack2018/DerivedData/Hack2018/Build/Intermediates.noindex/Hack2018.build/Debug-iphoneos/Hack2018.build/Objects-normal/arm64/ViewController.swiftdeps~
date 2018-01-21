@@ -1,0 +1,786 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ViewController"
+provides-nominal:
+- "8Hack201814ViewControllerC"
+provides-member:
+- ["8Hack201814ViewControllerC", ""]
+provides-dynamic-lookup:
+- "didReceiveMemoryWarning"
+- "loginButton"
+- "loginButtonDidLogOut"
+- "viewDidLoad"
+depends-top-level:
+- !private "!="
+- !private "Array"
+- "AssignmentPrecedence"
+- "Error"
+- !private "FBSDKAccessToken"
+- !private "FBSDKGraphRequest"
+- !private "FBSDKGraphRequestConnection"
+- "FBSDKLoginButton"
+- "FBSDKLoginButtonDelegate"
+- "FBSDKLoginManagerLoginResult"
+- !private "StringLiteralType"
+- "UIViewController"
+- "ViewController"
+- !private "displayAlert"
+- !private "kHeight"
+- !private "kWidth"
+- !private "print"
+depends-member:
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So15CALayerDelegateP", "addSubview"]
+- !private ["So15CALayerDelegateP", "center"]
+- !private ["So15CALayerDelegateP", "delegate"]
+- !private ["So15CALayerDelegateP", "frame"]
+- !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "readPermissions"]
+- !private ["SC6CGRectV", "height"]
+- !private ["SC6CGRectV", "width"]
+- !private ["s7CVarArgP", "FBSDKAccessToken"]
+- !private ["s7CVarArgP", "FBSDKGraphRequest"]
+- !private ["s7CVarArgP", "FBSDKLoginButton"]
+- !private ["s7CVarArgP", "addSubview"]
+- !private ["s7CVarArgP", "center"]
+- !private ["s7CVarArgP", "current"]
+- !private ["s7CVarArgP", "delegate"]
+- !private ["s7CVarArgP", "didReceiveMemoryWarning"]
+- !private ["s7CVarArgP", "displayAlert"]
+- !private ["s7CVarArgP", "fetchUserInfo"]
+- !private ["s7CVarArgP", "frame"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "kHeight"]
+- !private ["s7CVarArgP", "kWidth"]
+- ["s7CVarArgP", "loginButton"]
+- ["s7CVarArgP", "loginButtonDidLogOut"]
+- ["s7CVarArgP", "loginButtonWillLogin"]
+- !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "readPermissions"]
+- !private ["s7CVarArgP", "start"]
+- !private ["s7CVarArgP", "view"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- ["s7CVarArgP", ""]
+- !private ["s10CollectionP", "init"]
+- !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "FBSDKAccessToken"]
+- !private ["s28CustomDebugStringConvertibleP", "FBSDKGraphRequest"]
+- !private ["s28CustomDebugStringConvertibleP", "FBSDKLoginButton"]
+- !private ["s28CustomDebugStringConvertibleP", "addSubview"]
+- !private ["s28CustomDebugStringConvertibleP", "center"]
+- !private ["s28CustomDebugStringConvertibleP", "current"]
+- !private ["s28CustomDebugStringConvertibleP", "delegate"]
+- !private ["s28CustomDebugStringConvertibleP", "didReceiveMemoryWarning"]
+- !private ["s28CustomDebugStringConvertibleP", "displayAlert"]
+- !private ["s28CustomDebugStringConvertibleP", "fetchUserInfo"]
+- !private ["s28CustomDebugStringConvertibleP", "frame"]
+- !private ["s28CustomDebugStringConvertibleP", "height"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "kHeight"]
+- !private ["s28CustomDebugStringConvertibleP", "kWidth"]
+- ["s28CustomDebugStringConvertibleP", "loginButton"]
+- ["s28CustomDebugStringConvertibleP", "loginButtonDidLogOut"]
+- ["s28CustomDebugStringConvertibleP", "loginButtonWillLogin"]
+- !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "readPermissions"]
+- !private ["s28CustomDebugStringConvertibleP", "start"]
+- !private ["s28CustomDebugStringConvertibleP", "view"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s28CustomDebugStringConvertibleP", "width"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "height"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "width"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "height"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "width"]
+- !private ["s23CustomStringConvertibleP", "FBSDKAccessToken"]
+- !private ["s23CustomStringConvertibleP", "FBSDKGraphRequest"]
+- !private ["s23CustomStringConvertibleP", "FBSDKLoginButton"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "addSubview"]
+- !private ["s23CustomStringConvertibleP", "center"]
+- !private ["s23CustomStringConvertibleP", "current"]
+- !private ["s23CustomStringConvertibleP", "delegate"]
+- !private ["s23CustomStringConvertibleP", "didReceiveMemoryWarning"]
+- !private ["s23CustomStringConvertibleP", "displayAlert"]
+- !private ["s23CustomStringConvertibleP", "fetchUserInfo"]
+- !private ["s23CustomStringConvertibleP", "frame"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "kHeight"]
+- !private ["s23CustomStringConvertibleP", "kWidth"]
+- ["s23CustomStringConvertibleP", "loginButton"]
+- ["s23CustomStringConvertibleP", "loginButtonDidLogOut"]
+- ["s23CustomStringConvertibleP", "loginButtonWillLogin"]
+- !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "readPermissions"]
+- !private ["s23CustomStringConvertibleP", "start"]
+- !private ["s23CustomStringConvertibleP", "view"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "height"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "width"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "height"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "width"]
+- !private ["s9EquatableP", "FBSDKAccessToken"]
+- !private ["s9EquatableP", "FBSDKGraphRequest"]
+- !private ["s9EquatableP", "FBSDKLoginButton"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "addSubview"]
+- !private ["s9EquatableP", "center"]
+- !private ["s9EquatableP", "current"]
+- !private ["s9EquatableP", "delegate"]
+- !private ["s9EquatableP", "didReceiveMemoryWarning"]
+- !private ["s9EquatableP", "displayAlert"]
+- !private ["s9EquatableP", "fetchUserInfo"]
+- !private ["s9EquatableP", "frame"]
+- !private ["s9EquatableP", "height"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "kHeight"]
+- !private ["s9EquatableP", "kWidth"]
+- ["s9EquatableP", "loginButton"]
+- ["s9EquatableP", "loginButtonDidLogOut"]
+- ["s9EquatableP", "loginButtonWillLogin"]
+- !private ["s9EquatableP", "print"]
+- !private ["s9EquatableP", "readPermissions"]
+- !private ["s9EquatableP", "start"]
+- !private ["s9EquatableP", "view"]
+- !private ["s9EquatableP", "viewDidLoad"]
+- !private ["s9EquatableP", "width"]
+- ["s9EquatableP", ""]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["So16FBSDKAccessTokenC", "current"]
+- !private ["So11FBSDKButtonC", "center"]
+- !private ["So11FBSDKButtonC", "delegate"]
+- !private ["So11FBSDKButtonC", "init"]
+- !private ["So11FBSDKButtonC", "readPermissions"]
+- !private ["So12FBSDKCopyingP", "current"]
+- !private ["So17FBSDKGraphRequestC", "init"]
+- !private ["So17FBSDKGraphRequestC", "start"]
+- !private ["So16FBSDKLoginButtonC", "center"]
+- !private ["So16FBSDKLoginButtonC", "delegate"]
+- !private ["So16FBSDKLoginButtonC", "init"]
+- !private ["So16FBSDKLoginButtonC", "readPermissions"]
+- !private ["So24FBSDKLoginButtonDelegateP", "FBSDKAccessToken"]
+- !private ["So24FBSDKLoginButtonDelegateP", "FBSDKGraphRequest"]
+- !private ["So24FBSDKLoginButtonDelegateP", "FBSDKLoginButton"]
+- !private ["So24FBSDKLoginButtonDelegateP", "displayAlert"]
+- !private ["So24FBSDKLoginButtonDelegateP", "fetchUserInfo"]
+- !private ["So24FBSDKLoginButtonDelegateP", "kHeight"]
+- !private ["So24FBSDKLoginButtonDelegateP", "kWidth"]
+- ["So24FBSDKLoginButtonDelegateP", "loginButton"]
+- ["So24FBSDKLoginButtonDelegateP", "loginButtonDidLogOut"]
+- ["So24FBSDKLoginButtonDelegateP", "loginButtonWillLogin"]
+- !private ["So24FBSDKLoginButtonDelegateP", "print"]
+- !private ["So24FBSDKLoginButtonDelegateP", "view"]
+- ["So24FBSDKLoginButtonDelegateP", ""]
+- !private ["s8HashableP", "FBSDKAccessToken"]
+- !private ["s8HashableP", "FBSDKGraphRequest"]
+- !private ["s8HashableP", "FBSDKLoginButton"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "addSubview"]
+- !private ["s8HashableP", "center"]
+- !private ["s8HashableP", "current"]
+- !private ["s8HashableP", "delegate"]
+- !private ["s8HashableP", "didReceiveMemoryWarning"]
+- !private ["s8HashableP", "displayAlert"]
+- !private ["s8HashableP", "fetchUserInfo"]
+- !private ["s8HashableP", "frame"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "kHeight"]
+- !private ["s8HashableP", "kWidth"]
+- ["s8HashableP", "loginButton"]
+- ["s8HashableP", "loginButtonDidLogOut"]
+- ["s8HashableP", "loginButtonWillLogin"]
+- !private ["s8HashableP", "print"]
+- !private ["s8HashableP", "readPermissions"]
+- !private ["s8HashableP", "start"]
+- !private ["s8HashableP", "view"]
+- !private ["s8HashableP", "viewDidLoad"]
+- ["s8HashableP", ""]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "FBSDKAccessToken"]
+- !private ["So8NSCodingP", "FBSDKGraphRequest"]
+- !private ["So8NSCodingP", "FBSDKLoginButton"]
+- !private ["So8NSCodingP", "addSubview"]
+- !private ["So8NSCodingP", "center"]
+- !private ["So8NSCodingP", "current"]
+- !private ["So8NSCodingP", "delegate"]
+- !private ["So8NSCodingP", "didReceiveMemoryWarning"]
+- !private ["So8NSCodingP", "displayAlert"]
+- !private ["So8NSCodingP", "fetchUserInfo"]
+- !private ["So8NSCodingP", "frame"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "kHeight"]
+- !private ["So8NSCodingP", "kWidth"]
+- ["So8NSCodingP", "loginButton"]
+- ["So8NSCodingP", "loginButtonDidLogOut"]
+- ["So8NSCodingP", "loginButtonWillLogin"]
+- !private ["So8NSCodingP", "print"]
+- !private ["So8NSCodingP", "readPermissions"]
+- !private ["So8NSCodingP", "view"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- ["So8NSCodingP", ""]
+- !private ["So9NSCopyingP", "current"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "FBSDKAccessToken"]
+- !private ["So26NSExtensionRequestHandlingP", "FBSDKGraphRequest"]
+- !private ["So26NSExtensionRequestHandlingP", "FBSDKLoginButton"]
+- !private ["So26NSExtensionRequestHandlingP", "didReceiveMemoryWarning"]
+- !private ["So26NSExtensionRequestHandlingP", "displayAlert"]
+- !private ["So26NSExtensionRequestHandlingP", "fetchUserInfo"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "kHeight"]
+- !private ["So26NSExtensionRequestHandlingP", "kWidth"]
+- ["So26NSExtensionRequestHandlingP", "loginButton"]
+- ["So26NSExtensionRequestHandlingP", "loginButtonDidLogOut"]
+- ["So26NSExtensionRequestHandlingP", "loginButtonWillLogin"]
+- !private ["So26NSExtensionRequestHandlingP", "print"]
+- !private ["So26NSExtensionRequestHandlingP", "view"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So16NSMutableCopyingP", "init"]
+- ["So8NSObjectC", "Error"]
+- !private ["So8NSObjectC", "FBSDKAccessToken"]
+- !private ["So8NSObjectC", "FBSDKGraphRequest"]
+- !private ["So8NSObjectC", "FBSDKGraphRequestConnection"]
+- ["So8NSObjectC", "FBSDKLoginButton"]
+- ["So8NSObjectC", "FBSDKLoginManagerLoginResult"]
+- !private ["So8NSObjectC", "addSubview"]
+- !private ["So8NSObjectC", "center"]
+- !private ["So8NSObjectC", "current"]
+- !private ["So8NSObjectC", "delegate"]
+- ["So8NSObjectC", "didReceiveMemoryWarning"]
+- !private ["So8NSObjectC", "displayAlert"]
+- ["So8NSObjectC", "fetchUserInfo"]
+- !private ["So8NSObjectC", "frame"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "kHeight"]
+- !private ["So8NSObjectC", "kWidth"]
+- ["So8NSObjectC", "loginButton"]
+- ["So8NSObjectC", "loginButtonDidLogOut"]
+- ["So8NSObjectC", "loginButtonWillLogin"]
+- !private ["So8NSObjectC", "print"]
+- !private ["So8NSObjectC", "readPermissions"]
+- !private ["So8NSObjectC", "start"]
+- !private ["So8NSObjectC", "view"]
+- ["So8NSObjectC", "viewDidLoad"]
+- !private ["So16NSObjectProtocolP", "FBSDKAccessToken"]
+- !private ["So16NSObjectProtocolP", "FBSDKGraphRequest"]
+- !private ["So16NSObjectProtocolP", "FBSDKLoginButton"]
+- !private ["So16NSObjectProtocolP", "addSubview"]
+- !private ["So16NSObjectProtocolP", "center"]
+- !private ["So16NSObjectProtocolP", "current"]
+- !private ["So16NSObjectProtocolP", "delegate"]
+- !private ["So16NSObjectProtocolP", "didReceiveMemoryWarning"]
+- !private ["So16NSObjectProtocolP", "displayAlert"]
+- !private ["So16NSObjectProtocolP", "fetchUserInfo"]
+- !private ["So16NSObjectProtocolP", "frame"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "kHeight"]
+- !private ["So16NSObjectProtocolP", "kWidth"]
+- ["So16NSObjectProtocolP", "loginButton"]
+- ["So16NSObjectProtocolP", "loginButtonDidLogOut"]
+- ["So16NSObjectProtocolP", "loginButtonWillLogin"]
+- !private ["So16NSObjectProtocolP", "print"]
+- !private ["So16NSObjectProtocolP", "readPermissions"]
+- !private ["So16NSObjectProtocolP", "start"]
+- !private ["So16NSObjectProtocolP", "view"]
+- !private ["So16NSObjectProtocolP", "viewDidLoad"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So14NSSecureCodingP", "current"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So8NSStringC", "init"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s8SequenceP", "init"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "center"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "delegate"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "init"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "readPermissions"]
+- !private ["So29UIAccessibilityIdentificationP", "addSubview"]
+- !private ["So29UIAccessibilityIdentificationP", "center"]
+- !private ["So29UIAccessibilityIdentificationP", "delegate"]
+- !private ["So29UIAccessibilityIdentificationP", "frame"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "readPermissions"]
+- !private ["So12UIAppearanceP", "addSubview"]
+- !private ["So12UIAppearanceP", "center"]
+- !private ["So12UIAppearanceP", "delegate"]
+- !private ["So12UIAppearanceP", "frame"]
+- !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "readPermissions"]
+- !private ["So21UIAppearanceContainerP", "FBSDKAccessToken"]
+- !private ["So21UIAppearanceContainerP", "FBSDKGraphRequest"]
+- !private ["So21UIAppearanceContainerP", "FBSDKLoginButton"]
+- !private ["So21UIAppearanceContainerP", "addSubview"]
+- !private ["So21UIAppearanceContainerP", "center"]
+- !private ["So21UIAppearanceContainerP", "delegate"]
+- !private ["So21UIAppearanceContainerP", "didReceiveMemoryWarning"]
+- !private ["So21UIAppearanceContainerP", "displayAlert"]
+- !private ["So21UIAppearanceContainerP", "fetchUserInfo"]
+- !private ["So21UIAppearanceContainerP", "frame"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "kHeight"]
+- !private ["So21UIAppearanceContainerP", "kWidth"]
+- ["So21UIAppearanceContainerP", "loginButton"]
+- ["So21UIAppearanceContainerP", "loginButtonDidLogOut"]
+- ["So21UIAppearanceContainerP", "loginButtonWillLogin"]
+- !private ["So21UIAppearanceContainerP", "print"]
+- !private ["So21UIAppearanceContainerP", "readPermissions"]
+- !private ["So21UIAppearanceContainerP", "view"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So8UIButtonC", "center"]
+- !private ["So8UIButtonC", "delegate"]
+- !private ["So8UIButtonC", "init"]
+- !private ["So8UIButtonC", "readPermissions"]
+- !private ["So18UIContentContainerP", "FBSDKAccessToken"]
+- !private ["So18UIContentContainerP", "FBSDKGraphRequest"]
+- !private ["So18UIContentContainerP", "FBSDKLoginButton"]
+- !private ["So18UIContentContainerP", "didReceiveMemoryWarning"]
+- !private ["So18UIContentContainerP", "displayAlert"]
+- !private ["So18UIContentContainerP", "fetchUserInfo"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "kHeight"]
+- !private ["So18UIContentContainerP", "kWidth"]
+- ["So18UIContentContainerP", "loginButton"]
+- ["So18UIContentContainerP", "loginButtonDidLogOut"]
+- ["So18UIContentContainerP", "loginButtonWillLogin"]
+- !private ["So18UIContentContainerP", "print"]
+- !private ["So18UIContentContainerP", "view"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- ["So18UIContentContainerP", ""]
+- !private ["So9UIControlC", "center"]
+- !private ["So9UIControlC", "delegate"]
+- !private ["So9UIControlC", "init"]
+- !private ["So9UIControlC", "readPermissions"]
+- !private ["So17UICoordinateSpaceP", "addSubview"]
+- !private ["So17UICoordinateSpaceP", "center"]
+- !private ["So17UICoordinateSpaceP", "delegate"]
+- !private ["So17UICoordinateSpaceP", "frame"]
+- !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "readPermissions"]
+- !private ["So13UIDynamicItemP", "addSubview"]
+- !private ["So13UIDynamicItemP", "center"]
+- !private ["So13UIDynamicItemP", "delegate"]
+- !private ["So13UIDynamicItemP", "frame"]
+- !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "readPermissions"]
+- !private ["So18UIFocusEnvironmentP", "FBSDKAccessToken"]
+- !private ["So18UIFocusEnvironmentP", "FBSDKGraphRequest"]
+- !private ["So18UIFocusEnvironmentP", "FBSDKLoginButton"]
+- !private ["So18UIFocusEnvironmentP", "addSubview"]
+- !private ["So18UIFocusEnvironmentP", "center"]
+- !private ["So18UIFocusEnvironmentP", "delegate"]
+- !private ["So18UIFocusEnvironmentP", "didReceiveMemoryWarning"]
+- !private ["So18UIFocusEnvironmentP", "displayAlert"]
+- !private ["So18UIFocusEnvironmentP", "fetchUserInfo"]
+- !private ["So18UIFocusEnvironmentP", "frame"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "kHeight"]
+- !private ["So18UIFocusEnvironmentP", "kWidth"]
+- ["So18UIFocusEnvironmentP", "loginButton"]
+- ["So18UIFocusEnvironmentP", "loginButtonDidLogOut"]
+- ["So18UIFocusEnvironmentP", "loginButtonWillLogin"]
+- !private ["So18UIFocusEnvironmentP", "print"]
+- !private ["So18UIFocusEnvironmentP", "readPermissions"]
+- !private ["So18UIFocusEnvironmentP", "view"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So11UIFocusItemP", "addSubview"]
+- !private ["So11UIFocusItemP", "center"]
+- !private ["So11UIFocusItemP", "delegate"]
+- !private ["So11UIFocusItemP", "frame"]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "readPermissions"]
+- !private ["So30UIPasteConfigurationSupportingP", "FBSDKAccessToken"]
+- !private ["So30UIPasteConfigurationSupportingP", "FBSDKGraphRequest"]
+- !private ["So30UIPasteConfigurationSupportingP", "FBSDKLoginButton"]
+- !private ["So30UIPasteConfigurationSupportingP", "addSubview"]
+- !private ["So30UIPasteConfigurationSupportingP", "center"]
+- !private ["So30UIPasteConfigurationSupportingP", "delegate"]
+- !private ["So30UIPasteConfigurationSupportingP", "didReceiveMemoryWarning"]
+- !private ["So30UIPasteConfigurationSupportingP", "displayAlert"]
+- !private ["So30UIPasteConfigurationSupportingP", "fetchUserInfo"]
+- !private ["So30UIPasteConfigurationSupportingP", "frame"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "kHeight"]
+- !private ["So30UIPasteConfigurationSupportingP", "kWidth"]
+- ["So30UIPasteConfigurationSupportingP", "loginButton"]
+- ["So30UIPasteConfigurationSupportingP", "loginButtonDidLogOut"]
+- ["So30UIPasteConfigurationSupportingP", "loginButtonWillLogin"]
+- !private ["So30UIPasteConfigurationSupportingP", "print"]
+- !private ["So30UIPasteConfigurationSupportingP", "readPermissions"]
+- !private ["So30UIPasteConfigurationSupportingP", "view"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- ["So11UIResponderC", "Error"]
+- !private ["So11UIResponderC", "FBSDKAccessToken"]
+- !private ["So11UIResponderC", "FBSDKGraphRequest"]
+- !private ["So11UIResponderC", "FBSDKGraphRequestConnection"]
+- ["So11UIResponderC", "FBSDKLoginButton"]
+- ["So11UIResponderC", "FBSDKLoginManagerLoginResult"]
+- !private ["So11UIResponderC", "addSubview"]
+- !private ["So11UIResponderC", "center"]
+- !private ["So11UIResponderC", "delegate"]
+- ["So11UIResponderC", "didReceiveMemoryWarning"]
+- !private ["So11UIResponderC", "displayAlert"]
+- ["So11UIResponderC", "fetchUserInfo"]
+- !private ["So11UIResponderC", "frame"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "kHeight"]
+- !private ["So11UIResponderC", "kWidth"]
+- ["So11UIResponderC", "loginButton"]
+- ["So11UIResponderC", "loginButtonDidLogOut"]
+- ["So11UIResponderC", "loginButtonWillLogin"]
+- !private ["So11UIResponderC", "print"]
+- !private ["So11UIResponderC", "readPermissions"]
+- !private ["So11UIResponderC", "view"]
+- ["So11UIResponderC", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "FBSDKAccessToken"]
+- !private ["So30UIResponderStandardEditActionsP", "FBSDKGraphRequest"]
+- !private ["So30UIResponderStandardEditActionsP", "FBSDKLoginButton"]
+- !private ["So30UIResponderStandardEditActionsP", "addSubview"]
+- !private ["So30UIResponderStandardEditActionsP", "center"]
+- !private ["So30UIResponderStandardEditActionsP", "delegate"]
+- !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
+- !private ["So30UIResponderStandardEditActionsP", "displayAlert"]
+- !private ["So30UIResponderStandardEditActionsP", "fetchUserInfo"]
+- !private ["So30UIResponderStandardEditActionsP", "frame"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "kHeight"]
+- !private ["So30UIResponderStandardEditActionsP", "kWidth"]
+- ["So30UIResponderStandardEditActionsP", "loginButton"]
+- ["So30UIResponderStandardEditActionsP", "loginButtonDidLogOut"]
+- ["So30UIResponderStandardEditActionsP", "loginButtonWillLogin"]
+- !private ["So30UIResponderStandardEditActionsP", "print"]
+- !private ["So30UIResponderStandardEditActionsP", "readPermissions"]
+- !private ["So30UIResponderStandardEditActionsP", "view"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So35UISpringLoadedInteractionSupportingP", "center"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "delegate"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "init"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "readPermissions"]
+- !private ["So16UIStateRestoringP", "FBSDKAccessToken"]
+- !private ["So16UIStateRestoringP", "FBSDKGraphRequest"]
+- !private ["So16UIStateRestoringP", "FBSDKLoginButton"]
+- !private ["So16UIStateRestoringP", "didReceiveMemoryWarning"]
+- !private ["So16UIStateRestoringP", "displayAlert"]
+- !private ["So16UIStateRestoringP", "fetchUserInfo"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "kHeight"]
+- !private ["So16UIStateRestoringP", "kWidth"]
+- ["So16UIStateRestoringP", "loginButton"]
+- ["So16UIStateRestoringP", "loginButtonDidLogOut"]
+- ["So16UIStateRestoringP", "loginButtonWillLogin"]
+- !private ["So16UIStateRestoringP", "print"]
+- !private ["So16UIStateRestoringP", "view"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So18UITraitEnvironmentP", "FBSDKAccessToken"]
+- !private ["So18UITraitEnvironmentP", "FBSDKGraphRequest"]
+- !private ["So18UITraitEnvironmentP", "FBSDKLoginButton"]
+- !private ["So18UITraitEnvironmentP", "addSubview"]
+- !private ["So18UITraitEnvironmentP", "center"]
+- !private ["So18UITraitEnvironmentP", "delegate"]
+- !private ["So18UITraitEnvironmentP", "didReceiveMemoryWarning"]
+- !private ["So18UITraitEnvironmentP", "displayAlert"]
+- !private ["So18UITraitEnvironmentP", "fetchUserInfo"]
+- !private ["So18UITraitEnvironmentP", "frame"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "kHeight"]
+- !private ["So18UITraitEnvironmentP", "kWidth"]
+- ["So18UITraitEnvironmentP", "loginButton"]
+- ["So18UITraitEnvironmentP", "loginButtonDidLogOut"]
+- ["So18UITraitEnvironmentP", "loginButtonWillLogin"]
+- !private ["So18UITraitEnvironmentP", "print"]
+- !private ["So18UITraitEnvironmentP", "readPermissions"]
+- !private ["So18UITraitEnvironmentP", "view"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So6UIViewC", "addSubview"]
+- !private ["So6UIViewC", "center"]
+- !private ["So6UIViewC", "delegate"]
+- !private ["So6UIViewC", "frame"]
+- !private ["So6UIViewC", "init"]
+- !private ["So6UIViewC", "readPermissions"]
+- ["So16UIViewControllerC", "Error"]
+- !private ["So16UIViewControllerC", "FBSDKAccessToken"]
+- !private ["So16UIViewControllerC", "FBSDKGraphRequest"]
+- !private ["So16UIViewControllerC", "FBSDKGraphRequestConnection"]
+- ["So16UIViewControllerC", "FBSDKLoginButton"]
+- ["So16UIViewControllerC", "FBSDKLoginManagerLoginResult"]
+- ["So16UIViewControllerC", "didReceiveMemoryWarning"]
+- !private ["So16UIViewControllerC", "displayAlert"]
+- ["So16UIViewControllerC", "fetchUserInfo"]
+- ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "kHeight"]
+- !private ["So16UIViewControllerC", "kWidth"]
+- ["So16UIViewControllerC", "loginButton"]
+- ["So16UIViewControllerC", "loginButtonDidLogOut"]
+- ["So16UIViewControllerC", "loginButtonWillLogin"]
+- !private ["So16UIViewControllerC", "print"]
+- !private ["So16UIViewControllerC", "view"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- ["So16UIViewControllerC", ""]
+- !private ["9Alamofire14URLConvertibleP", "init"]
+- ["8Hack201814ViewControllerC", "Error"]
+- !private ["8Hack201814ViewControllerC", "FBSDKAccessToken"]
+- !private ["8Hack201814ViewControllerC", "FBSDKGraphRequest"]
+- !private ["8Hack201814ViewControllerC", "FBSDKGraphRequestConnection"]
+- ["8Hack201814ViewControllerC", "FBSDKLoginButton"]
+- ["8Hack201814ViewControllerC", "FBSDKLoginManagerLoginResult"]
+- ["8Hack201814ViewControllerC", "deinit"]
+- ["8Hack201814ViewControllerC", "didReceiveMemoryWarning"]
+- !private ["8Hack201814ViewControllerC", "displayAlert"]
+- ["8Hack201814ViewControllerC", "fetchUserInfo"]
+- ["8Hack201814ViewControllerC", "init"]
+- !private ["8Hack201814ViewControllerC", "kHeight"]
+- !private ["8Hack201814ViewControllerC", "kWidth"]
+- ["8Hack201814ViewControllerC", "loginButton"]
+- ["8Hack201814ViewControllerC", "loginButtonDidLogOut"]
+- ["8Hack201814ViewControllerC", "loginButtonWillLogin"]
+- !private ["8Hack201814ViewControllerC", "print"]
+- !private ["8Hack201814ViewControllerC", "view"]
+- ["8Hack201814ViewControllerC", "viewDidLoad"]
+- !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addSubview"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "center"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "delegate"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "frame"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "readPermissions"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s10_IndexableP", "init"]
+- !private ["s14_IndexableBaseP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "FBSDKAccessToken"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "FBSDKGraphRequest"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "FBSDKLoginButton"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addSubview"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "center"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "current"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "didReceiveMemoryWarning"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "displayAlert"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "fetchUserInfo"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "frame"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "kHeight"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "kWidth"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "loginButton"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "loginButtonDidLogOut"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "loginButtonWillLogin"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "readPermissions"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "start"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "height"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "width"]
+- !private ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "s23BidirectionalCollectionP"
+- !private "Sb"
+- !private "So15CALayerDelegateP"
+- !private "SC6CGRectV"
+- "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "So16FBSDKAccessTokenC"
+- !private "So11FBSDKButtonC"
+- !private "So12FBSDKCopyingP"
+- !private "So17FBSDKGraphRequestC"
+- !private "So16FBSDKLoginButtonC"
+- "So24FBSDKLoginButtonDelegateP"
+- "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- "So8NSCodingP"
+- !private "So9NSCopyingP"
+- "So26NSExtensionRequestHandlingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s8SequenceP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- !private "So8UIButtonC"
+- "So18UIContentContainerP"
+- !private "So9UIControlC"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- !private "So35UISpringLoadedInteractionSupportingP"
+- "So16UIStateRestoringP"
+- "So18UITraitEnvironmentP"
+- !private "So6UIViewC"
+- "So16UIViewControllerC"
+- !private "9Alamofire14URLConvertibleP"
+- "8Hack201814ViewControllerC"
+- !private "s23_BidirectionalIndexableP"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s10_IndexableP"
+- !private "s14_IndexableBaseP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s26_RangeReplaceableIndexableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/SwiftSpinner.swiftmodule/arm64.swiftmodule"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/VideoSplashKit/VideoSplashKit.framework/Modules/VideoSplashKit.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ModelIO.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MediaPlayer.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/GLKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ARKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SceneKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SpriteKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MapKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFURL.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-umbrella.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/VideoSplashKit/VideoSplashKit.framework/Headers/VideoSplashKit-umbrella.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFTask.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFTask+Exceptions.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/Bolts.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Headers/SwiftSpinner-Swift.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/VideoSplashKit/VideoSplashKit.framework/Headers/VideoSplashKit-Swift.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/SwiftSpinner/SwiftSpinner.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/Bolts.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Products/Debug-iphoneos/VideoSplashKit/VideoSplashKit.framework/Modules/module.modulemap"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Hack2018/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/SceneKit.framework/Headers/SceneKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
+interface-hash: "a16d73244dcb6efffe5afa16aae5dfa5"

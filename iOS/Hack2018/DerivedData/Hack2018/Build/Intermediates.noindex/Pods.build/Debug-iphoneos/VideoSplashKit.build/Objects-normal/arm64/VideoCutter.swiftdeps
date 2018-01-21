@@ -1,0 +1,544 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "VideoCutter"
+provides-nominal:
+- "14VideoSplashKit0A6CutterC"
+provides-member:
+- ["SS", ""]
+- ["14VideoSplashKit0A6CutterC", ""]
+- ["SS", "convert"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "AVAssetExportSession"
+- !private "AVFileType"
+- !private "AVURLAsset"
+- !private "AssignmentPrecedence"
+- "BooleanLiteralType"
+- "CGFloat"
+- !private "CMTimeMakeWithSeconds"
+- !private "CMTimeRangeMake"
+- "CastingPrecedence"
+- !private "DispatchQueue"
+- !private "FileManager"
+- !private "Float64"
+- "NSError"
+- "NSObject"
+- "NSString"
+- !private "NSTemporaryDirectory"
+- "String"
+- "StringLiteralType"
+- "URL"
+- "VideoCutter"
+- "Void"
+- !private "print"
+depends-member:
+- !private ["So7AVAssetC", "init"]
+- !private ["So20AVAssetExportSessionC", "exportAsynchronously"]
+- !private ["So20AVAssetExportSessionC", "init"]
+- !private ["So20AVAssetExportSessionC", "outputFileType"]
+- !private ["So20AVAssetExportSessionC", "outputURL"]
+- !private ["So20AVAssetExportSessionC", "shouldOptimizeForNetworkUse"]
+- !private ["So20AVAssetExportSessionC", "status"]
+- !private ["So20AVAssetExportSessionC", "timeRange"]
+- !private ["SC26AVAssetExportSessionStatusO", "completed"]
+- !private ["So29AVAsynchronousKeyValueLoadingP", "init"]
+- !private ["So21AVContentKeyRecipientP", "init"]
+- !private ["SC10AVFileTypeV", "mp4"]
+- !private ["So10AVURLAssetC", "init"]
+- !private ["s23BidirectionalCollectionP", "convert"]
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["s19BinaryFloatingPointP", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "AVAssetExportSession"]
+- !private ["s7CVarArgP", "AVFileType"]
+- !private ["s7CVarArgP", "AVURLAsset"]
+- !private ["s7CVarArgP", "CMTimeMakeWithSeconds"]
+- !private ["s7CVarArgP", "CMTimeRangeMake"]
+- !private ["s7CVarArgP", "DispatchQueue"]
+- !private ["s7CVarArgP", "FileManager"]
+- !private ["s7CVarArgP", "Float64"]
+- !private ["s7CVarArgP", "NSTemporaryDirectory"]
+- !private ["s7CVarArgP", "URL"]
+- !private ["s7CVarArgP", "appendingPathComponent"]
+- !private ["s7CVarArgP", "async"]
+- !private ["s7CVarArgP", "convert"]
+- !private ["s7CVarArgP", "createDirectory"]
+- !private ["s7CVarArgP", "default"]
+- !private ["s7CVarArgP", "exportAsynchronously"]
+- !private ["s7CVarArgP", "fileExists"]
+- !private ["s7CVarArgP", "global"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "main"]
+- !private ["s7CVarArgP", "outputFileType"]
+- !private ["s7CVarArgP", "outputURL"]
+- !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "removeItem"]
+- !private ["s7CVarArgP", "shouldOptimizeForNetworkUse"]
+- !private ["s7CVarArgP", "status"]
+- !private ["s7CVarArgP", "timeRange"]
+- ["s7CVarArgP", ""]
+- !private ["s10CollectionP", "convert"]
+- !private ["s10CollectionP", "init"]
+- !private ["s10ComparableP", "convert"]
+- !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "AVAssetExportSession"]
+- !private ["s28CustomDebugStringConvertibleP", "AVFileType"]
+- !private ["s28CustomDebugStringConvertibleP", "AVURLAsset"]
+- !private ["s28CustomDebugStringConvertibleP", "CMTimeMakeWithSeconds"]
+- !private ["s28CustomDebugStringConvertibleP", "CMTimeRangeMake"]
+- !private ["s28CustomDebugStringConvertibleP", "DispatchQueue"]
+- !private ["s28CustomDebugStringConvertibleP", "FileManager"]
+- !private ["s28CustomDebugStringConvertibleP", "Float64"]
+- !private ["s28CustomDebugStringConvertibleP", "NSTemporaryDirectory"]
+- !private ["s28CustomDebugStringConvertibleP", "URL"]
+- !private ["s28CustomDebugStringConvertibleP", "appendingPathComponent"]
+- !private ["s28CustomDebugStringConvertibleP", "async"]
+- !private ["s28CustomDebugStringConvertibleP", "convert"]
+- !private ["s28CustomDebugStringConvertibleP", "createDirectory"]
+- !private ["s28CustomDebugStringConvertibleP", "default"]
+- !private ["s28CustomDebugStringConvertibleP", "exportAsynchronously"]
+- !private ["s28CustomDebugStringConvertibleP", "fileExists"]
+- !private ["s28CustomDebugStringConvertibleP", "global"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "main"]
+- !private ["s28CustomDebugStringConvertibleP", "outputFileType"]
+- !private ["s28CustomDebugStringConvertibleP", "outputURL"]
+- !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "removeItem"]
+- !private ["s28CustomDebugStringConvertibleP", "shouldOptimizeForNetworkUse"]
+- !private ["s28CustomDebugStringConvertibleP", "status"]
+- !private ["s28CustomDebugStringConvertibleP", "timeRange"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "appendingPathComponent"]
+- !private ["s29CustomPlaygroundQuickLookableP", "convert"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "convert"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "AVAssetExportSession"]
+- !private ["s23CustomStringConvertibleP", "AVFileType"]
+- !private ["s23CustomStringConvertibleP", "AVURLAsset"]
+- !private ["s23CustomStringConvertibleP", "CMTimeMakeWithSeconds"]
+- !private ["s23CustomStringConvertibleP", "CMTimeRangeMake"]
+- !private ["s23CustomStringConvertibleP", "DispatchQueue"]
+- !private ["s23CustomStringConvertibleP", "FileManager"]
+- !private ["s23CustomStringConvertibleP", "Float64"]
+- !private ["s23CustomStringConvertibleP", "NSTemporaryDirectory"]
+- !private ["s23CustomStringConvertibleP", "URL"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "appendingPathComponent"]
+- !private ["s23CustomStringConvertibleP", "async"]
+- !private ["s23CustomStringConvertibleP", "convert"]
+- !private ["s23CustomStringConvertibleP", "createDirectory"]
+- !private ["s23CustomStringConvertibleP", "default"]
+- !private ["s23CustomStringConvertibleP", "exportAsynchronously"]
+- !private ["s23CustomStringConvertibleP", "fileExists"]
+- !private ["s23CustomStringConvertibleP", "global"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "main"]
+- !private ["s23CustomStringConvertibleP", "outputFileType"]
+- !private ["s23CustomStringConvertibleP", "outputURL"]
+- !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "removeItem"]
+- !private ["s23CustomStringConvertibleP", "shouldOptimizeForNetworkUse"]
+- !private ["s23CustomStringConvertibleP", "status"]
+- !private ["s23CustomStringConvertibleP", "timeRange"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "convert"]
+- !private ["s9DecodableP", "init"]
+- !private ["So14DispatchObjectC", "async"]
+- !private ["So14DispatchObjectC", "global"]
+- !private ["So14DispatchObjectC", "main"]
+- !private ["So13DispatchQueueC", "async"]
+- !private ["So13DispatchQueueC", "global"]
+- !private ["So13DispatchQueueC", "main"]
+- !private ["Sd", "init"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "convert"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "AVAssetExportSession"]
+- !private ["s9EquatableP", "AVFileType"]
+- !private ["s9EquatableP", "AVURLAsset"]
+- !private ["s9EquatableP", "CMTimeMakeWithSeconds"]
+- !private ["s9EquatableP", "CMTimeRangeMake"]
+- !private ["s9EquatableP", "DispatchQueue"]
+- !private ["s9EquatableP", "FileManager"]
+- !private ["s9EquatableP", "Float64"]
+- !private ["s9EquatableP", "NSTemporaryDirectory"]
+- !private ["s9EquatableP", "URL"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "appendingPathComponent"]
+- !private ["s9EquatableP", "async"]
+- !private ["s9EquatableP", "completed"]
+- !private ["s9EquatableP", "convert"]
+- !private ["s9EquatableP", "createDirectory"]
+- !private ["s9EquatableP", "default"]
+- !private ["s9EquatableP", "exportAsynchronously"]
+- !private ["s9EquatableP", "fileExists"]
+- !private ["s9EquatableP", "global"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "main"]
+- !private ["s9EquatableP", "mp4"]
+- !private ["s9EquatableP", "outputFileType"]
+- !private ["s9EquatableP", "outputURL"]
+- !private ["s9EquatableP", "print"]
+- !private ["s9EquatableP", "removeItem"]
+- !private ["s9EquatableP", "shouldOptimizeForNetworkUse"]
+- !private ["s9EquatableP", "status"]
+- !private ["s9EquatableP", "timeRange"]
+- ["s9EquatableP", ""]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "appendingPathComponent"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "convert"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s25ExpressibleByFloatLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "appendingPathComponent"]
+- !private ["s26ExpressibleByStringLiteralP", "convert"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "appendingPathComponent"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "convert"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["So11FileManagerC", "createDirectory"]
+- !private ["So11FileManagerC", "default"]
+- !private ["So11FileManagerC", "fileExists"]
+- !private ["So11FileManagerC", "removeItem"]
+- !private ["s13FloatingPointP", "init"]
+- !private ["s8HashableP", "AVAssetExportSession"]
+- !private ["s8HashableP", "AVFileType"]
+- !private ["s8HashableP", "AVURLAsset"]
+- !private ["s8HashableP", "CMTimeMakeWithSeconds"]
+- !private ["s8HashableP", "CMTimeRangeMake"]
+- !private ["s8HashableP", "DispatchQueue"]
+- !private ["s8HashableP", "FileManager"]
+- !private ["s8HashableP", "Float64"]
+- !private ["s8HashableP", "NSTemporaryDirectory"]
+- !private ["s8HashableP", "URL"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "appendingPathComponent"]
+- !private ["s8HashableP", "async"]
+- !private ["s8HashableP", "completed"]
+- !private ["s8HashableP", "convert"]
+- !private ["s8HashableP", "createDirectory"]
+- !private ["s8HashableP", "default"]
+- !private ["s8HashableP", "exportAsynchronously"]
+- !private ["s8HashableP", "fileExists"]
+- !private ["s8HashableP", "global"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "main"]
+- !private ["s8HashableP", "mp4"]
+- !private ["s8HashableP", "outputFileType"]
+- !private ["s8HashableP", "outputURL"]
+- !private ["s8HashableP", "print"]
+- !private ["s8HashableP", "removeItem"]
+- !private ["s8HashableP", "shouldOptimizeForNetworkUse"]
+- !private ["s8HashableP", "status"]
+- !private ["s8HashableP", "timeRange"]
+- ["s8HashableP", ""]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "convert"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "convert"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "appendingPathComponent"]
+- !private ["So8NSCodingP", "convert"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So9NSCopyingP", "appendingPathComponent"]
+- !private ["So9NSCopyingP", "convert"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So21NSItemProviderReadingP", "appendingPathComponent"]
+- !private ["So21NSItemProviderReadingP", "convert"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "appendingPathComponent"]
+- !private ["So21NSItemProviderWritingP", "convert"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So16NSMutableCopyingP", "appendingPathComponent"]
+- !private ["So16NSMutableCopyingP", "convert"]
+- !private ["So16NSMutableCopyingP", "init"]
+- !private ["So8NSObjectC", "AVAssetExportSession"]
+- !private ["So8NSObjectC", "AVFileType"]
+- !private ["So8NSObjectC", "AVURLAsset"]
+- ["So8NSObjectC", "CGFloat"]
+- !private ["So8NSObjectC", "CMTimeMakeWithSeconds"]
+- !private ["So8NSObjectC", "CMTimeRangeMake"]
+- !private ["So8NSObjectC", "DispatchQueue"]
+- !private ["So8NSObjectC", "FileManager"]
+- !private ["So8NSObjectC", "Float64"]
+- ["So8NSObjectC", "NSError"]
+- !private ["So8NSObjectC", "NSTemporaryDirectory"]
+- ["So8NSObjectC", "URL"]
+- ["So8NSObjectC", "Void"]
+- !private ["So8NSObjectC", "appendingPathComponent"]
+- !private ["So8NSObjectC", "async"]
+- !private ["So8NSObjectC", "convert"]
+- !private ["So8NSObjectC", "createDirectory"]
+- ["So8NSObjectC", "cropVideoWithUrl"]
+- !private ["So8NSObjectC", "default"]
+- !private ["So8NSObjectC", "exportAsynchronously"]
+- !private ["So8NSObjectC", "fileExists"]
+- !private ["So8NSObjectC", "global"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "main"]
+- !private ["So8NSObjectC", "outputFileType"]
+- !private ["So8NSObjectC", "outputURL"]
+- !private ["So8NSObjectC", "print"]
+- !private ["So8NSObjectC", "removeItem"]
+- !private ["So8NSObjectC", "shouldOptimizeForNetworkUse"]
+- !private ["So8NSObjectC", "status"]
+- !private ["So8NSObjectC", "timeRange"]
+- ["So8NSObjectC", ""]
+- !private ["So16NSObjectProtocolP", "AVAssetExportSession"]
+- !private ["So16NSObjectProtocolP", "AVFileType"]
+- !private ["So16NSObjectProtocolP", "AVURLAsset"]
+- !private ["So16NSObjectProtocolP", "CMTimeMakeWithSeconds"]
+- !private ["So16NSObjectProtocolP", "CMTimeRangeMake"]
+- !private ["So16NSObjectProtocolP", "DispatchQueue"]
+- !private ["So16NSObjectProtocolP", "FileManager"]
+- !private ["So16NSObjectProtocolP", "Float64"]
+- !private ["So16NSObjectProtocolP", "NSTemporaryDirectory"]
+- !private ["So16NSObjectProtocolP", "URL"]
+- !private ["So16NSObjectProtocolP", "appendingPathComponent"]
+- !private ["So16NSObjectProtocolP", "async"]
+- !private ["So16NSObjectProtocolP", "convert"]
+- !private ["So16NSObjectProtocolP", "createDirectory"]
+- !private ["So16NSObjectProtocolP", "default"]
+- !private ["So16NSObjectProtocolP", "exportAsynchronously"]
+- !private ["So16NSObjectProtocolP", "fileExists"]
+- !private ["So16NSObjectProtocolP", "global"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "main"]
+- !private ["So16NSObjectProtocolP", "outputFileType"]
+- !private ["So16NSObjectProtocolP", "outputURL"]
+- !private ["So16NSObjectProtocolP", "print"]
+- !private ["So16NSObjectProtocolP", "removeItem"]
+- !private ["So16NSObjectProtocolP", "shouldOptimizeForNetworkUse"]
+- !private ["So16NSObjectProtocolP", "status"]
+- !private ["So16NSObjectProtocolP", "timeRange"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So14NSSecureCodingP", "appendingPathComponent"]
+- !private ["So14NSSecureCodingP", "convert"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So8NSStringC", "appendingPathComponent"]
+- !private ["So8NSStringC", "convert"]
+- !private ["So8NSStringC", "init"]
+- !private ["s7NumericP", "init"]
+- !private ["So9OS_objectC", "async"]
+- !private ["So9OS_objectC", "global"]
+- !private ["So9OS_objectC", "main"]
+- !private ["s26RangeReplaceableCollectionP", "convert"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s16RawRepresentableP", "completed"]
+- !private ["s16RawRepresentableP", "mp4"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["s8SequenceP", "convert"]
+- !private ["s8SequenceP", "init"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["s10StrideableP", "init"]
+- ["SS", "NSString"]
+- ["SS", "convert"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "convert"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "convert"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "convert"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["10Foundation3URLV", "init"]
+- !private ["14VideoSplashKit0A6CutterC", "AVAssetExportSession"]
+- !private ["14VideoSplashKit0A6CutterC", "AVFileType"]
+- !private ["14VideoSplashKit0A6CutterC", "AVURLAsset"]
+- ["14VideoSplashKit0A6CutterC", "CGFloat"]
+- !private ["14VideoSplashKit0A6CutterC", "CMTimeMakeWithSeconds"]
+- !private ["14VideoSplashKit0A6CutterC", "CMTimeRangeMake"]
+- !private ["14VideoSplashKit0A6CutterC", "DispatchQueue"]
+- !private ["14VideoSplashKit0A6CutterC", "FileManager"]
+- !private ["14VideoSplashKit0A6CutterC", "Float64"]
+- ["14VideoSplashKit0A6CutterC", "NSError"]
+- !private ["14VideoSplashKit0A6CutterC", "NSTemporaryDirectory"]
+- ["14VideoSplashKit0A6CutterC", "URL"]
+- ["14VideoSplashKit0A6CutterC", "Void"]
+- ["14VideoSplashKit0A6CutterC", "cropVideoWithUrl"]
+- ["14VideoSplashKit0A6CutterC", "deinit"]
+- ["14VideoSplashKit0A6CutterC", "init"]
+- !private ["14VideoSplashKit0A6CutterC", "print"]
+- !private ["s23_BidirectionalIndexableP", "convert"]
+- !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s15_CVarArgAlignedP", "init"]
+- !private ["s22_CVarArgPassedAsDoubleP", "init"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "convert"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "convert"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "convert"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "convert"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "convert"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "appendingPathComponent"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "convert"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s10_IndexableP", "convert"]
+- !private ["s10_IndexableP", "init"]
+- !private ["s14_IndexableBaseP", "convert"]
+- !private ["s14_IndexableBaseP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "AVAssetExportSession"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "AVFileType"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "AVURLAsset"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CMTimeMakeWithSeconds"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CMTimeRangeMake"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "DispatchQueue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "FileManager"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Float64"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NSTemporaryDirectory"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "URL"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "appendingPathComponent"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "async"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "convert"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "createDirectory"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "default"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "exportAsynchronously"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "fileExists"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "global"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "outputFileType"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "outputURL"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "removeItem"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shouldOptimizeForNetworkUse"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "status"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "timeRange"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "convert"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "mp4"]
+- !private ["s26_RangeReplaceableIndexableP", "convert"]
+- !private ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s11_StrideableP", "init"]
+- !private ["s20_SwiftNewtypeWrapperP", "mp4"]
+- !private ["s16_SwiftStringViewP", "convert"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "So7AVAssetC"
+- !private "So20AVAssetExportSessionC"
+- !private "SC26AVAssetExportSessionStatusO"
+- !private "So29AVAsynchronousKeyValueLoadingP"
+- !private "So21AVContentKeyRecipientP"
+- !private "SC10AVFileTypeV"
+- !private "So10AVURLAssetC"
+- !private "s23BidirectionalCollectionP"
+- !private "s19BinaryFloatingPointP"
+- !private "Sb"
+- "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "So14DispatchObjectC"
+- !private "So13DispatchQueueC"
+- !private "Sd"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "So11FileManagerC"
+- !private "s13FloatingPointP"
+- "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "s7NumericP"
+- !private "So9OS_objectC"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s16RawRepresentableP"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "s8SequenceP"
+- !private "s13SignedNumericP"
+- !private "s10StrideableP"
+- "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "10Foundation3URLV"
+- "14VideoSplashKit0A6CutterC"
+- !private "s23_BidirectionalIndexableP"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s33_ExpressibleByBuiltinFloatLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s34_ExpressibleByFileReferenceLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s10_IndexableP"
+- !private "s14_IndexableBaseP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s26_RangeReplaceableIndexableP"
+- !private "s11_StrideableP"
+- !private "s20_SwiftNewtypeWrapperP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MediaPlayer.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/Pods/Target Support Files/VideoSplashKit/VideoSplashKit-umbrella.h"
+- "/Users/alexmorin/Desktop/Hack2018/iOS/Hack2018/DerivedData/Hack2018/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/VideoSplashKit.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/MediaPlayer.framework/Headers/MediaPlayer.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/AVKit.framework/Headers/AVKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+interface-hash: "090800e06c675727a6a07eaf2fba8111"
