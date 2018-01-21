@@ -53,6 +53,7 @@ extension String {
             "ARRIVE": CString(fr: "Arrivé à destination", en: "Arrived to destination", es: "Llegada a destino"),
             "BRAVO": CString(fr: "Félicitations!", en: "Congratulations!", es: "Felicitaciones"),
             "TABLEVIEW": CString(fr: "Liste de missions", en: "Missions list", es: "Lista de misiones"),
+            "PROFILE": CString(fr: "Profile", en: "Profil", es: "Perfil"),
         ]
         
         switch lang {

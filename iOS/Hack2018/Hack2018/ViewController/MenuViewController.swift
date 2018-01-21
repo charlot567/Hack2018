@@ -33,11 +33,43 @@ class MenuViewController: UIViewController, UNUserNotificationCenterDelegate {
             ControllerDidYouKnow.save(dyns: dyns)
         }
         
-        
-        goToMissionsListView()
+    
         
         UNUserNotificationCenter.current().delegate = self
         
+        let height = (kHeight - navBar.frame.height) / 3
+        let topButton = UIButton()
+        topButton.frame = CGRect(x: 0, y: navBar.frame.maxY, width: kWidth, height: height)
+        topButton.backgroundColor = UIColor.blue
+        topButton.layer.borderWidth = 1
+        topButton.layer.borderColor = UIColor.white.cgColor
+        topButton.setTitle("TABLEVIEW".lz(), for: .normal)
+        topButton.titleLabel?.font = UIFont(name: "Arial-BoldMT", size: 35)
+        topButton.addTarget(self, action: #selector(goToMissionsListView), for: .touchUpInside)
+        topButton.setTitleColor(.white, for: .normal)
+        self.view.addSubview(topButton)
+        
+        let middleButton = UIButton()
+        middleButton.frame = CGRect(x: 0, y: topButton.frame.maxY, width: kWidth, height: height)
+        middleButton.backgroundColor = UIColor.green
+        middleButton.layer.borderWidth = 1
+        middleButton.layer.borderColor = UIColor.white.cgColor
+        middleButton.setTitle("NAO".lz(), for: .normal)
+        middleButton.setTitleColor(.white, for: .normal)
+        middleButton.titleLabel?.font = UIFont(name: "Arial-BoldMT", size: 35)
+        middleButton.addTarget(self, action: #selector(goToNao), for: .touchUpInside)
+        self.view.addSubview(middleButton)
+        
+        let bottomButton = UIButton()
+        bottomButton.frame = CGRect(x: 0, y: middleButton.frame.maxY, width: kWidth, height: height)
+        bottomButton.backgroundColor = UIColor.red
+        bottomButton.layer.borderWidth = 1
+        bottomButton.layer.borderColor = UIColor.white.cgColor
+        bottomButton.setTitle("PROFILE".lz(), for: .normal)
+        bottomButton.setTitleColor(.white, for: .normal)
+        bottomButton.titleLabel?.font = UIFont(name: "Arial-BoldMT", size: 35)
+        bottomButton.addTarget(self, action: #selector(goToProfile), for: .touchUpInside)
+        self.view.addSubview(bottomButton)
         
         //  CHOIX DES LANGUES .... \\\\\\\\\\\\\\\
     }
@@ -72,7 +104,7 @@ class MenuViewController: UIViewController, UNUserNotificationCenterDelegate {
         print("OpenAmigo")
     }
     
-    func goToMissionsListView() {
+    @objc func goToMissionsListView() {
         SwiftSpinner.show("FETCHING_USER_INFO".lz())
         
         ControllerMission.get { (missions: [Mission]) in
@@ -87,8 +119,11 @@ class MenuViewController: UIViewController, UNUserNotificationCenterDelegate {
                 }
             }
         }
-        
-        
+    }
+    
+    @objc
+    func goToNao() {
+        print("NAO")
     }
     
     override func didReceiveMemoryWarning() {
