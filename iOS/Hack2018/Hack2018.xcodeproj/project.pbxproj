@@ -11,6 +11,7 @@
 		3F04B45C201449680020E1D6 /* ControllerMission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04B45B201449680020E1D6 /* ControllerMission.swift */; };
 		3F04B45E201449950020E1D6 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04B45D201449950020E1D6 /* Mission.swift */; };
 		3F04B46220144FBB0020E1D6 /* AcceptMissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04B46120144FBB0020E1D6 /* AcceptMissionView.swift */; };
+		3F04B4642014621B0020E1D6 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04B4632014621B0020E1D6 /* CustomCell.swift */; };
 		3FA297C62013C196009C27D2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA297C52013C196009C27D2 /* LoginViewController.swift */; };
 		3FD7424E2013C7A400323F31 /* login_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3FD7424D2013C7A400323F31 /* login_video.mp4 */; };
 		3FD742502013C97B00323F31 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD7424F2013C97B00323F31 /* Extensions.swift */; };
@@ -44,6 +45,7 @@
 		3F04B45B201449680020E1D6 /* ControllerMission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerMission.swift; sourceTree = "<group>"; };
 		3F04B45D201449950020E1D6 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
 		3F04B46120144FBB0020E1D6 /* AcceptMissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptMissionView.swift; sourceTree = "<group>"; };
+		3F04B4632014621B0020E1D6 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		3FA297C52013C196009C27D2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3FD7424D2013C7A400323F31 /* login_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = login_video.mp4; sourceTree = "<group>"; };
 		3FD7424F2013C97B00323F31 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				3F04B4592014495C0020E1D6 /* MissionListView.swift */,
 				3F04B45D201449950020E1D6 /* Mission.swift */,
 				3F04B46120144FBB0020E1D6 /* AcceptMissionView.swift */,
+				3F04B4632014621B0020E1D6 /* CustomCell.swift */,
 			);
 			path = Hack2018;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 			files = (
 				3FD7426720143C0E00323F31 /* DidYouKnow.swift in Sources */,
 				3FD7426520143AAA00323F31 /* ControllerDidYouKnow.swift in Sources */,
+				3F04B4642014621B0020E1D6 /* CustomCell.swift in Sources */,
 				A791780C2013B99200635F27 /* Global.swift in Sources */,
 				3FD742632014270400323F31 /* ProfileView.swift in Sources */,
 				3FD742502013C97B00323F31 /* Extensions.swift in Sources */,

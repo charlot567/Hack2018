@@ -28,6 +28,7 @@ class MissionListView: UIView, UITableViewDelegate, UITableViewDataSource {
         tableView = UITableView(frame: CGRect(x: 0, y: navBar.frame.height, width: kWidth, height: kHeight - navBar.frame.height))
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.register(CustomCell.self, forCellReuseIdentifier: "ReuseID")
         self.addSubview(tableView)
     }
     
@@ -44,11 +45,33 @@ class MissionListView: UIView, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "reuseCellID")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ReuseID") as! CustomCell
         
-        cell.textLabel?.text = missions[indexPath.row].title
+        cell.title.text = missions[indexPath.row].title
+        cell.status.text = getStatusLabel(status: missions[indexPath.row].status)
         
         return cell
+    }
+    
+    func reloadData() {
+        ControllerMission.get { (missions: [Mission]) in
+            self.missions = missions
+            self.tableView.reloadData()
+        }
+    }
+    
+    func getStatusLabel(status: Status) -> String {
+        if(status == .completed) {
+            return "COMPLETE".lz()
+        } else if(status == .inProgress) {
+            return "IN_PROGRESS".lz()
+        }
+        
+        return "TODO".lz()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
