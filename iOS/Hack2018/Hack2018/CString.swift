@@ -12,4 +12,5 @@ struct CString {
     var fr = "-"
     var en = "-"
     var es = "-"
+    var it = "-"
 }
