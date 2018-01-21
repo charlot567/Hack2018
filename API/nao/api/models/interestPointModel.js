@@ -12,7 +12,7 @@ var InterestPointSchema = new Schema({
     imageUrl: {
         type: String
     },
-    moreInfoUrl: {
+    url: {
         type: String,
     },
     category: {

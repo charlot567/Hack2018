@@ -16,4 +16,8 @@ module.exports = function(app) {
     app.route('/user/getById')
     .get(user.getUserById)
     .post(user.getUserById);
+
+    app.route('/user/addUser')
+    .get(user.addUser)
+    .post(user.addUser);
 };
