@@ -13,7 +13,14 @@ import UserNotifications
 class ControllerDidYouKnow {
     
     static func get(completition: @escaping (_: [DidYouKnow]) -> Void) {
-        let parameters = ["lang": "fr"]
+        let user = UserDefaults.standard
+        var lang = user.value(forKey: "LANGUAGE") as? String
+        
+        if(lang == nil) {
+            lang = "fr"
+        }
+        
+        let parameters = ["lang": lang]
         
         guard let url = URL(string: "\(apiAdress)/didYouKnow/getByLang") else { return }
         
