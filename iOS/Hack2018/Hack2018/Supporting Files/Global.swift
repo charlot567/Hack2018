@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 let kDebug = true
 var kWidth: CGFloat = 0
@@ -27,4 +28,24 @@ func displayAlert(viewController: UIViewController, title: String, message: Stri
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
         viewController.present(alert, animated: true, completion: nil)
     }
+}
+
+func addNotification(title: String, body: String) {
+    let center = UNUserNotificationCenter.current()
+    
+    let content = UNMutableNotificationContent()
+    content.title = title
+    content.body = body
+    content.sound = UNNotificationSound.default()
+    let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5,
+                                                    repeats: false)
+    
+    let identifier = "UYLLocalNotification"
+    let request = UNNotificationRequest(identifier: identifier,
+                                        content: content, trigger: trigger)
+    center.add(request, withCompletionHandler: { (error) in
+        if let error = error {
+            print(error)
+        }
+    })
 }

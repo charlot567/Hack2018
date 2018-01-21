@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import UserNotifications
 
-class MenuViewController: UIViewController {
+class MenuViewController: UIViewController, UNUserNotificationCenterDelegate {
 
     private var navBar: NavBar!
     
@@ -28,6 +29,8 @@ class MenuViewController: UIViewController {
         ControllerDidYouKnow.get { (dyns: [DidYouKnow]) in
             ControllerDidYouKnow.save(dyns: dyns)
         }
+        
+        UNUserNotificationCenter.current().delegate = self
     }
     
     private func initAllView() {
@@ -62,5 +65,11 @@ class MenuViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    //  For displaying notification when app is in foreground
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        
+        completionHandler([.alert, .badge, .sound])
     }
 }

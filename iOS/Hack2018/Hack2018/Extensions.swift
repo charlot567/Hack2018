@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 extension UIView {
     
@@ -40,6 +41,7 @@ extension String {
             "FETCHING_USER_INFO": CString(fr: "Récupération des infos", en: "Fetching infos", es: "Obteniendo información"),
             "LANG": CString(fr: "Language", en: "Language", es: "Idioma"),
             "SCORE": CString(fr: "Score", en: "Score", es: "Puntuación"),
+            "FUN_FACT": CString(fr: "Fait intéréssant", en: "Fun fact", es: "Hecho de la diversión"),
         ]
         
         switch lang {
@@ -53,3 +55,4 @@ extension String {
     }
     
 }
+

@@ -59,6 +59,7 @@ class ControllerDidYouKnow {
         
         for dyn in dyns {
             
+            //  DONT FORGET TO replace exist with !exist
             if(exist(id: dyn.id)) {
                 print("Add to coredata: \(dyn.id)")
                 
@@ -68,14 +69,7 @@ class ControllerDidYouKnow {
                 d.setValue(dyn.id, forKey: "id")
                 d.setValue(dyn.text, forKey: "title")
                 
-                let center = UNUserNotificationCenter.current()
-                
-                let nl = UILocalNotification()
-                let calendar = Calendar.current
-                let newDate = calendar.date(byAdding: .second, value: 30, to: Date())
-                print("date: \(newDate)")
-                nl.fireDate = newDate
-                nl.alertBody = "Salut"
+                addNotification(title: "FUN_FACT".lz(), body: dyn.text)
                 
                 do {
                     try context.save()
