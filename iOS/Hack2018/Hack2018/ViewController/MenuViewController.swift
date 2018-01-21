@@ -21,7 +21,7 @@ class MenuViewController: UIViewController, UNUserNotificationCenterDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        menuViewController = self
         initAllView()
         self.navBar = NavBar()
         self.view.addSubview(navBar)
@@ -109,9 +109,12 @@ class MenuViewController: UIViewController, UNUserNotificationCenterDelegate {
         
         ControllerMission.get { (missions: [Mission]) in
             DispatchQueue.main.async {
+                SwiftSpinner.hide()
+                
                 self.missionListView.missions = missions
                 self.missionListView.frame.origin.x = kWidth
                 self.view.addSubview(self.missionListView)
+                
                 UIView.animate(withDuration: 0.3, animations: {
                     self.missionListView.frame.origin.x = 0
                 }) { (_: Bool) in
