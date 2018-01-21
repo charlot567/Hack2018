@@ -26,7 +26,7 @@ class MenuViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(logout), name: logoutNotifName, object: nil)
         
         ControllerDidYouKnow.get { (dyns: [DidYouKnow]) in
-            
+            ControllerDidYouKnow.save(dyns: dyns)
         }
     }
     
