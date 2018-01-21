@@ -12,7 +12,7 @@ exports.getAll = function(req, res) {
 };
 
 exports.getByCategory = function(req, res) {
-    const {category} = req.params;
+    const category = req.query.category || req.body.category;
     InterestPoint.find({category}, function(err, point) {
     if (err)
       res.send(err);
@@ -22,10 +22,10 @@ exports.getByCategory = function(req, res) {
 
 exports.addInterestPoint = function(req, res) {
     const new_interestPoint = new InterestPoint(req.body);
-    console.log(new_interestPoint);
-   /* new_interestPoint.save(function(err, point) {
+
+    new_interestPoint.save(function(err, point) {
     if (err)
         res.send(err);
     res.json(point);
-  });*/
+  });
 };

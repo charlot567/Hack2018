@@ -6,10 +6,16 @@ var UserSchema = new Schema({
     name: {
         type: String,
     },
-    facebookId: {
-        type: Number,
+    userId: {
+        type: String,
     },
     email: {
+        type: String,
+    },
+    lang: {
+        type: String,
+    },
+    score:{
         type: String,
     }
 });
