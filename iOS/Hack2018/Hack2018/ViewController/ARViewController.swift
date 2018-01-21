@@ -18,10 +18,15 @@ class ARViewController: UIViewController {
     var answerNode2 = SCNNode()
     var answerNode3 = SCNNode()
     
+    var textNode = SCNNode()
+    
     var answer1 = SCNText()
     var answer3 = SCNText()
     var answer2 = SCNText()
     var currentMission: Mission?
+    var isDone = false;
+    
+    var text = SCNText()
     
     var statusLabel = UILabel()
     
@@ -74,7 +79,7 @@ class ARViewController: UIViewController {
     }
     
     func generateMessage(message: String) -> SCNNode {
-        let text = SCNText(string: message, extrusionDepth: 2)
+        text = SCNText(string: message, extrusionDepth: 2)
         //  create material
         let material = SCNMaterial()
         text.alignmentMode = kCAAlignmentCenter
@@ -122,7 +127,7 @@ class ARViewController: UIViewController {
         textQuestion.materials = [material]
         
         //Create Node object
-        var textNode = SCNNode()
+        textNode = SCNNode()
         textNode.scale = SCNVector3(x:0.002,y:0.002,z:0.002)
         textNode.geometry = textQuestion
         textNode.position = SCNVector3(x: -0.15, y:-0.040, z: -0.498)
@@ -210,6 +215,36 @@ class ARViewController: UIViewController {
         return returnNode
     }
     
+    func changeQuestionText(text: String) {
+        var text2 = SCNText(string: text, extrusionDepth: 2)
+        //  create material
+        let material = SCNMaterial()
+        text2.alignmentMode = kCAAlignmentCenter
+        text2.isWrapped = true
+        text2.containerFrame = CGRect(x: 0, y: 0, width: 140, height: 150)
+        material.diffuse.contents = UIColor.black
+        text2.materials = [material]
+    
+        //Create Node object
+        textNode.geometry = text2
+    }
+    
+    func changeAnswerNode2Text(text: String) {
+        var textans = SCNText(string: text, extrusionDepth: 2)
+        //  create material
+        let material4 = SCNMaterial()
+        textans.alignmentMode = kCAAlignmentCenter
+        textans.isWrapped = true
+        textans.containerFrame = CGRect(x: 0, y: 0, width: 140, height: 100)
+        material4.diffuse.contents = UIColor.blue
+        textans.materials = [material4]
+        
+        //Create Node object
+        answerNode2.geometry = textans
+    }
+    
+    
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch = touches.first as! UITouch
         if(touch.view == self.sceneView){
@@ -219,27 +254,61 @@ class ARViewController: UIViewController {
                 return
             }
             if answerNode1.contains(result.node) { //myObjectNodes is declared as  Set<SCNNode>
-                print("Réponse 1 choisi")
-                if(currentMission?.questions.answer[0].isCorrect!)! {
+                if(currentMission?.questions.answer[0].isCorrect)! {
                     answer1.materials[0].diffuse.contents = UIColor.green
+                    changeQuestionText(text: (currentMission?.feedback.good!)!)
                 } else {
                     answer1.materials[0].diffuse.contents = UIColor.red
+                    changeQuestionText(text: (currentMission?.feedback.wrong!)!)
                 }
-                answer1.materials[0].diffuse.contents = UIColor.yellow
+                
+                answerNode1.removeFromParentNode();
+                answerNode3.removeFromParentNode();
+                changeAnswerNode2Text(text: "Continuer".lz())
+                isDone = true;
+                
+                
+                
             } else if answerNode2.contains(result.node) {
-                print("Réponse 2 choisi")
-                if(currentMission?.questions.answer[1].isCorrect!)! {
+                
+                if(isDone) {
+                    var  vc = MenuViewController()
+                    self.present(vc, animated: true, completion: nil)
+                    
+                    ControllerUser.updateScore(score: self.currentMission!.reward)
+                    ControllerMission.complete(mission: missions[indexPath.row])
+                }
+                
+                
+                if(currentMission?.questions.answer[1].isCorrect)! {
                     answer2.materials[0].diffuse.contents = UIColor.green
+                    changeQuestionText(text: (currentMission?.feedback.good!)!)
                 } else {
                     answer2.materials[0].diffuse.contents = UIColor.red
+                    changeQuestionText(text: (currentMission?.feedback.wrong!)!)
                 }
+                
+                answerNode1.removeFromParentNode();
+                answerNode3.removeFromParentNode();
+                changeAnswerNode2Text(text: "Continuer".lz())
+                isDone = true;
+
             } else if answerNode3.contains(result.node) {
-                print("Réponse 3 choisi")
-                if(currentMission?.questions.answer[2].isCorrect!)! {
+                
+                
+                if (currentMission?.questions.answer[2].isCorrect)! {
                     answer3.materials[0].diffuse.contents = UIColor.green
+                    changeQuestionText(text: (currentMission?.feedback.good!)!)
                 } else {
                     answer3.materials[0].diffuse.contents = UIColor.red
+                    changeQuestionText(text: (currentMission?.feedback.wrong!)!)
                 }
+                
+                answerNode1.removeFromParentNode();
+                answerNode3.removeFromParentNode();
+                changeAnswerNode2Text(text: "Continuer".lz())
+                isDone = true;
+
             }
             
         }
@@ -347,6 +416,13 @@ extension ARViewController: ARSCNViewDelegate {
         //node.addChildNode(generateMessage(message: "This is a right answer of course you knew it was number 3 or maybe 2 it does not really matter!"))
         
         sceneView.scene.isPaused = true
+        
+        
+        let configuration = ARWorldTrackingConfiguration()
+        
+        // Run the view's session
+        sceneView.session.run(configuration)
+        
     }
     
     func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {

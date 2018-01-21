@@ -7,6 +7,7 @@ provides-member:
 - ["8Hack201817ControllerMissionC", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "+="
 - !private "=="
 - !private "Answer"
 - !private "Array"
@@ -16,6 +17,7 @@ depends-top-level:
 - "ControllerMission"
 - !private "Dictionary"
 - !private "Double"
+- !private "Feedback"
 - !private "Int"
 - !private "JSONSerialization"
 - "Mission"
@@ -52,6 +54,7 @@ depends-member:
 - !private ["8Hack201817ControllerMissionC", "CLLocationCoordinate2D"]
 - !private ["8Hack201817ControllerMissionC", "Dictionary"]
 - !private ["8Hack201817ControllerMissionC", "Double"]
+- !private ["8Hack201817ControllerMissionC", "Feedback"]
 - !private ["8Hack201817ControllerMissionC", "Int"]
 - !private ["8Hack201817ControllerMissionC", "JSONSerialization"]
 - ["8Hack201817ControllerMissionC", "Mission"]
@@ -119,6 +122,7 @@ depends-member:
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["8Hack20188FeedbackV", "init"]
 - !private ["s8HashableP", "addValue"]
 - !private ["s8HashableP", "data"]
 - !private ["s8HashableP", "dataTask"]
@@ -249,6 +253,7 @@ depends-nominal:
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "8Hack20188FeedbackV"
 - !private "s8HashableP"
 - !private "So17JSONSerializationC"
 - !private "s25LosslessStringConvertibleP"

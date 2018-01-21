@@ -7,6 +7,7 @@ provides-member:
 - ["8Hack201817ControllerMissionC", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "+="
 - !private "=="
 - !private "Answer"
 - !private "Array"
@@ -16,6 +17,7 @@ depends-top-level:
 - "ControllerMission"
 - !private "Dictionary"
 - !private "Double"
+- !private "Feedback"
 - !private "Int"
 - !private "JSONSerialization"
 - "Mission"
@@ -33,10 +35,8 @@ depends-member:
 - !private ["8Hack20186AnswerV", "init"]
 - !private ["Sa", "append"]
 - !private ["Sa", "init"]
-- !private ["Sa", "subscript"]
 - !private ["s23BidirectionalCollectionP", "append"]
 - !private ["s23BidirectionalCollectionP", "init"]
-- !private ["s23BidirectionalCollectionP", "subscript"]
 - !private ["SC22CLLocationCoordinate2DV", "init"]
 - !private ["s7CVarArgP", "append"]
 - !private ["s7CVarArgP", "data"]
@@ -54,6 +54,7 @@ depends-member:
 - !private ["8Hack201817ControllerMissionC", "CLLocationCoordinate2D"]
 - !private ["8Hack201817ControllerMissionC", "Dictionary"]
 - !private ["8Hack201817ControllerMissionC", "Double"]
+- !private ["8Hack201817ControllerMissionC", "Feedback"]
 - !private ["8Hack201817ControllerMissionC", "Int"]
 - !private ["8Hack201817ControllerMissionC", "JSONSerialization"]
 - ["8Hack201817ControllerMissionC", "Mission"]
@@ -117,11 +118,11 @@ depends-member:
 - !private ["s9EquatableP", "toDo"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
-- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["8Hack20188FeedbackV", "init"]
 - !private ["s8HashableP", "addValue"]
 - !private ["s8HashableP", "data"]
 - !private ["s8HashableP", "dataTask"]
@@ -139,7 +140,6 @@ depends-member:
 - !private ["8Hack20187MissionC", "init"]
 - !private ["s17MutableCollectionP", "append"]
 - !private ["s17MutableCollectionP", "init"]
-- !private ["s17MutableCollectionP", "subscript"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "resume"]
@@ -163,10 +163,8 @@ depends-member:
 - !private ["8Hack20188QuestionV", "init"]
 - !private ["s22RandomAccessCollectionP", "append"]
 - !private ["s22RandomAccessCollectionP", "init"]
-- !private ["s22RandomAccessCollectionP", "subscript"]
 - !private ["s26RangeReplaceableCollectionP", "append"]
 - !private ["s26RangeReplaceableCollectionP", "init"]
-- !private ["s26RangeReplaceableCollectionP", "subscript"]
 - !private ["10Foundation20ReferenceConvertibleP", "addValue"]
 - !private ["10Foundation20ReferenceConvertibleP", "httpBody"]
 - !private ["10Foundation20ReferenceConvertibleP", "httpMethod"]
@@ -197,13 +195,10 @@ depends-member:
 - !private ["8Hack20184UserC", "lang"]
 - !private ["s14_ArrayProtocolP", "append"]
 - !private ["s14_ArrayProtocolP", "init"]
-- !private ["s14_ArrayProtocolP", "subscript"]
 - !private ["s23_BidirectionalIndexableP", "append"]
 - !private ["s23_BidirectionalIndexableP", "init"]
-- !private ["s23_BidirectionalIndexableP", "subscript"]
 - !private ["s24_DestructorSafeContainerP", "append"]
 - !private ["s24_DestructorSafeContainerP", "init"]
-- !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
@@ -225,7 +220,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
 - !private ["s17_MutableIndexableP", "append"]
 - !private ["s17_MutableIndexableP", "init"]
-- !private ["s17_MutableIndexableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "addValue"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "httpBody"]
@@ -234,10 +228,8 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s22_RandomAccessIndexableP", "append"]
 - !private ["s22_RandomAccessIndexableP", "init"]
-- !private ["s22_RandomAccessIndexableP", "subscript"]
 - !private ["s26_RangeReplaceableIndexableP", "append"]
 - !private ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "subscript"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "8Hack20186AnswerV"
@@ -261,6 +253,7 @@ depends-nominal:
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "8Hack20188FeedbackV"
 - !private "s8HashableP"
 - !private "So17JSONSerializationC"
 - !private "s25LosslessStringConvertibleP"
