@@ -4,16 +4,19 @@ provides-top-level:
 - "Question"
 - "Answer"
 - "Status"
+- "Feedback"
 provides-nominal:
 - "8Hack20187MissionC"
 - "8Hack20188QuestionV"
 - "8Hack20186AnswerV"
 - "8Hack20186StatusO"
+- "8Hack20188FeedbackV"
 provides-member:
 - ["8Hack20187MissionC", ""]
 - ["8Hack20188QuestionV", ""]
 - ["8Hack20186AnswerV", ""]
 - ["8Hack20186StatusO", ""]
+- ["8Hack20188FeedbackV", ""]
 provides-dynamic-lookup:
 depends-top-level:
 - "=="
@@ -21,6 +24,7 @@ depends-top-level:
 - "AssignmentPrecedence"
 - "Bool"
 - "CLLocationCoordinate2D"
+- "Feedback"
 - !private "FloatLiteralType"
 - "Int"
 - !private "IntegerLiteralType"
@@ -55,6 +59,10 @@ depends-member:
 - ["s9EquatableP", ""]
 - ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s27ExpressibleByIntegerLiteralP", "hashValue"]
+- ["8Hack20188FeedbackV", "String"]
+- ["8Hack20188FeedbackV", "good"]
+- ["8Hack20188FeedbackV", "init"]
+- ["8Hack20188FeedbackV", "wrong"]
 - !private ["s17FixedWidthIntegerP", "hashValue"]
 - ["s8HashableP", "hashValue"]
 - ["s8HashableP", ""]
@@ -62,6 +70,7 @@ depends-member:
 - !private ["s25LosslessStringConvertibleP", "hashValue"]
 - !private ["s10MirrorPathP", "hashValue"]
 - ["8Hack20187MissionC", "CLLocationCoordinate2D"]
+- ["8Hack20187MissionC", "Feedback"]
 - ["8Hack20187MissionC", "Int"]
 - ["8Hack20187MissionC", "Question"]
 - ["8Hack20187MissionC", "Status"]
@@ -69,6 +78,7 @@ depends-member:
 - ["8Hack20187MissionC", "deinit"]
 - ["8Hack20187MissionC", "description"]
 - ["8Hack20187MissionC", "feedback"]
+- ["8Hack20187MissionC", "id"]
 - ["8Hack20187MissionC", "init"]
 - ["8Hack20187MissionC", "lang"]
 - ["8Hack20187MissionC", "position"]
@@ -125,6 +135,7 @@ depends-nominal:
 - "s9EquatableP"
 - "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
+- "8Hack20188FeedbackV"
 - !private "s17FixedWidthIntegerP"
 - "s8HashableP"
 - !private "Si"
@@ -249,4 +260,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/SceneKit.framework/Headers/SceneKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
-interface-hash: "e967c4c322f85437176d34ed4e10a422"
+interface-hash: "7db35b62272dde0297402fdffcace9db"

@@ -114,7 +114,11 @@ class AcceptMissionView: UIView, CLLocationManagerDelegate {
             self.rewardLbl.text = "\(self.mission.reward!) \("POINT".lz())"
         }
         
-        
+        if(self.mission.status == .completed) {
+            self.startBtn.isHidden = true
+        } else {
+            self.startBtn.isHidden = false
+        }
     }
     
     func updateUI() {
@@ -137,7 +141,7 @@ class AcceptMissionView: UIView, CLLocationManagerDelegate {
             self.statusLbl.text = "IN_PROGRESS".lz()
             
             let timerInterval: TimeInterval = 2
-            addNotification(title: "ARRIVE".lz(), body: "BRAVO".lz(), timeInteval: timerInterval)
+            addNotification(title: "ARRIVE".lz(), body: "BRAVO".lz(), timeInteval: timerInterval, userInfo: nil)
             
             Timer.scheduledTimer(withTimeInterval: timerInterval, repeats: false, block: { (_: Timer) in
                 DispatchQueue.main.async {

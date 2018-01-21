@@ -65,6 +65,7 @@ extension String {
             "PROFILE": CString(fr: "Profile", en: "Profil", es: "Perfil"),
             "USE_LANG": CString(fr: "En quelle langue voulez-vous utiliser l'application?", en: "In wich language would you like to use the app?", es: "¿En qué idioma quieres usar la aplicación?"),
             "FIND_PLANE": CString(fr: "Veuillez trouver une surface plane", en: "Please find a flat surface", es: "Por favor encuentre una superficie plana"), "Continuer": CString(fr: "Continuer", en: "Continue", es: "Seguir"),
+            "COMPLETED": CString(fr: "Completé", en: "Complete", es: "Terminado"),
         ]
         
         switch lang! {

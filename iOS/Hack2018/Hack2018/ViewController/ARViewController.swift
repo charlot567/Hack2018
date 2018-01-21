@@ -18,6 +18,8 @@ class ARViewController: UIViewController {
     var answerNode2 = SCNNode()
     var answerNode3 = SCNNode()
     
+    var currentFact = String()
+    
     var textNode = SCNNode()
     
     var answer1 = SCNText()
@@ -33,7 +35,12 @@ class ARViewController: UIViewController {
     init(mission: Mission) {
         self.currentMission = mission
         super.init(nibName: nil, bundle: nil)
-        
+    }
+    
+    init(fact: String) {
+        self.currentMission = nil
+        self.currentFact = fact
+        super.init(nibName: nil, bundle: nil)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -248,11 +255,12 @@ class ARViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch = touches.first as! UITouch
         if(touch.view == self.sceneView){
-            print("touch working")
             let viewTouchLocation:CGPoint = touch.location(in: sceneView)
+
             guard let result = sceneView.hitTest(viewTouchLocation, options: nil).first else {
                 return
             }
+            
             if answerNode1.contains(result.node) { //myObjectNodes is declared as  Set<SCNNode>
                 if(currentMission?.questions.answer[0].isCorrect)! {
                     answer1.materials[0].diffuse.contents = UIColor.green
@@ -276,7 +284,7 @@ class ARViewController: UIViewController {
                     self.present(vc, animated: true, completion: nil)
                     
                     ControllerUser.updateScore(score: self.currentMission!.reward)
-                    ControllerMission.complete(mission: missions[indexPath.row])
+                    ControllerMission.complete(mission: self.currentMission!)
                 }
                 
                 
@@ -410,6 +418,8 @@ extension ARViewController: ARSCNViewDelegate {
         
         if(currentMission != nil) {
             node.addChildNode(generateQuestionAR(Question: (currentMission?.questions.title!)!, Answer: (currentMission?.questions.answer)!))
+        } else if(currentFact != "") {
+            node.addChildNode(generateMessage(message: currentFact))
         }
         
         

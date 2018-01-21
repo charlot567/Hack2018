@@ -41,6 +41,7 @@ depends-top-level:
 - !private "CGPoint"
 - !private "CGRect"
 - "CastingPrecedence"
+- !private "ControllerMission"
 - !private "ControllerUser"
 - !private "DispatchQueue"
 - "Error"
@@ -87,6 +88,7 @@ depends-member:
 - !private ["So17ARSCNViewDelegateP", "ARWorldTrackingConfiguration"]
 - !private ["So17ARSCNViewDelegateP", "CGFloat"]
 - !private ["So17ARSCNViewDelegateP", "CGRect"]
+- !private ["So17ARSCNViewDelegateP", "ControllerMission"]
 - !private ["So17ARSCNViewDelegateP", "ControllerUser"]
 - !private ["So17ARSCNViewDelegateP", "DispatchQueue"]
 - !private ["So17ARSCNViewDelegateP", "MenuViewController"]
@@ -97,6 +99,7 @@ depends-member:
 - !private ["So17ARSCNViewDelegateP", "SCNScene"]
 - ["So17ARSCNViewDelegateP", "SCNText"]
 - !private ["So17ARSCNViewDelegateP", "SCNVector3"]
+- ["So17ARSCNViewDelegateP", "String"]
 - !private ["So17ARSCNViewDelegateP", "UIColor"]
 - ["So17ARSCNViewDelegateP", "UILabel"]
 - !private ["So17ARSCNViewDelegateP", "answer1"]
@@ -107,7 +110,9 @@ depends-member:
 - !private ["So17ARSCNViewDelegateP", "answerNode3"]
 - !private ["So17ARSCNViewDelegateP", "changeAnswerNode2Text"]
 - !private ["So17ARSCNViewDelegateP", "changeQuestionText"]
+- !private ["So17ARSCNViewDelegateP", "currentFact"]
 - !private ["So17ARSCNViewDelegateP", "currentMission"]
+- !private ["So17ARSCNViewDelegateP", "generateMessage"]
 - !private ["So17ARSCNViewDelegateP", "generateQuestionAR"]
 - !private ["So17ARSCNViewDelegateP", "isDone"]
 - !private ["So17ARSCNViewDelegateP", "kCAAlignmentCenter"]
@@ -130,6 +135,7 @@ depends-member:
 - !private ["So17ARSessionObserverP", "ARWorldTrackingConfiguration"]
 - !private ["So17ARSessionObserverP", "CGFloat"]
 - !private ["So17ARSessionObserverP", "CGRect"]
+- !private ["So17ARSessionObserverP", "ControllerMission"]
 - !private ["So17ARSessionObserverP", "ControllerUser"]
 - !private ["So17ARSessionObserverP", "DispatchQueue"]
 - !private ["So17ARSessionObserverP", "MenuViewController"]
@@ -140,6 +146,7 @@ depends-member:
 - !private ["So17ARSessionObserverP", "SCNScene"]
 - ["So17ARSessionObserverP", "SCNText"]
 - !private ["So17ARSessionObserverP", "SCNVector3"]
+- ["So17ARSessionObserverP", "String"]
 - !private ["So17ARSessionObserverP", "UIColor"]
 - ["So17ARSessionObserverP", "UILabel"]
 - !private ["So17ARSessionObserverP", "answer1"]
@@ -150,7 +157,9 @@ depends-member:
 - !private ["So17ARSessionObserverP", "answerNode3"]
 - !private ["So17ARSessionObserverP", "changeAnswerNode2Text"]
 - !private ["So17ARSessionObserverP", "changeQuestionText"]
+- !private ["So17ARSessionObserverP", "currentFact"]
 - !private ["So17ARSessionObserverP", "currentMission"]
+- !private ["So17ARSessionObserverP", "generateMessage"]
 - !private ["So17ARSessionObserverP", "generateQuestionAR"]
 - !private ["So17ARSessionObserverP", "isDone"]
 - !private ["So17ARSessionObserverP", "kCAAlignmentCenter"]
@@ -177,6 +186,7 @@ depends-member:
 - !private ["8Hack201816ARViewControllerC", "CGFloat"]
 - !private ["8Hack201816ARViewControllerC", "CGPoint"]
 - !private ["8Hack201816ARViewControllerC", "CGRect"]
+- !private ["8Hack201816ARViewControllerC", "ControllerMission"]
 - !private ["8Hack201816ARViewControllerC", "ControllerUser"]
 - !private ["8Hack201816ARViewControllerC", "DispatchQueue"]
 - ["8Hack201816ARViewControllerC", "Error"]
@@ -205,6 +215,7 @@ depends-member:
 - ["8Hack201816ARViewControllerC", "answerNode3"]
 - ["8Hack201816ARViewControllerC", "changeAnswerNode2Text"]
 - ["8Hack201816ARViewControllerC", "changeQuestionText"]
+- ["8Hack201816ARViewControllerC", "currentFact"]
 - ["8Hack201816ARViewControllerC", "currentMission"]
 - ["8Hack201816ARViewControllerC", "deinit"]
 - ["8Hack201816ARViewControllerC", "didReceiveMemoryWarning"]
@@ -237,7 +248,7 @@ depends-member:
 - !private ["Sa", "subscript"]
 - !private ["s23BidirectionalCollectionP", "count"]
 - !private ["s23BidirectionalCollectionP", "first"]
-- !private ["s23BidirectionalCollectionP", "init"]
+- ["s23BidirectionalCollectionP", "init"]
 - !private ["s23BidirectionalCollectionP", "lz"]
 - !private ["s23BidirectionalCollectionP", "subscript"]
 - !private ["s19BinaryFloatingPointP", "init"]
@@ -270,6 +281,7 @@ depends-member:
 - !private ["s7CVarArgP", "ARWorldTrackingConfiguration"]
 - !private ["s7CVarArgP", "CGFloat"]
 - !private ["s7CVarArgP", "CGRect"]
+- !private ["s7CVarArgP", "ControllerMission"]
 - !private ["s7CVarArgP", "ControllerUser"]
 - !private ["s7CVarArgP", "DispatchQueue"]
 - !private ["s7CVarArgP", "MenuViewController"]
@@ -280,6 +292,7 @@ depends-member:
 - !private ["s7CVarArgP", "SCNScene"]
 - ["s7CVarArgP", "SCNText"]
 - !private ["s7CVarArgP", "SCNVector3"]
+- ["s7CVarArgP", "String"]
 - !private ["s7CVarArgP", "UIColor"]
 - ["s7CVarArgP", "UILabel"]
 - !private ["s7CVarArgP", "addChildNode"]
@@ -306,6 +319,7 @@ depends-member:
 - !private ["s7CVarArgP", "contents"]
 - !private ["s7CVarArgP", "cornerRadius"]
 - !private ["s7CVarArgP", "count"]
+- !private ["s7CVarArgP", "currentFact"]
 - !private ["s7CVarArgP", "currentMission"]
 - !private ["s7CVarArgP", "debugOptions"]
 - !private ["s7CVarArgP", "delegate"]
@@ -315,6 +329,7 @@ depends-member:
 - !private ["s7CVarArgP", "extent"]
 - !private ["s7CVarArgP", "first"]
 - !private ["s7CVarArgP", "frame"]
+- !private ["s7CVarArgP", "generateMessage"]
 - !private ["s7CVarArgP", "generateQuestionAR"]
 - !private ["s7CVarArgP", "geometry"]
 - !private ["s7CVarArgP", "green"]
@@ -367,21 +382,23 @@ depends-member:
 - ["s7CVarArgP", ""]
 - !private ["s10CollectionP", "count"]
 - !private ["s10CollectionP", "first"]
-- !private ["s10CollectionP", "init"]
+- ["s10CollectionP", "init"]
 - !private ["s10CollectionP", "lz"]
 - !private ["s10CollectionP", "subscript"]
 - !private ["s10CollectionP", "x"]
 - !private ["s10CollectionP", "y"]
 - !private ["s10CollectionP", "z"]
-- !private ["s10ComparableP", "init"]
+- ["s10ComparableP", "init"]
 - !private ["s10ComparableP", "lz"]
 - !private ["s10ComparableP", "pi"]
+- !private ["8Hack201817ControllerMissionC", "complete"]
 - !private ["8Hack201814ControllerUserC", "updateScore"]
 - !private ["s28CustomDebugStringConvertibleP", "ARSCNDebugOptions"]
 - !private ["s28CustomDebugStringConvertibleP", "ARSCNView"]
 - !private ["s28CustomDebugStringConvertibleP", "ARWorldTrackingConfiguration"]
 - !private ["s28CustomDebugStringConvertibleP", "CGFloat"]
 - !private ["s28CustomDebugStringConvertibleP", "CGRect"]
+- !private ["s28CustomDebugStringConvertibleP", "ControllerMission"]
 - !private ["s28CustomDebugStringConvertibleP", "ControllerUser"]
 - !private ["s28CustomDebugStringConvertibleP", "DispatchQueue"]
 - !private ["s28CustomDebugStringConvertibleP", "MenuViewController"]
@@ -392,6 +409,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "SCNScene"]
 - ["s28CustomDebugStringConvertibleP", "SCNText"]
 - !private ["s28CustomDebugStringConvertibleP", "SCNVector3"]
+- ["s28CustomDebugStringConvertibleP", "String"]
 - !private ["s28CustomDebugStringConvertibleP", "UIColor"]
 - ["s28CustomDebugStringConvertibleP", "UILabel"]
 - !private ["s28CustomDebugStringConvertibleP", "addChildNode"]
@@ -419,6 +437,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "contents"]
 - !private ["s28CustomDebugStringConvertibleP", "cornerRadius"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "currentFact"]
 - !private ["s28CustomDebugStringConvertibleP", "currentMission"]
 - !private ["s28CustomDebugStringConvertibleP", "debugOptions"]
 - !private ["s28CustomDebugStringConvertibleP", "delegate"]
@@ -429,6 +448,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "first"]
 - !private ["s28CustomDebugStringConvertibleP", "float3"]
 - !private ["s28CustomDebugStringConvertibleP", "frame"]
+- !private ["s28CustomDebugStringConvertibleP", "generateMessage"]
 - !private ["s28CustomDebugStringConvertibleP", "generateQuestionAR"]
 - !private ["s28CustomDebugStringConvertibleP", "geometry"]
 - !private ["s28CustomDebugStringConvertibleP", "green"]
@@ -484,7 +504,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "height"]
-- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "lz"]
 - !private ["s29CustomPlaygroundQuickLookableP", "pi"]
 - !private ["s29CustomPlaygroundQuickLookableP", "width"]
@@ -492,7 +512,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "count"]
 - !private ["s17CustomReflectableP", "first"]
 - !private ["s17CustomReflectableP", "height"]
-- !private ["s17CustomReflectableP", "init"]
+- ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "lz"]
 - !private ["s17CustomReflectableP", "pi"]
 - !private ["s17CustomReflectableP", "subscript"]
@@ -502,6 +522,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "ARWorldTrackingConfiguration"]
 - !private ["s23CustomStringConvertibleP", "CGFloat"]
 - !private ["s23CustomStringConvertibleP", "CGRect"]
+- !private ["s23CustomStringConvertibleP", "ControllerMission"]
 - !private ["s23CustomStringConvertibleP", "ControllerUser"]
 - !private ["s23CustomStringConvertibleP", "DispatchQueue"]
 - !private ["s23CustomStringConvertibleP", "MenuViewController"]
@@ -512,6 +533,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "SCNScene"]
 - ["s23CustomStringConvertibleP", "SCNText"]
 - !private ["s23CustomStringConvertibleP", "SCNVector3"]
+- ["s23CustomStringConvertibleP", "String"]
 - !private ["s23CustomStringConvertibleP", "UIColor"]
 - ["s23CustomStringConvertibleP", "UILabel"]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
@@ -539,6 +561,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "contents"]
 - !private ["s23CustomStringConvertibleP", "cornerRadius"]
 - !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "currentFact"]
 - !private ["s23CustomStringConvertibleP", "currentMission"]
 - !private ["s23CustomStringConvertibleP", "debugOptions"]
 - !private ["s23CustomStringConvertibleP", "delegate"]
@@ -548,6 +571,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "extent"]
 - !private ["s23CustomStringConvertibleP", "first"]
 - !private ["s23CustomStringConvertibleP", "frame"]
+- !private ["s23CustomStringConvertibleP", "generateMessage"]
 - !private ["s23CustomStringConvertibleP", "generateQuestionAR"]
 - !private ["s23CustomStringConvertibleP", "geometry"]
 - !private ["s23CustomStringConvertibleP", "green"]
@@ -602,7 +626,7 @@ depends-member:
 - !private ["s9DecodableP", "count"]
 - !private ["s9DecodableP", "first"]
 - !private ["s9DecodableP", "height"]
-- !private ["s9DecodableP", "init"]
+- ["s9DecodableP", "init"]
 - !private ["s9DecodableP", "lz"]
 - !private ["s9DecodableP", "pi"]
 - !private ["s9DecodableP", "subscript"]
@@ -615,7 +639,7 @@ depends-member:
 - !private ["s9EncodableP", "count"]
 - !private ["s9EncodableP", "first"]
 - !private ["s9EncodableP", "height"]
-- !private ["s9EncodableP", "init"]
+- ["s9EncodableP", "init"]
 - !private ["s9EncodableP", "lz"]
 - !private ["s9EncodableP", "pi"]
 - !private ["s9EncodableP", "subscript"]
@@ -625,6 +649,7 @@ depends-member:
 - !private ["s9EquatableP", "ARWorldTrackingConfiguration"]
 - !private ["s9EquatableP", "CGFloat"]
 - !private ["s9EquatableP", "CGRect"]
+- !private ["s9EquatableP", "ControllerMission"]
 - !private ["s9EquatableP", "ControllerUser"]
 - !private ["s9EquatableP", "DispatchQueue"]
 - !private ["s9EquatableP", "MenuViewController"]
@@ -635,6 +660,7 @@ depends-member:
 - !private ["s9EquatableP", "SCNScene"]
 - ["s9EquatableP", "SCNText"]
 - !private ["s9EquatableP", "SCNVector3"]
+- ["s9EquatableP", "String"]
 - !private ["s9EquatableP", "UIColor"]
 - ["s9EquatableP", "UILabel"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
@@ -662,6 +688,7 @@ depends-member:
 - !private ["s9EquatableP", "contains"]
 - !private ["s9EquatableP", "contents"]
 - !private ["s9EquatableP", "cornerRadius"]
+- !private ["s9EquatableP", "currentFact"]
 - !private ["s9EquatableP", "currentMission"]
 - !private ["s9EquatableP", "debugOptions"]
 - !private ["s9EquatableP", "delegate"]
@@ -672,6 +699,7 @@ depends-member:
 - !private ["s9EquatableP", "first"]
 - !private ["s9EquatableP", "float3"]
 - !private ["s9EquatableP", "frame"]
+- !private ["s9EquatableP", "generateMessage"]
 - !private ["s9EquatableP", "generateQuestionAR"]
 - !private ["s9EquatableP", "geometry"]
 - !private ["s9EquatableP", "green"]
@@ -734,15 +762,15 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "y"]
 - !private ["s25ExpressibleByArrayLiteralP", "z"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
-- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "lz"]
 - !private ["s25ExpressibleByFloatLiteralP", "init"]
 - !private ["s25ExpressibleByFloatLiteralP", "pi"]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s27ExpressibleByIntegerLiteralP", "pi"]
-- !private ["s26ExpressibleByStringLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "lz"]
-- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "lz"]
 - !private ["8Hack20188FeedbackV", "good"]
 - !private ["8Hack20188FeedbackV", "wrong"]
@@ -754,6 +782,7 @@ depends-member:
 - !private ["s8HashableP", "ARWorldTrackingConfiguration"]
 - !private ["s8HashableP", "CGFloat"]
 - !private ["s8HashableP", "CGRect"]
+- !private ["s8HashableP", "ControllerMission"]
 - !private ["s8HashableP", "ControllerUser"]
 - !private ["s8HashableP", "DispatchQueue"]
 - !private ["s8HashableP", "MenuViewController"]
@@ -764,6 +793,7 @@ depends-member:
 - !private ["s8HashableP", "SCNScene"]
 - ["s8HashableP", "SCNText"]
 - !private ["s8HashableP", "SCNVector3"]
+- ["s8HashableP", "String"]
 - !private ["s8HashableP", "UIColor"]
 - ["s8HashableP", "UILabel"]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
@@ -790,6 +820,7 @@ depends-member:
 - !private ["s8HashableP", "contains"]
 - !private ["s8HashableP", "contents"]
 - !private ["s8HashableP", "cornerRadius"]
+- !private ["s8HashableP", "currentFact"]
 - !private ["s8HashableP", "currentMission"]
 - !private ["s8HashableP", "debugOptions"]
 - !private ["s8HashableP", "delegate"]
@@ -799,6 +830,7 @@ depends-member:
 - !private ["s8HashableP", "extent"]
 - !private ["s8HashableP", "first"]
 - !private ["s8HashableP", "frame"]
+- !private ["s8HashableP", "generateMessage"]
 - !private ["s8HashableP", "generateQuestionAR"]
 - !private ["s8HashableP", "geometry"]
 - !private ["s8HashableP", "green"]
@@ -849,11 +881,11 @@ depends-member:
 - !private ["s8HashableP", "withAlphaComponent"]
 - ["s8HashableP", ""]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
-- !private ["s25LosslessStringConvertibleP", "init"]
+- ["s25LosslessStringConvertibleP", "init"]
 - !private ["s25LosslessStringConvertibleP", "lz"]
 - !private ["s25LosslessStringConvertibleP", "pi"]
 - !private ["8Hack201818MenuViewControllerC", "init"]
-- !private ["s10MirrorPathP", "init"]
+- ["s10MirrorPathP", "init"]
 - !private ["s10MirrorPathP", "lz"]
 - !private ["8Hack20187MissionC", "feedback"]
 - !private ["8Hack20187MissionC", "questions"]
@@ -866,6 +898,7 @@ depends-member:
 - !private ["So8NSCodingP", "ARWorldTrackingConfiguration"]
 - !private ["So8NSCodingP", "CGFloat"]
 - !private ["So8NSCodingP", "CGRect"]
+- !private ["So8NSCodingP", "ControllerMission"]
 - !private ["So8NSCodingP", "ControllerUser"]
 - !private ["So8NSCodingP", "DispatchQueue"]
 - !private ["So8NSCodingP", "MenuViewController"]
@@ -876,6 +909,7 @@ depends-member:
 - !private ["So8NSCodingP", "SCNScene"]
 - ["So8NSCodingP", "SCNText"]
 - !private ["So8NSCodingP", "SCNVector3"]
+- ["So8NSCodingP", "String"]
 - !private ["So8NSCodingP", "UIColor"]
 - ["So8NSCodingP", "UILabel"]
 - !private ["So8NSCodingP", "addChildNode"]
@@ -899,6 +933,7 @@ depends-member:
 - !private ["So8NSCodingP", "contains"]
 - !private ["So8NSCodingP", "contents"]
 - !private ["So8NSCodingP", "cornerRadius"]
+- !private ["So8NSCodingP", "currentFact"]
 - !private ["So8NSCodingP", "currentMission"]
 - !private ["So8NSCodingP", "debugOptions"]
 - !private ["So8NSCodingP", "delegate"]
@@ -906,6 +941,7 @@ depends-member:
 - !private ["So8NSCodingP", "diffuse"]
 - !private ["So8NSCodingP", "eulerAngles"]
 - !private ["So8NSCodingP", "frame"]
+- !private ["So8NSCodingP", "generateMessage"]
 - !private ["So8NSCodingP", "generateQuestionAR"]
 - !private ["So8NSCodingP", "geometry"]
 - !private ["So8NSCodingP", "green"]
@@ -982,6 +1018,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "ARWorldTrackingConfiguration"]
 - !private ["So26NSExtensionRequestHandlingP", "CGFloat"]
 - !private ["So26NSExtensionRequestHandlingP", "CGRect"]
+- !private ["So26NSExtensionRequestHandlingP", "ControllerMission"]
 - !private ["So26NSExtensionRequestHandlingP", "ControllerUser"]
 - !private ["So26NSExtensionRequestHandlingP", "DispatchQueue"]
 - !private ["So26NSExtensionRequestHandlingP", "MenuViewController"]
@@ -992,6 +1029,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "SCNScene"]
 - ["So26NSExtensionRequestHandlingP", "SCNText"]
 - !private ["So26NSExtensionRequestHandlingP", "SCNVector3"]
+- ["So26NSExtensionRequestHandlingP", "String"]
 - !private ["So26NSExtensionRequestHandlingP", "UIColor"]
 - ["So26NSExtensionRequestHandlingP", "UILabel"]
 - !private ["So26NSExtensionRequestHandlingP", "answer1"]
@@ -1002,8 +1040,10 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "answerNode3"]
 - !private ["So26NSExtensionRequestHandlingP", "changeAnswerNode2Text"]
 - !private ["So26NSExtensionRequestHandlingP", "changeQuestionText"]
+- !private ["So26NSExtensionRequestHandlingP", "currentFact"]
 - !private ["So26NSExtensionRequestHandlingP", "currentMission"]
 - !private ["So26NSExtensionRequestHandlingP", "didReceiveMemoryWarning"]
+- !private ["So26NSExtensionRequestHandlingP", "generateMessage"]
 - !private ["So26NSExtensionRequestHandlingP", "generateQuestionAR"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "isDone"]
@@ -1054,6 +1094,7 @@ depends-member:
 - !private ["So8NSObjectC", "CGFloat"]
 - !private ["So8NSObjectC", "CGPoint"]
 - !private ["So8NSObjectC", "CGRect"]
+- !private ["So8NSObjectC", "ControllerMission"]
 - !private ["So8NSObjectC", "ControllerUser"]
 - !private ["So8NSObjectC", "DispatchQueue"]
 - ["So8NSObjectC", "Error"]
@@ -1097,6 +1138,7 @@ depends-member:
 - !private ["So8NSObjectC", "contains"]
 - !private ["So8NSObjectC", "contents"]
 - !private ["So8NSObjectC", "cornerRadius"]
+- ["So8NSObjectC", "currentFact"]
 - ["So8NSObjectC", "currentMission"]
 - !private ["So8NSObjectC", "debugOptions"]
 - !private ["So8NSObjectC", "delegate"]
@@ -1159,6 +1201,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "ARWorldTrackingConfiguration"]
 - !private ["So16NSObjectProtocolP", "CGFloat"]
 - !private ["So16NSObjectProtocolP", "CGRect"]
+- !private ["So16NSObjectProtocolP", "ControllerMission"]
 - !private ["So16NSObjectProtocolP", "ControllerUser"]
 - !private ["So16NSObjectProtocolP", "DispatchQueue"]
 - !private ["So16NSObjectProtocolP", "MenuViewController"]
@@ -1169,6 +1212,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "SCNScene"]
 - ["So16NSObjectProtocolP", "SCNText"]
 - !private ["So16NSObjectProtocolP", "SCNVector3"]
+- ["So16NSObjectProtocolP", "String"]
 - !private ["So16NSObjectProtocolP", "UIColor"]
 - ["So16NSObjectProtocolP", "UILabel"]
 - !private ["So16NSObjectProtocolP", "addChildNode"]
@@ -1194,6 +1238,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "contains"]
 - !private ["So16NSObjectProtocolP", "contents"]
 - !private ["So16NSObjectProtocolP", "cornerRadius"]
+- !private ["So16NSObjectProtocolP", "currentFact"]
 - !private ["So16NSObjectProtocolP", "currentMission"]
 - !private ["So16NSObjectProtocolP", "debugOptions"]
 - !private ["So16NSObjectProtocolP", "delegate"]
@@ -1202,6 +1247,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "eulerAngles"]
 - !private ["So16NSObjectProtocolP", "extent"]
 - !private ["So16NSObjectProtocolP", "frame"]
+- !private ["So16NSObjectProtocolP", "generateMessage"]
 - !private ["So16NSObjectProtocolP", "generateQuestionAR"]
 - !private ["So16NSObjectProtocolP", "geometry"]
 - !private ["So16NSObjectProtocolP", "green"]
@@ -1295,7 +1341,7 @@ depends-member:
 - !private ["s22RandomAccessCollectionP", "subscript"]
 - !private ["s26RangeReplaceableCollectionP", "count"]
 - !private ["s26RangeReplaceableCollectionP", "first"]
-- !private ["s26RangeReplaceableCollectionP", "init"]
+- ["s26RangeReplaceableCollectionP", "init"]
 - !private ["s26RangeReplaceableCollectionP", "lz"]
 - !private ["s26RangeReplaceableCollectionP", "subscript"]
 - !private ["s16RawRepresentableP", "center"]
@@ -1388,6 +1434,7 @@ depends-member:
 - !private ["So24SCNSceneRendererDelegateP", "ARWorldTrackingConfiguration"]
 - !private ["So24SCNSceneRendererDelegateP", "CGFloat"]
 - !private ["So24SCNSceneRendererDelegateP", "CGRect"]
+- !private ["So24SCNSceneRendererDelegateP", "ControllerMission"]
 - !private ["So24SCNSceneRendererDelegateP", "ControllerUser"]
 - !private ["So24SCNSceneRendererDelegateP", "DispatchQueue"]
 - !private ["So24SCNSceneRendererDelegateP", "MenuViewController"]
@@ -1398,6 +1445,7 @@ depends-member:
 - !private ["So24SCNSceneRendererDelegateP", "SCNScene"]
 - ["So24SCNSceneRendererDelegateP", "SCNText"]
 - !private ["So24SCNSceneRendererDelegateP", "SCNVector3"]
+- ["So24SCNSceneRendererDelegateP", "String"]
 - !private ["So24SCNSceneRendererDelegateP", "UIColor"]
 - ["So24SCNSceneRendererDelegateP", "UILabel"]
 - !private ["So24SCNSceneRendererDelegateP", "answer1"]
@@ -1408,7 +1456,9 @@ depends-member:
 - !private ["So24SCNSceneRendererDelegateP", "answerNode3"]
 - !private ["So24SCNSceneRendererDelegateP", "changeAnswerNode2Text"]
 - !private ["So24SCNSceneRendererDelegateP", "changeQuestionText"]
+- !private ["So24SCNSceneRendererDelegateP", "currentFact"]
 - !private ["So24SCNSceneRendererDelegateP", "currentMission"]
+- !private ["So24SCNSceneRendererDelegateP", "generateMessage"]
 - !private ["So24SCNSceneRendererDelegateP", "generateQuestionAR"]
 - !private ["So24SCNSceneRendererDelegateP", "isDone"]
 - !private ["So24SCNSceneRendererDelegateP", "kCAAlignmentCenter"]
@@ -1456,7 +1506,7 @@ depends-member:
 - !private ["So7SCNViewC", "showsStatistics"]
 - !private ["s8SequenceP", "count"]
 - !private ["s8SequenceP", "first"]
-- !private ["s8SequenceP", "init"]
+- ["s8SequenceP", "init"]
 - !private ["s8SequenceP", "lz"]
 - !private ["s8SequenceP", "subscript"]
 - !private ["s8SequenceP", "x"]
@@ -1470,13 +1520,13 @@ depends-member:
 - !private ["s12StaticStringV", "init"]
 - !private ["s10StrideableP", "init"]
 - !private ["s10StrideableP", "pi"]
-- !private ["SS", "init"]
+- ["SS", "init"]
 - !private ["SS", "lz"]
-- !private ["s14StringProtocolP", "init"]
+- ["s14StringProtocolP", "init"]
 - !private ["s14StringProtocolP", "lz"]
-- !private ["s16TextOutputStreamP", "init"]
+- ["s16TextOutputStreamP", "init"]
 - !private ["s16TextOutputStreamP", "lz"]
-- !private ["s20TextOutputStreamableP", "init"]
+- ["s20TextOutputStreamableP", "init"]
 - !private ["s20TextOutputStreamableP", "lz"]
 - !private ["So29UIAccessibilityIdentificationP", "addSubview"]
 - !private ["So29UIAccessibilityIdentificationP", "backgroundColor"]
@@ -1515,6 +1565,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "ARWorldTrackingConfiguration"]
 - !private ["So21UIAppearanceContainerP", "CGFloat"]
 - !private ["So21UIAppearanceContainerP", "CGRect"]
+- !private ["So21UIAppearanceContainerP", "ControllerMission"]
 - !private ["So21UIAppearanceContainerP", "ControllerUser"]
 - !private ["So21UIAppearanceContainerP", "DispatchQueue"]
 - !private ["So21UIAppearanceContainerP", "MenuViewController"]
@@ -1525,6 +1576,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "SCNScene"]
 - ["So21UIAppearanceContainerP", "SCNText"]
 - !private ["So21UIAppearanceContainerP", "SCNVector3"]
+- ["So21UIAppearanceContainerP", "String"]
 - !private ["So21UIAppearanceContainerP", "UIColor"]
 - ["So21UIAppearanceContainerP", "UILabel"]
 - !private ["So21UIAppearanceContainerP", "addSubview"]
@@ -1538,11 +1590,13 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "changeAnswerNode2Text"]
 - !private ["So21UIAppearanceContainerP", "changeQuestionText"]
 - !private ["So21UIAppearanceContainerP", "clipsToBounds"]
+- !private ["So21UIAppearanceContainerP", "currentFact"]
 - !private ["So21UIAppearanceContainerP", "currentMission"]
 - !private ["So21UIAppearanceContainerP", "debugOptions"]
 - !private ["So21UIAppearanceContainerP", "delegate"]
 - !private ["So21UIAppearanceContainerP", "didReceiveMemoryWarning"]
 - !private ["So21UIAppearanceContainerP", "frame"]
+- !private ["So21UIAppearanceContainerP", "generateMessage"]
 - !private ["So21UIAppearanceContainerP", "generateQuestionAR"]
 - !private ["So21UIAppearanceContainerP", "hitTest"]
 - ["So21UIAppearanceContainerP", "init"]
@@ -1581,6 +1635,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "ARWorldTrackingConfiguration"]
 - !private ["So18UIContentContainerP", "CGFloat"]
 - !private ["So18UIContentContainerP", "CGRect"]
+- !private ["So18UIContentContainerP", "ControllerMission"]
 - !private ["So18UIContentContainerP", "ControllerUser"]
 - !private ["So18UIContentContainerP", "DispatchQueue"]
 - !private ["So18UIContentContainerP", "MenuViewController"]
@@ -1591,6 +1646,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "SCNScene"]
 - ["So18UIContentContainerP", "SCNText"]
 - !private ["So18UIContentContainerP", "SCNVector3"]
+- ["So18UIContentContainerP", "String"]
 - !private ["So18UIContentContainerP", "UIColor"]
 - ["So18UIContentContainerP", "UILabel"]
 - !private ["So18UIContentContainerP", "answer1"]
@@ -1601,8 +1657,10 @@ depends-member:
 - !private ["So18UIContentContainerP", "answerNode3"]
 - !private ["So18UIContentContainerP", "changeAnswerNode2Text"]
 - !private ["So18UIContentContainerP", "changeQuestionText"]
+- !private ["So18UIContentContainerP", "currentFact"]
 - !private ["So18UIContentContainerP", "currentMission"]
 - !private ["So18UIContentContainerP", "didReceiveMemoryWarning"]
+- !private ["So18UIContentContainerP", "generateMessage"]
 - !private ["So18UIContentContainerP", "generateQuestionAR"]
 - !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "isDone"]
@@ -1668,6 +1726,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "ARWorldTrackingConfiguration"]
 - !private ["So18UIFocusEnvironmentP", "CGFloat"]
 - !private ["So18UIFocusEnvironmentP", "CGRect"]
+- !private ["So18UIFocusEnvironmentP", "ControllerMission"]
 - !private ["So18UIFocusEnvironmentP", "ControllerUser"]
 - !private ["So18UIFocusEnvironmentP", "DispatchQueue"]
 - !private ["So18UIFocusEnvironmentP", "MenuViewController"]
@@ -1678,6 +1737,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "SCNScene"]
 - ["So18UIFocusEnvironmentP", "SCNText"]
 - !private ["So18UIFocusEnvironmentP", "SCNVector3"]
+- ["So18UIFocusEnvironmentP", "String"]
 - !private ["So18UIFocusEnvironmentP", "UIColor"]
 - ["So18UIFocusEnvironmentP", "UILabel"]
 - !private ["So18UIFocusEnvironmentP", "addChildNode"]
@@ -1695,12 +1755,14 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "childNodes"]
 - !private ["So18UIFocusEnvironmentP", "clipsToBounds"]
 - !private ["So18UIFocusEnvironmentP", "contains"]
+- !private ["So18UIFocusEnvironmentP", "currentFact"]
 - !private ["So18UIFocusEnvironmentP", "currentMission"]
 - !private ["So18UIFocusEnvironmentP", "debugOptions"]
 - !private ["So18UIFocusEnvironmentP", "delegate"]
 - !private ["So18UIFocusEnvironmentP", "didReceiveMemoryWarning"]
 - !private ["So18UIFocusEnvironmentP", "eulerAngles"]
 - !private ["So18UIFocusEnvironmentP", "frame"]
+- !private ["So18UIFocusEnvironmentP", "generateMessage"]
 - !private ["So18UIFocusEnvironmentP", "generateQuestionAR"]
 - !private ["So18UIFocusEnvironmentP", "geometry"]
 - !private ["So18UIFocusEnvironmentP", "hitTest"]
@@ -1770,6 +1832,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "ARWorldTrackingConfiguration"]
 - !private ["So30UIPasteConfigurationSupportingP", "CGFloat"]
 - !private ["So30UIPasteConfigurationSupportingP", "CGRect"]
+- !private ["So30UIPasteConfigurationSupportingP", "ControllerMission"]
 - !private ["So30UIPasteConfigurationSupportingP", "ControllerUser"]
 - !private ["So30UIPasteConfigurationSupportingP", "DispatchQueue"]
 - !private ["So30UIPasteConfigurationSupportingP", "MenuViewController"]
@@ -1780,6 +1843,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "SCNScene"]
 - ["So30UIPasteConfigurationSupportingP", "SCNText"]
 - !private ["So30UIPasteConfigurationSupportingP", "SCNVector3"]
+- ["So30UIPasteConfigurationSupportingP", "String"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
 - ["So30UIPasteConfigurationSupportingP", "UILabel"]
 - !private ["So30UIPasteConfigurationSupportingP", "addSubview"]
@@ -1793,11 +1857,13 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "changeAnswerNode2Text"]
 - !private ["So30UIPasteConfigurationSupportingP", "changeQuestionText"]
 - !private ["So30UIPasteConfigurationSupportingP", "clipsToBounds"]
+- !private ["So30UIPasteConfigurationSupportingP", "currentFact"]
 - !private ["So30UIPasteConfigurationSupportingP", "currentMission"]
 - !private ["So30UIPasteConfigurationSupportingP", "debugOptions"]
 - !private ["So30UIPasteConfigurationSupportingP", "delegate"]
 - !private ["So30UIPasteConfigurationSupportingP", "didReceiveMemoryWarning"]
 - !private ["So30UIPasteConfigurationSupportingP", "frame"]
+- !private ["So30UIPasteConfigurationSupportingP", "generateMessage"]
 - !private ["So30UIPasteConfigurationSupportingP", "generateQuestionAR"]
 - !private ["So30UIPasteConfigurationSupportingP", "hitTest"]
 - ["So30UIPasteConfigurationSupportingP", "init"]
@@ -1835,6 +1901,7 @@ depends-member:
 - !private ["So11UIResponderC", "CGFloat"]
 - !private ["So11UIResponderC", "CGPoint"]
 - !private ["So11UIResponderC", "CGRect"]
+- !private ["So11UIResponderC", "ControllerMission"]
 - !private ["So11UIResponderC", "ControllerUser"]
 - !private ["So11UIResponderC", "DispatchQueue"]
 - ["So11UIResponderC", "Error"]
@@ -1866,6 +1933,7 @@ depends-member:
 - ["So11UIResponderC", "changeAnswerNode2Text"]
 - ["So11UIResponderC", "changeQuestionText"]
 - !private ["So11UIResponderC", "clipsToBounds"]
+- ["So11UIResponderC", "currentFact"]
 - ["So11UIResponderC", "currentMission"]
 - !private ["So11UIResponderC", "debugOptions"]
 - !private ["So11UIResponderC", "delegate"]
@@ -1903,6 +1971,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "ARWorldTrackingConfiguration"]
 - !private ["So30UIResponderStandardEditActionsP", "CGFloat"]
 - !private ["So30UIResponderStandardEditActionsP", "CGRect"]
+- !private ["So30UIResponderStandardEditActionsP", "ControllerMission"]
 - !private ["So30UIResponderStandardEditActionsP", "ControllerUser"]
 - !private ["So30UIResponderStandardEditActionsP", "DispatchQueue"]
 - !private ["So30UIResponderStandardEditActionsP", "MenuViewController"]
@@ -1913,6 +1982,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "SCNScene"]
 - ["So30UIResponderStandardEditActionsP", "SCNText"]
 - !private ["So30UIResponderStandardEditActionsP", "SCNVector3"]
+- ["So30UIResponderStandardEditActionsP", "String"]
 - !private ["So30UIResponderStandardEditActionsP", "UIColor"]
 - ["So30UIResponderStandardEditActionsP", "UILabel"]
 - !private ["So30UIResponderStandardEditActionsP", "addSubview"]
@@ -1926,11 +1996,13 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "changeAnswerNode2Text"]
 - !private ["So30UIResponderStandardEditActionsP", "changeQuestionText"]
 - !private ["So30UIResponderStandardEditActionsP", "clipsToBounds"]
+- !private ["So30UIResponderStandardEditActionsP", "currentFact"]
 - !private ["So30UIResponderStandardEditActionsP", "currentMission"]
 - !private ["So30UIResponderStandardEditActionsP", "debugOptions"]
 - !private ["So30UIResponderStandardEditActionsP", "delegate"]
 - !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
 - !private ["So30UIResponderStandardEditActionsP", "frame"]
+- !private ["So30UIResponderStandardEditActionsP", "generateMessage"]
 - !private ["So30UIResponderStandardEditActionsP", "generateQuestionAR"]
 - !private ["So30UIResponderStandardEditActionsP", "hitTest"]
 - ["So30UIResponderStandardEditActionsP", "init"]
@@ -1962,6 +2034,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "ARWorldTrackingConfiguration"]
 - !private ["So16UIStateRestoringP", "CGFloat"]
 - !private ["So16UIStateRestoringP", "CGRect"]
+- !private ["So16UIStateRestoringP", "ControllerMission"]
 - !private ["So16UIStateRestoringP", "ControllerUser"]
 - !private ["So16UIStateRestoringP", "DispatchQueue"]
 - !private ["So16UIStateRestoringP", "MenuViewController"]
@@ -1972,6 +2045,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "SCNScene"]
 - ["So16UIStateRestoringP", "SCNText"]
 - !private ["So16UIStateRestoringP", "SCNVector3"]
+- ["So16UIStateRestoringP", "String"]
 - !private ["So16UIStateRestoringP", "UIColor"]
 - ["So16UIStateRestoringP", "UILabel"]
 - !private ["So16UIStateRestoringP", "answer1"]
@@ -1982,8 +2056,10 @@ depends-member:
 - !private ["So16UIStateRestoringP", "answerNode3"]
 - !private ["So16UIStateRestoringP", "changeAnswerNode2Text"]
 - !private ["So16UIStateRestoringP", "changeQuestionText"]
+- !private ["So16UIStateRestoringP", "currentFact"]
 - !private ["So16UIStateRestoringP", "currentMission"]
 - !private ["So16UIStateRestoringP", "didReceiveMemoryWarning"]
+- !private ["So16UIStateRestoringP", "generateMessage"]
 - !private ["So16UIStateRestoringP", "generateQuestionAR"]
 - !private ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "isDone"]
@@ -2010,6 +2086,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "ARWorldTrackingConfiguration"]
 - !private ["So18UITraitEnvironmentP", "CGFloat"]
 - !private ["So18UITraitEnvironmentP", "CGRect"]
+- !private ["So18UITraitEnvironmentP", "ControllerMission"]
 - !private ["So18UITraitEnvironmentP", "ControllerUser"]
 - !private ["So18UITraitEnvironmentP", "DispatchQueue"]
 - !private ["So18UITraitEnvironmentP", "MenuViewController"]
@@ -2020,6 +2097,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "SCNScene"]
 - ["So18UITraitEnvironmentP", "SCNText"]
 - !private ["So18UITraitEnvironmentP", "SCNVector3"]
+- ["So18UITraitEnvironmentP", "String"]
 - !private ["So18UITraitEnvironmentP", "UIColor"]
 - ["So18UITraitEnvironmentP", "UILabel"]
 - !private ["So18UITraitEnvironmentP", "addSubview"]
@@ -2033,11 +2111,13 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "changeAnswerNode2Text"]
 - !private ["So18UITraitEnvironmentP", "changeQuestionText"]
 - !private ["So18UITraitEnvironmentP", "clipsToBounds"]
+- !private ["So18UITraitEnvironmentP", "currentFact"]
 - !private ["So18UITraitEnvironmentP", "currentMission"]
 - !private ["So18UITraitEnvironmentP", "debugOptions"]
 - !private ["So18UITraitEnvironmentP", "delegate"]
 - !private ["So18UITraitEnvironmentP", "didReceiveMemoryWarning"]
 - !private ["So18UITraitEnvironmentP", "frame"]
+- !private ["So18UITraitEnvironmentP", "generateMessage"]
 - !private ["So18UITraitEnvironmentP", "generateQuestionAR"]
 - !private ["So18UITraitEnvironmentP", "hitTest"]
 - ["So18UITraitEnvironmentP", "init"]
@@ -2091,6 +2171,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "CGFloat"]
 - !private ["So16UIViewControllerC", "CGPoint"]
 - !private ["So16UIViewControllerC", "CGRect"]
+- !private ["So16UIViewControllerC", "ControllerMission"]
 - !private ["So16UIViewControllerC", "ControllerUser"]
 - !private ["So16UIViewControllerC", "DispatchQueue"]
 - ["So16UIViewControllerC", "Error"]
@@ -2119,6 +2200,7 @@ depends-member:
 - ["So16UIViewControllerC", "answerNode3"]
 - ["So16UIViewControllerC", "changeAnswerNode2Text"]
 - ["So16UIViewControllerC", "changeQuestionText"]
+- ["So16UIViewControllerC", "currentFact"]
 - ["So16UIViewControllerC", "currentMission"]
 - ["So16UIViewControllerC", "didReceiveMemoryWarning"]
 - ["So16UIViewControllerC", "generateMessage"]
@@ -2143,14 +2225,14 @@ depends-member:
 - ["So16UIViewControllerC", "viewWillDisappear"]
 - ["So16UIViewControllerC", ""]
 - !private ["So32UNUserNotificationCenterDelegateP", "init"]
-- !private ["9Alamofire14URLConvertibleP", "init"]
+- ["9Alamofire14URLConvertibleP", "init"]
 - !private ["9Alamofire14URLConvertibleP", "lz"]
 - !private ["s14_ArrayProtocolP", "count"]
 - !private ["s14_ArrayProtocolP", "first"]
 - !private ["s14_ArrayProtocolP", "subscript"]
 - !private ["s23_BidirectionalIndexableP", "count"]
 - !private ["s23_BidirectionalIndexableP", "first"]
-- !private ["s23_BidirectionalIndexableP", "init"]
+- ["s23_BidirectionalIndexableP", "init"]
 - !private ["s23_BidirectionalIndexableP", "lz"]
 - !private ["s23_BidirectionalIndexableP", "subscript"]
 - !private ["s15_CVarArgAlignedP", "init"]
@@ -2177,15 +2259,15 @@ depends-member:
 - !private ["s24_DestructorSafeContainerP", "first"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
-- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "lz"]
 - !private ["s33_ExpressibleByBuiltinFloatLiteralP", "pi"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "pi"]
-- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "lz"]
-- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "lz"]
-- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "lz"]
 - !private ["s26_ExpressibleByColorLiteralP", "black"]
 - !private ["s26_ExpressibleByColorLiteralP", "blue"]
@@ -2194,13 +2276,13 @@ depends-member:
 - !private ["s26_ExpressibleByColorLiteralP", "red"]
 - !private ["s26_ExpressibleByColorLiteralP", "white"]
 - !private ["s26_ExpressibleByColorLiteralP", "withAlphaComponent"]
-- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "lz"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "lz"]
 - !private ["s10_IndexableP", "count"]
 - !private ["s10_IndexableP", "first"]
-- !private ["s10_IndexableP", "init"]
+- ["s10_IndexableP", "init"]
 - !private ["s10_IndexableP", "lz"]
 - !private ["s10_IndexableP", "subscript"]
 - !private ["s10_IndexableP", "x"]
@@ -2208,7 +2290,7 @@ depends-member:
 - !private ["s10_IndexableP", "z"]
 - !private ["s14_IndexableBaseP", "count"]
 - !private ["s14_IndexableBaseP", "first"]
-- !private ["s14_IndexableBaseP", "init"]
+- ["s14_IndexableBaseP", "init"]
 - !private ["s14_IndexableBaseP", "lz"]
 - !private ["s14_IndexableBaseP", "subscript"]
 - !private ["s14_IndexableBaseP", "x"]
@@ -2219,6 +2301,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ARWorldTrackingConfiguration"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGFloat"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGRect"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ControllerMission"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ControllerUser"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "DispatchQueue"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "MenuViewController"]
@@ -2229,6 +2312,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "SCNScene"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "SCNText"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "SCNVector3"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "String"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "UILabel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addChildNode"]
@@ -2254,6 +2338,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "contains"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "contents"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cornerRadius"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "currentFact"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "currentMission"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "debugOptions"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
@@ -2262,6 +2347,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "eulerAngles"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "extent"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "frame"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "generateMessage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "generateQuestionAR"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "geometry"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "green"]
@@ -2317,7 +2403,7 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "count"]
 - !private ["s21_ObjectiveCBridgeableP", "first"]
 - !private ["s21_ObjectiveCBridgeableP", "height"]
-- !private ["s21_ObjectiveCBridgeableP", "init"]
+- ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "lz"]
 - !private ["s21_ObjectiveCBridgeableP", "pi"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
@@ -2328,12 +2414,12 @@ depends-member:
 - !private ["s22_RandomAccessIndexableP", "subscript"]
 - !private ["s26_RangeReplaceableIndexableP", "count"]
 - !private ["s26_RangeReplaceableIndexableP", "first"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
+- ["s26_RangeReplaceableIndexableP", "init"]
 - !private ["s26_RangeReplaceableIndexableP", "lz"]
 - !private ["s26_RangeReplaceableIndexableP", "subscript"]
 - !private ["s11_StrideableP", "init"]
 - !private ["s11_StrideableP", "pi"]
-- !private ["s16_SwiftStringViewP", "init"]
+- ["s16_SwiftStringViewP", "init"]
 - !private ["s16_SwiftStringViewP", "lz"]
 - !private ["4simd6float3V", "init"]
 - !private ["4simd6float3V", "x"]
@@ -2358,7 +2444,7 @@ depends-nominal:
 - !private "So28ARWorldTrackingConfigurationC"
 - !private "8Hack20186AnswerV"
 - !private "Sa"
-- !private "s23BidirectionalCollectionP"
+- "s23BidirectionalCollectionP"
 - !private "s19BinaryFloatingPointP"
 - !private "Sb"
 - !private "So7CALayerC"
@@ -2367,32 +2453,33 @@ depends-nominal:
 - !private "12CoreGraphics7CGFloatV"
 - !private "SC6CGRectV"
 - "s7CVarArgP"
-- !private "s10CollectionP"
-- !private "s10ComparableP"
+- "s10CollectionP"
+- "s10ComparableP"
+- !private "8Hack201817ControllerMissionC"
 - !private "8Hack201814ControllerUserC"
 - "s28CustomDebugStringConvertibleP"
-- !private "s29CustomPlaygroundQuickLookableP"
-- !private "s17CustomReflectableP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
+- "s9DecodableP"
 - !private "So14DispatchObjectC"
 - !private "So13DispatchQueueC"
-- !private "s9EncodableP"
+- "s9EncodableP"
 - "s9EquatableP"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
-- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s25ExpressibleByFloatLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
-- !private "s26ExpressibleByStringLiteralP"
-- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "8Hack20188FeedbackV"
 - !private "Sf"
 - !private "s13FloatingPointP"
 - "s8HashableP"
-- !private "s25LosslessStringConvertibleP"
+- "s25LosslessStringConvertibleP"
 - !private "8Hack201818MenuViewControllerC"
-- !private "s10MirrorPathP"
+- "s10MirrorPathP"
 - !private "8Hack20187MissionC"
 - !private "s17MutableCollectionP"
 - "So8NSCodingP"
@@ -2412,7 +2499,7 @@ depends-nominal:
 - !private "So28ARWorldTrackingConfigurationC14PlaneDetectionV"
 - !private "8Hack20188QuestionV"
 - !private "s22RandomAccessCollectionP"
-- !private "s26RangeReplaceableCollectionP"
+- "s26RangeReplaceableCollectionP"
 - !private "s16RawRepresentableP"
 - "So13SCNActionableP"
 - "So13SCNAnimatableP"
@@ -2431,16 +2518,16 @@ depends-nominal:
 - "So7SCNTextC"
 - !private "SC10SCNVector3V"
 - !private "So7SCNViewC"
-- !private "s8SequenceP"
+- "s8SequenceP"
 - !private "s3SetV"
 - !private "s10SetAlgebraP"
 - !private "s13SignedNumericP"
 - !private "s12StaticStringV"
 - !private "s10StrideableP"
-- !private "SS"
-- !private "s14StringProtocolP"
-- !private "s16TextOutputStreamP"
-- !private "s20TextOutputStreamableP"
+- "SS"
+- "s14StringProtocolP"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
 - "So29UIAccessibilityIdentificationP"
 - "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
@@ -2461,32 +2548,32 @@ depends-nominal:
 - "So6UIViewC"
 - "So16UIViewControllerC"
 - !private "So32UNUserNotificationCenterDelegateP"
-- !private "9Alamofire14URLConvertibleP"
+- "9Alamofire14URLConvertibleP"
 - !private "s14_ArrayProtocolP"
-- !private "s23_BidirectionalIndexableP"
+- "s23_BidirectionalIndexableP"
 - !private "s15_CVarArgAlignedP"
 - !private "s22_CVarArgPassedAsDoubleP"
 - "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
-- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s33_ExpressibleByBuiltinFloatLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
-- !private "s34_ExpressibleByBuiltinStringLiteralP"
-- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
-- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s26_ExpressibleByColorLiteralP"
-- !private "s33_ExpressibleByStringInterpolationP"
+- "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
+- "s10_IndexableP"
+- "s14_IndexableBaseP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s17_MutableIndexableP"
-- !private "s21_ObjectiveCBridgeableP"
+- "s21_ObjectiveCBridgeableP"
 - !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
+- "s26_RangeReplaceableIndexableP"
 - !private "s11_StrideableP"
-- !private "s16_SwiftStringViewP"
+- "s16_SwiftStringViewP"
 - !private "4simd6float3V"
 - !private "4simd6float4V"
 - "SC13simd_float4x4V"
@@ -2586,4 +2673,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/SceneKit.framework/Headers/SceneKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
-interface-hash: "3d8cd211a92df1a3accf9ae35f3471d9"
+interface-hash: "e0b0b774ab8f555176f3d9a017f875c8"

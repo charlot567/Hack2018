@@ -69,7 +69,7 @@ class MissionListView: UIView, UITableViewDelegate, UITableViewDataSource {
     
     func getStatusLabel(status: Status) -> String {
         if(status == .completed) {
-            return "COMPLETE".lz()
+            return "COMPLETED".lz()
         } else if(status == .inProgress) {
             return "IN_PROGRESS".lz()
         }
@@ -82,6 +82,7 @@ class MissionListView: UIView, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         acceptMissionView.mission = missions[indexPath.row]
         acceptMissionView.setupView()
         self.acceptMissionView.frame.origin.x = kWidth

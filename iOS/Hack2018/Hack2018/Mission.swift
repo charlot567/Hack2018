@@ -10,6 +10,7 @@ import Foundation
 import CoreLocation
 
 class Mission {
+    var id: String!
     var title: String!
     var description: String!
     var position: CLLocationCoordinate2D!
@@ -19,8 +20,9 @@ class Mission {
     var status: Status!
     var feedback: Feedback!
     
-    init(title: String, description: String, position: CLLocationCoordinate2D, reward: Int, questions: Question, lang: String, status: Status, feedback: Feedback) {
+    init(title: String, description: String, position: CLLocationCoordinate2D, reward: Int, questions: Question, lang: String, status: Status, feedback: Feedback, id: String) {
         
+        self.id = id
         self.title = title
         self.description = description
         self.position = position

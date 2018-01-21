@@ -78,6 +78,7 @@ depends-member:
 - ["8Hack20187MissionC", "deinit"]
 - ["8Hack20187MissionC", "description"]
 - ["8Hack20187MissionC", "feedback"]
+- ["8Hack20187MissionC", "id"]
 - ["8Hack20187MissionC", "init"]
 - ["8Hack20187MissionC", "lang"]
 - ["8Hack20187MissionC", "position"]
@@ -259,4 +260,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/SceneKit.framework/Headers/SceneKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
-interface-hash: "33da0676d800e89bb3c6a6f143035b3a"
+interface-hash: "7db35b62272dde0297402fdffcace9db"

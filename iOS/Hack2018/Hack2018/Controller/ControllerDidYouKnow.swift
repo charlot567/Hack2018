@@ -62,7 +62,7 @@ class ControllerDidYouKnow {
         for dyn in dyns {
             
             //  DONT FORGET TO replace exist with !exist
-            if(exist(id: dyn.id)) {
+            if(!exist(id: dyn.id)) {
                 print("Add to coredata: \(dyn.id)")
                 
                 let entity = NSEntityDescription.entity(forEntityName: "DYN", in: context)
@@ -71,7 +71,7 @@ class ControllerDidYouKnow {
                 d.setValue(dyn.id, forKey: "id")
                 d.setValue(dyn.text, forKey: "title")
                 
-                addNotification(title: "FUN_FACT".lz(), body: dyn.text, timeInteval: timeInteval)
+                addNotification(title: "FUN_FACT".lz(), body: dyn.text, timeInteval: timeInteval, userInfo: ["openDYN": dyn.id])
                 timeInteval += skip
                 
                 do {
