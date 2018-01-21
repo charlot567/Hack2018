@@ -32,6 +32,8 @@ class ARViewController: UIViewController {
     
     var statusLabel = UILabel()
     
+    var backButtonView = UIButton()
+    
     init(mission: Mission) {
         self.currentMission = mission
         super.init(nibName: nil, bundle: nil)
@@ -62,8 +64,16 @@ class ARViewController: UIViewController {
         // Show statistics such as fps and timing information
         sceneView.showsStatistics = true
         
+        backButtonView = UIButton(frame: CGRect(x: 0, y: 0, width: kWidth, height: 70))
+        backButtonView.addTarget(self, action: #selector(back), for: .touchUpInside)
+        backButtonView.layer.zPosition = 1000
+        self.sceneView.addSubview(backButtonView)
         
-        
+        let backButton = UIImageView()
+        backButton.frame = CGRect(x: 20, y: 30, width: 40, height: 40)
+        backButton.image = UIImage(named: "arrow")
+        backButton.layer.zPosition = 1001
+        backButtonView.addSubview(backButton)
         // Create a new scene
         //let scene = SCNScene(named: "art.scnassets/Chien.scn")!
         //sceneView.scene = scene
@@ -83,6 +93,13 @@ class ARViewController: UIViewController {
         
         
         self.view.addSubview(statusLabel)
+    }
+    
+    @objc func back() {
+        print("back")
+        
+        var  vc = MenuViewController()
+        self.present(vc, animated: true, completion: nil)
     }
     
     func generateMessage(message: String) -> SCNNode {
