@@ -33,7 +33,17 @@ class NavBar: UIView {
         profileButton.layer.cornerRadius = imageSize / 2
         self.addSubview(profileButton)
      
+        let coinImg = UIImageView()
+        coinImg.frame = CGRect(x: 20, y: 40, width: 40, height: 40)
+        coinImg.image = UIImage(named: "coin")
+        self.addSubview(coinImg)
         
+        let coinLabel = UILabel()
+        coinLabel.frame = CGRect(x: 0, y: coinImg.frame.maxY, width: 80, height: 20)
+        coinLabel.font = UIFont(name: "Arial", size: 15)
+        coinLabel.textAlignment = .center
+        coinLabel.text = "\(kCurrentUser.score)"
+        self.addSubview(coinLabel)
     }
     
     @objc func showProfile() {
