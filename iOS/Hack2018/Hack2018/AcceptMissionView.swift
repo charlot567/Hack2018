@@ -19,7 +19,7 @@ class AcceptMissionView: UIView, CLLocationManagerDelegate {
     private let statusLbl = UILabel()
     private let rewardLbl = UILabel()
     private let startBtn = UIButton()
-    
+    let title = UILabel()
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -39,7 +39,7 @@ class AcceptMissionView: UIView, CLLocationManagerDelegate {
         mapView.showsUserLocation = true
         scrollView.addSubview(mapView)
         
-        let title = UILabel()
+        
         title.frame = CGRect(x: 20, y: mapView.frame.maxY + 35, width: kWidth, height: 30)
         title.font = UIFont(name: "Arial-BoldMT", size: 25)
         title.text = "MISSION".lz()
@@ -112,6 +112,15 @@ class AcceptMissionView: UIView, CLLocationManagerDelegate {
         }
         
         
+    }
+    
+    func updateUI() {
+        
+        if(mission != nil) {
+            self.rewardLbl.text = "\(self.mission.reward!) \("POINT".lz())"
+            self.statusLbl.text = (self.mission.status == .completed) ? "COMPLETE".lz() : "TODO".lz()
+            self.title.text = "MISSION".lz()
+        }
     }
     
     @objc

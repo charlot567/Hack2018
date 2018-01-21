@@ -43,6 +43,8 @@ class MissionListView: UIView, UITableViewDelegate, UITableViewDataSource {
     
     func updateBar() {
         self.navBar.updateTitle(title: "TABLEVIEW".lz())
+        self.tableView.reloadData()
+        self.acceptMissionView.updateUI()
     }
     
     required init?(coder aDecoder: NSCoder) {

@@ -12,7 +12,9 @@ class ProfileView: UIScrollView {
     
     private var navBar: NavBar!
     private let scoreLabel = UILabel()
-    
+    let scoreTitle = UILabel()
+    let langTitle = UILabel()
+    let logoutButton = UIButton()
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -33,7 +35,7 @@ class ProfileView: UIScrollView {
         name.textColor = UIColor.white
         self.addSubview(name)
         
-        let langTitle = UILabel()
+        
         langTitle.frame = CGRect(x: name.frame.minX, y: profileImageView.frame.maxY + 35, width: kWidth, height: 25)
         langTitle.font = UIFont(name: "Arial-BoldMT", size: 20)
         langTitle.text = "LANG".lz()
@@ -47,7 +49,7 @@ class ProfileView: UIScrollView {
         langTitleUser.textColor = UIColor.black
         self.addSubview(langTitleUser)
         
-        let scoreTitle = UILabel()
+        
         scoreTitle.frame = CGRect(x: name.frame.minX, y: langTitleUser.frame.maxY + 35, width: kWidth, height: 25)
         scoreTitle.font = UIFont(name: "Arial-BoldMT", size: 20)
         scoreTitle.text = "SCORE".lz()
@@ -67,7 +69,6 @@ class ProfileView: UIScrollView {
         backButton.addTarget(self, action: #selector(back), for: .touchUpInside)
         self.addSubview(backButton)
         
-        let logoutButton = UIButton()
         logoutButton.frame = CGRect(x: 0, y: scoreLabel.frame.maxY + 35, width: kWidth, height: 35)
         logoutButton.setTitle("DISCONNECT_FB".lz(), for: .normal)
         logoutButton.addTarget(self, action: #selector(logout), for: .touchUpInside)
@@ -80,6 +81,12 @@ class ProfileView: UIScrollView {
         self.addGestureRecognizer(swipeGesture)
         
         NotificationCenter.default.addObserver(self, selector: #selector(updateScore), name: updateScoreNotifName, object: nil)
+    }
+    
+    func updateUI() {
+        logoutButton.setTitle("DISCONNECT_FB".lz(), for: .normal)
+        scoreTitle.text = "SCORE".lz()
+        langTitle.text = "LANG".lz()
     }
     
     @objc

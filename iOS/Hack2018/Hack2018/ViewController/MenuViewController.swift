@@ -117,6 +117,7 @@ class MenuViewController: UIViewController, UNUserNotificationCenterDelegate {
             self.bottomButton.setTitle("LANG".lz(), for: .normal)
             
             self.missionListView.updateBar()
+            self.profileView.updateUI()
         }
     }
     
