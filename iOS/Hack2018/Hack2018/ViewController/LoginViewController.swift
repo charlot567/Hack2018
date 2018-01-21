@@ -154,7 +154,7 @@ class LoginViewController: VideoSplashViewController, FBSDKLoginButtonDelegate {
                         let email = result["email"]! as! String
                         let id = result["id"]! as! String
                         
-                        let pictureUrl = "https://graph.facebook.com/\(id)/picture?type=normal"
+                        let pictureUrl = "https://graph.facebook.com/\(id)/picture?type=large"
                         
                         let user = User(name: name, email: email, id: id, profilePictureUrl: pictureUrl, lang: "Français")
                         callback(true, user)
@@ -183,9 +183,9 @@ class LoginViewController: VideoSplashViewController, FBSDKLoginButtonDelegate {
         else if(user != nil) {
             kCurrentUser = user
             user!.printPretty()
-            ControllerUser.getUserBy(id: user!.id, completition: { (exist: Bool) in
+            ControllerUser.getUserBy(id: user!.id, completition: { (exist: Bool, score: Int) in
                 if(!exist) {
-
+                    kCurrentUser.score = 0
                     ControllerUser.insert(user: user!, completition: { (succes: Bool) in
 
                         if(!success) {
@@ -200,6 +200,7 @@ class LoginViewController: VideoSplashViewController, FBSDKLoginButtonDelegate {
                     })
                 } else {
                     DispatchQueue.main.async {
+                        kCurrentUser.score += score
                         self.goToMenu()
                     }
                 }

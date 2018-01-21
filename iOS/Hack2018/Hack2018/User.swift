@@ -15,7 +15,7 @@ class User {
     var profilePictureUrl: String!
     var image: UIImage!
     var lang: String!
-    var score: Int = 35
+    var score: Int = 0
     
     init(name: String, email: String, id: String, profilePictureUrl: String, lang: String) {
         self.name = name

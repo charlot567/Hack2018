@@ -19,6 +19,7 @@ var kCurrentUser: User!
 let notifShowProfileName = NSNotification.Name(rawValue: "notifShowProfileName")
 let logoutNotifName = NSNotification.Name(rawValue: "logoutNotifName")
 let backMissionNotifName = NSNotification.Name(rawValue: "backMissionNotifName")
+let updateScoreNotifName = NSNotification.Name(rawValue: "updateScoreNotifName")
 
 import SwiftSpinner
 

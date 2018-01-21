@@ -35,6 +35,7 @@ class ControllerMission {
                     if let json = json as? [Dictionary<String, Any>] {
                         for info in json {
                             let reward = info["reward"] as! Int
+                            let title = info["title"] as! String
                             let pos = info["position"] as! Dictionary<String, Any>
                             let lat = pos["lat"] as! Double
                             let long = pos["long"] as! Double
@@ -56,7 +57,7 @@ class ControllerMission {
                             let q1 = Question(title: question, answer: questionAnswerFinal)
                             let coord = CLLocationCoordinate2D(latitude: lat, longitude: long)
                             
-                            missions.append(Mission(title: "Mission Centro", description: "", position: coord, reward: reward, questions: q1, feedback: correct, lang: kCurrentUser.lang, status: .toDo))
+                            missions.append(Mission(title: title, description: "", position: coord, reward: reward, questions: q1, feedback: correct, lang: kCurrentUser.lang, status: .toDo))
                             
                             
                         }

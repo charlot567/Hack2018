@@ -84,7 +84,6 @@ class MissionListView: UIView, UITableViewDelegate, UITableViewDataSource {
         }) { (_: Bool) in
             
         }
-
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

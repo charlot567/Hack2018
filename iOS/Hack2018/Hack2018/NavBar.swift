@@ -47,6 +47,15 @@ class NavBar: UIView {
         coinLabel.textAlignment = .center
         coinLabel.text = "\(kCurrentUser.score)"
         self.addSubview(coinLabel)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(updateScore), name: updateScoreNotifName, object: nil)
+    }
+    
+    @objc
+    func updateScore() {
+        DispatchQueue.main.async {
+            self.coinLabel.text = "\(kCurrentUser.score)"
+        }
     }
     
     func setForMissionView(title: String, acceptMissionView: AcceptMissionView) {
