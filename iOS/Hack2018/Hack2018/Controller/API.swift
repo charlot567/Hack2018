@@ -8,4 +8,4 @@
 
 import Foundation
 
-let apiAdress = ""
+let apiAdress = "http://factory26.com:3000"

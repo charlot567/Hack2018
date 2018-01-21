@@ -175,29 +175,28 @@ class LoginViewController: VideoSplashViewController, FBSDKLoginButtonDelegate {
         }
         
         else if(user != nil) {
+            kCurrentUser = user
             user!.printPretty()
-            ControllerUser.getUserBy(id: user!.id, completition: { (userAPI: User?) in
-                if(userAPI == nil) {
-                    
+            ControllerUser.getUserBy(id: user!.id, completition: { (exist: Bool) in
+                if(!exist) {
+
                     ControllerUser.insert(user: user!, completition: { (succes: Bool) in
-                        
+
                         if(!success) {
                             displayAlert(viewController: self, title: "Error", message: "Fetchig user info ox#")
                             return
                         }
-                        
+
                         DispatchQueue.main.async {
                             self.goToMenu()
                         }
-                        
+
                     })
                 } else {
                     DispatchQueue.main.async {
                         self.goToMenu()
                     }
                 }
-                
-             
             })
         } else {
             displayAlert(viewController: self, title: "Error", message: "Fetchig user info ox#")

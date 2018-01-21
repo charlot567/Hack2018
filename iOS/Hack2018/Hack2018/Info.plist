@@ -54,6 +54,11 @@
 	<string>141375063212015</string>
 	<key>FacebookDisplayName</key>
 	<string>Hack2018</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>UIAppFonts</key>
 	<array>
 		<string>GothamHTF-Bold</string>

@@ -13,6 +13,8 @@ var kWidth: CGFloat = 0
 var kHeight: CGFloat = 0
 var IPHONE_X = false
 
+var kCurrentUser: User!
+
 import SwiftSpinner
 
 func displayAlert(viewController: UIViewController, title: String, message: String) {

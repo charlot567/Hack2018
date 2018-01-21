@@ -12,11 +12,26 @@ class MenuViewController: UIViewController {
 
     private var navBar: NavBar!
     
+    private var profileView: ProfileView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        initAllView()
         self.navBar = NavBar()
         self.view.addSubview(navBar)
+        
+        goToProfile()
+    }
+    
+    private func initAllView() {
+        
+        profileView = ProfileView(frame: self.view.frame)
+    }
+    
+    private func goToProfile() {
+        self.view.addSubview(profileView)
     }
 
     @objc func openAmigo() {
