@@ -61,10 +61,18 @@ class ProfileView: UIScrollView {
         self.addSubview(scoreLabel)
         
         let backButton = UIButton()
-        backButton.frame = CGRect(x: 10, y: 30, width: 30, height: 30)
+        backButton.frame = CGRect(x: 10, y: 50, width: 30, height: 30)
         backButton.setImage(UIImage(named: "arrow"), for: .normal)
         backButton.addTarget(self, action: #selector(back), for: .touchUpInside)
         self.addSubview(backButton)
+        
+        let logoutButton = UIButton()
+        logoutButton.frame = CGRect(x: 0, y: scoreLabel.frame.maxY + 35, width: kWidth, height: 35)
+        logoutButton.setTitle("DISCONNECT_FB".lz(), for: .normal)
+        logoutButton.addTarget(self, action: #selector(logout), for: .touchUpInside)
+        logoutButton.setTitleColor(.red, for: .normal)
+        logoutButton.frame = CGRect(x: kWidth / 2 - logoutButton.frame.width / 2, y: logoutButton.frame.origin.y, width: logoutButton.frame.width, height: logoutButton.frame.height)
+        self.addSubview(logoutButton)
         
         let swipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(back))
         swipeGesture.direction = .right
@@ -79,6 +87,11 @@ class ProfileView: UIScrollView {
         }) { (_: Bool) in
             self.removeFromSuperview()
         }
+    }
+    
+    @objc
+    func logout() {
+        NotificationCenter.default.post(name: logoutNotifName, object: nil)
     }
     
     required init?(coder aDecoder: NSCoder) {

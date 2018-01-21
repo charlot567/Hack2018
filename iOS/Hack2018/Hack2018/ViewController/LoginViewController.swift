@@ -14,6 +14,7 @@ import SwiftSpinner
 class LoginViewController: VideoSplashViewController, FBSDKLoginButtonDelegate {
     
     private let loginLabel = UILabel()
+    var logoutPlease = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,9 +30,13 @@ class LoginViewController: VideoSplashViewController, FBSDKLoginButtonDelegate {
         
         setupView()
         
-        self.fetchUserInfo { (succes: Bool, user: User?) in
-            
-            self.loginResult(success: succes, user: user)
+        if(!logoutPlease) {
+            self.fetchUserInfo { (succes: Bool, user: User?) in
+                
+                self.loginResult(success: succes, user: user)
+            }
+        } else {
+            self.logout()
         }
     }
     
@@ -211,6 +216,14 @@ class LoginViewController: VideoSplashViewController, FBSDKLoginButtonDelegate {
             
             present(viewController, animated: true, completion: nil)
         }
+    }
+    
+    private func logout() {
+        let loginManager = FBSDKLoginManager()
+        loginManager.logOut()
+        updateLoginLabel()
+        
+        logoutPlease = false
     }
     
     override func didReceiveMemoryWarning() {

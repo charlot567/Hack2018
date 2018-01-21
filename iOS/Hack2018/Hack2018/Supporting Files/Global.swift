@@ -16,6 +16,7 @@ var IPHONE_X = false
 var kCurrentUser: User!
 
 let notifShowProfileName = NSNotification.Name(rawValue: "notifShowProfileName")
+let logoutNotifName = NSNotification.Name(rawValue: "logoutNotifName")
 
 import SwiftSpinner
 

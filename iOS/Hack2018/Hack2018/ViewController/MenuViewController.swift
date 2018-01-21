@@ -23,6 +23,7 @@ class MenuViewController: UIViewController {
         self.view.addSubview(navBar)
         
         NotificationCenter.default.addObserver(self, selector: #selector(goToProfile), name: notifShowProfileName, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(logout), name: logoutNotifName, object: nil)
     }
     
     private func initAllView() {
@@ -37,6 +38,16 @@ class MenuViewController: UIViewController {
             self.profileView.frame.origin.x = 0
         }) { (_: Bool) in
             
+        }
+    }
+    
+    @objc func logout() {
+        if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginViewControllerID") as? LoginViewController {
+            viewController.logoutPlease = true
+            
+            present(viewController, animated: true, completion: {
+                self.profileView.removeFromSuperview()
+            })
         }
     }
 
